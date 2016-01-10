@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="countdown.css">
+    </head>
+
+    <body>
+        <h1>Flight 2016</h1>
+        <p>Hello, world!</p>
+        <div id="countdown">
+            <li class="timer" id="day"></li>
+            <li class="timer" id="hour"></li>
+            <li class="timer" id="minute"></li>
+            <li class="timer" id="second"></li>
+        </div>
+    </body>
+
+    <script src="countdown.js"></script>
+    <script>
+        var counter = function() {
+            var elem, unit, factor, countdown = time_calc();
+            if (countdown.total == 0) {
+                // site launch!
+            }
+
+            for (var i = 0; i < FACTORS.length; i++) {
+                unit = FACTORS[i][0];
+                elem = document.getElementById(unit);
+                disp = (countdown[unit] == 1) ? unit : (unit + 's');
+                elem.innerHTML = countdown[unit] + ' ' + disp;
+            }
+        };
+
+        counter();
+        window.onload = setInterval(counter, 1000);
+    </script>
+</html>
