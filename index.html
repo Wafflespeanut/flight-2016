@@ -2,17 +2,28 @@
 <html>
     <head>
         <meta charset="UTF-8" />
+        <title>Flight 2016</title>
         <link rel="stylesheet" href="countdown.css">
     </head>
 
     <body>
-        <h1>Flight 2016</h1>
-        <p>Hello, world!</p>
-        <div id="countdown">
-            <li class="timer" id="day"></li>
-            <li class="timer" id="hour"></li>
-            <li class="timer" id="minute"></li>
-            <li class="timer" id="second"></li>
+        <div class="countdown">
+            <div class="radar"></div>
+            <div class="field"></div>
+            <table>
+                <tr>
+                    <td class="timer-val" id="day-val"></td>
+                    <td class="timer-val" id="hour-val"></td>
+                    <td class="timer-val" id="minute-val"></td>
+                    <td class="timer-val" id="second-val"></td>
+                </tr>
+                <tr>
+                    <td class="timer-disp" id="day-disp"></td>
+                    <td class="timer-disp" id="hour-disp"></td>
+                    <td class="timer-disp" id="minute-disp"></td>
+                    <td class="timer-disp" id="second-disp"></td>
+                </tr>
+            </table>
         </div>
     </body>
 
@@ -26,13 +37,14 @@
 
             for (var i = 0; i < FACTORS.length; i++) {
                 unit = FACTORS[i][0];
-                elem = document.getElementById(unit);
-                disp = (countdown[unit] == 1) ? unit : (unit + 's');
-                elem.innerHTML = countdown[unit] + ' ' + disp;
+                elem_val = document.getElementById(unit + '-val');
+                elem_disp = document.getElementById(unit + '-disp');
+                elem_val.innerHTML = ('0' + countdown[unit]).slice(-2);
+                elem_disp.innerHTML = (countdown[unit] == 1) ? unit : (unit + 's');
             }
         };
 
-        counter();
+        counter();  // to eliminate the initial delay when the page loads
         window.onload = setInterval(counter, 1000);
     </script>
 </html>
