@@ -23,8 +23,8 @@ function time_calc() {      // all of this stunt is to construct an object out o
 
 function counter() {
     var elem, unit, factor, countdown = time_calc();
-    if (countdown.total == 0) {
-        // site launch!
+    if (countdown.total <= 0) {
+        return; // site launch!
     }
 
     for (var i = 0; i < FACTORS.length; i++) {
@@ -35,6 +35,3 @@ function counter() {
         elem_disp.innerHTML = (countdown[unit] == 1) ? unit : (unit + 's');
     }
 };
-
-counter();  // to eliminate the initial delay when the page loads
-setInterval(counter, 1000);

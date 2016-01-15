@@ -3,13 +3,24 @@ body {
     overflow: hidden;
 }
 
-table {
+/* Countdown timer transition */
+
+#countdown {
+    opacity: 0;
+    transition: opacity 2s ease-in;
+    -moz-transition: opacity 2s ease-in;
+    -webkit-transition: opacity 2s ease-in;
+    -o-transition: opacity 2s ease-in;
+    -ms-transition: opacity 2s ease-in;
+}
+
+.timer {
     max-width: 100%;
     margin: auto;
     padding-top: 10%;
 }
 
-td {
+.timer td {
     padding: 5px 25px 5px 25px;
     text-align: center;
 }

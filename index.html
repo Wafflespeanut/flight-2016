@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width" />
+        <meta name="viewport" content="width=device-width; height=device-height" />
         <title>Flight 2016</title>
         <link rel="stylesheet" href="countdown.css">
         <link rel="stylesheet" href="loader.css">
@@ -11,8 +11,11 @@
     <body>
         <div id="loader"></div>
         <div id="content">
-            <div class="countdown">
-                <table>
+            <div class="logo">
+                <img id="logo" class="logo" src="https://www.dropbox.com/s/or8vpl5rye2v9uh/Crazy%20Buddy.png?dl=1" />
+            </div>
+            <div id="countdown">
+                <table class="timer">
                     <tr>
                         <td class="timer-val" id="day-val"></td>
                         <td class="timer-val" id="hour-val"></td>
@@ -27,6 +30,7 @@
                     </tr>
                 </table>
             </div>
+
         </div>
     </body>
 
@@ -35,6 +39,17 @@
         window.onload = function() {
             document.getElementById('loader').style.display = 'none';
             document.getElementById('content').style.display = 'block';
+            counter();  // to eliminate the initial delay when the page loads
+            setInterval(counter, 1000);
+            setTimeout(function() {     // temporary workaround
+                document.getElementById('logo').style.opacity = 1;
+                setTimeout(function() {
+                    document.getElementById('logo').style.opacity = 0.15;
+                    setTimeout(function() {
+                        document.getElementById('countdown').style.opacity = 1;
+                    }, 3000);
+                }, 2000);
+            }, 500);
         }
     </script>
 </html>
