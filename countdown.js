@@ -20,3 +20,21 @@ function time_calc() {      // all of this stunt is to construct an object out o
         } prev_unit = cur_unit;
     } return time_vals;
 }
+
+function counter() {
+    var elem, unit, factor, countdown = time_calc();
+    if (countdown.total == 0) {
+        // site launch!
+    }
+
+    for (var i = 0; i < FACTORS.length; i++) {
+        unit = FACTORS[i][0];
+        elem_val = document.getElementById(unit + '-val');
+        elem_disp = document.getElementById(unit + '-disp');
+        elem_val.innerHTML = ('0' + countdown[unit]).slice(-2);
+        elem_disp.innerHTML = (countdown[unit] == 1) ? unit : (unit + 's');
+    }
+};
+
+counter();  // to eliminate the initial delay when the page loads
+setInterval(counter, 1000);

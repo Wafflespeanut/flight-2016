@@ -1,54 +1,23 @@
 body {
-    background-color: black;
     font-family: 'Verdana';
     overflow: hidden;
 }
 
 table {
+    max-width: 100%;
     margin: auto;
-    padding-top: 10em;
+    padding-top: 10%;
 }
 
 td {
     padding: 5px 25px 5px 25px;
-    color: lightgreen;
+    text-align: center;
 }
 
 .timer-val {
     font-size: 5em;
-    text-align: center;
 }
 
 .timer-disp {
     font-size: 1.2em;
-    text-align: center;
-}
-
-.radar {
-    width: 5%;
-    min-height: 40em;
-    margin: auto;
-    position: absolute;
-    top: -40%;
-    left: 45%;
-    animation: clockwise 5s linear infinite;
-    transform-origin: 100% 100%;
-    background: linear-gradient(82deg, transparent 40%, green), transparent;
-}
-
-.field {
-    width: 100%;
-    height: 150%;
-    position: absolute;
-    top: -20%;
-    left: 0%;
-    background:
-        radial-gradient(farthest-side circle, transparent 30%, rgba(6, 60, 8, 0.8) 37%, transparent 45%),
-        radial-gradient(farthest-side circle, transparent 60%, rgba(6, 60, 8, 0.8) 67%, transparent 75%),
-        radial-gradient(farthest-side circle, transparent 90%, rgba(6, 60, 8, 0.8) 97%, transparent 105%);
-}
-
-@keyframes clockwise {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
 }

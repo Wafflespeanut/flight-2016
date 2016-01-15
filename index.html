@@ -2,49 +2,39 @@
 <html>
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
         <title>Flight 2016</title>
         <link rel="stylesheet" href="countdown.css">
+        <link rel="stylesheet" href="loader.css">
     </head>
 
     <body>
-        <div class="countdown">
-            <div class="radar"></div>
-            <div class="field"></div>
-            <table>
-                <tr>
-                    <td class="timer-val" id="day-val"></td>
-                    <td class="timer-val" id="hour-val"></td>
-                    <td class="timer-val" id="minute-val"></td>
-                    <td class="timer-val" id="second-val"></td>
-                </tr>
-                <tr>
-                    <td class="timer-disp" id="day-disp"></td>
-                    <td class="timer-disp" id="hour-disp"></td>
-                    <td class="timer-disp" id="minute-disp"></td>
-                    <td class="timer-disp" id="second-disp"></td>
-                </tr>
-            </table>
+        <div id="loader"></div>
+        <div id="content">
+            <div class="countdown">
+                <table>
+                    <tr>
+                        <td class="timer-val" id="day-val"></td>
+                        <td class="timer-val" id="hour-val"></td>
+                        <td class="timer-val" id="minute-val"></td>
+                        <td class="timer-val" id="second-val"></td>
+                    </tr>
+                    <tr>
+                        <td class="timer-disp" id="day-disp"></td>
+                        <td class="timer-disp" id="hour-disp"></td>
+                        <td class="timer-disp" id="minute-disp"></td>
+                        <td class="timer-disp" id="second-disp"></td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </body>
 
     <script src="countdown.js"></script>
     <script>
-        var counter = function() {
-            var elem, unit, factor, countdown = time_calc();
-            if (countdown.total == 0) {
-                // site launch!
-            }
-
-            for (var i = 0; i < FACTORS.length; i++) {
-                unit = FACTORS[i][0];
-                elem_val = document.getElementById(unit + '-val');
-                elem_disp = document.getElementById(unit + '-disp');
-                elem_val.innerHTML = ('0' + countdown[unit]).slice(-2);
-                elem_disp.innerHTML = (countdown[unit] == 1) ? unit : (unit + 's');
-            }
-        };
-
-        counter();  // to eliminate the initial delay when the page loads
-        window.onload = setInterval(counter, 1000);
+        window.onload = function() {
+            document.getElementById('loader').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+        }
     </script>
 </html>
