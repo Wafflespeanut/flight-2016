@@ -22,13 +22,32 @@ body {
 
 .timer td {
     padding: 5px 25px 5px 25px;
+    font-family: 'DS-Digital', sans-serif;
     text-align: center;
 }
 
 .timer-val {
-    font-size: 5em;
+    font-size: 7.5em;
 }
 
 .timer-disp {
-    font-size: 1.2em;
+    font-size: 1.5em;
+}
+
+.description {
+    max-width: 100%;
+    margin: auto;
+}
+
+#short {
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+
+#contact {
+    padding-top: 5%;
+    text-align: right;
+    padding-right: 5%;
 }
