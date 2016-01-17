@@ -2,20 +2,26 @@
 <html>
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-        <meta name="viewport" content="width=device-width; height=device-height" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
         <title>Flight 2016</title>
         <link rel='stylesheet' type='text/css' href='countdown.css'>
         <link rel='stylesheet' type='text/css' href='loader.css'>
         <link href="http://db.onlinewebfonts.com/c/63f874d192fb3892d88d5e26f942b5e2?family=DS-Digital" rel="stylesheet" type="text/css"/>
+        <script type='text/javascript' src="countdown.js"></script>
     </head>
 
     <body>
         <div id="loader"></div>
         <div id="content">
             <div class="logo">
-                <img id="logo" class="logo" src="https://www.dropbox.com/s/or8vpl5rye2v9uh/Crazy%20Buddy.png?dl=1" />
+                <img id="logo" class="logo" src="flight.png" />
             </div>
             <div id="countdown">
+                <div id="short">
+                    <em>
+                        The stage is set! And, the curtain rises in ...
+                    </em>
+                </div>
                 <table class="timer">
                     <tr>
                         <td class="timer-val" id="day-val"></td>
@@ -30,28 +36,24 @@
                         <td class="timer-disp" id="second-disp"></td>
                     </tr>
                 </table>
-                <table class="description">
-                    <tr>
-                        <td id="short">
-                            <em>
-                                Flight is some department's function, and it's conducted by blah blah blah f***.
-                                What's going on? What's happening?!!
-                                Okay, Please forgive me... I can't take anymore! I'm going to die!
-                            </em>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="contact">
-                            <p style="padding-right: 6%"> Contact:</p>
-                            <p> +91 9999999999</p>
-                        </td>
-                    </tr>
-                </table>
+                <div class="description">
+                    <div class="contact">
+                        <p id="contact-head">Contact us for more info!</p>
+                        <div>
+                            <img class='icon' src='http://buffaloschoolsfoundation.org/wp-content/uploads/2010/04/contact_icon.png' />
+                            +91 97 152 55152
+                        </div>
+                        <div style="height: 1.2vw"></div>
+                        <div>
+                            <img class='icon' src='http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Email-icon.png' />
+                            mitflight16@gmail.com
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
 
-    <script type='text/javascript' src="countdown.js"></script>
     <script>
         window.onload = function() {
             document.getElementById('loader').style.display = 'none';
@@ -61,11 +63,11 @@
             setTimeout(function() {     // temporary workaround
                 document.getElementById('logo').style.opacity = 1;
                 setTimeout(function() {
-                    document.getElementById('logo').style.opacity = 0.15;
+                    document.getElementById('logo').style.opacity = 0.25;
                     setTimeout(function() {
                         document.getElementById('countdown').style.opacity = 1;
                     }, 3000);
-                }, 2000);
+                }, 3000);
             }, 500);
         }
     </script>
