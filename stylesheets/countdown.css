@@ -1,7 +1,6 @@
 body {
     font-family: 'Helvetica';
-    overflow: hidden;
-    font-size: 2vw;
+    font-size: 1.5em;
 }
 
 /* Countdown timer transition */
@@ -17,42 +16,43 @@ body {
 
 .timer {
     margin: auto;
-    padding-top: 7.5vh;
+    padding-top: 1em;
+    table-layout: fixed;
+    width: 750px;
 }
 
 .timer td {
-    padding: 0.8vw 3.5vw 0.8vw 3.5vw;
+    padding: 4px 25px 4px 25px;
+    width: 25px;
     font-family: 'DS-Digital', monospace;
     text-align: center;
 }
 
 .timer-val {
-    font-size: 10vw;
+    font-size: 5.2em;
 }
 
 .timer-disp {
-    font-size: 2.5vw;
+    font-size: 1.2em;
 }
 
 #short {
-    padding-top: 10vh;
-    padding-left: 15vw;
-    padding-right: 15vw;
+    padding-top: 8%;
     text-align: center;
 }
 
 .contact {
     position: fixed;
-    font-size: 1vw;
-    padding-right: 5vw;
-    padding-bottom: 2vh;
+    font-family: 'Verdana';
+    font-size: 14px;
+    padding-right: 2em;
+    padding-bottom: 2em;
     right: 0;
     bottom: 0;
 }
 
 .icon {
     float: left;
-    padding-top: 0.3vh;
-    padding-right: 0.5vw;
-    height: 2vw;
+    padding-right: 0.75em;
+    height: 1.8em;
 }

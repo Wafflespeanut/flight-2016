@@ -9,9 +9,9 @@
     position: fixed;
     top: 40%;
     left: 45%;
-    width: 5vw;
-    height: 5vw;
-    border: 1vw solid #000;
+    width: 75px;
+    height: 75px;
+    border: 10px solid #000;    /* could be a propeller or something... */
     background: transparent;
     border-right-color: transparent;
     border-radius: 50%;
@@ -58,22 +58,21 @@
 
 /* Logo transition */
 
-.logo div {
-    position: relative;
-}
-
 .logo img {
     opacity: 0;
-    position: absolute;
-    width: 60%;
+    position: fixed;
+    width: 700px;
     transition: opacity 2s ease-in;
     -moz-transition: opacity 2s ease-in;
     -webkit-transition: opacity 2s ease-in;
     -o-transition: opacity 2s ease-in;
     -ms-transition: opacity 2s ease-in;
     margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }

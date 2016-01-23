@@ -4,23 +4,22 @@
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
         <title>Flight 2016</title>
-        <link rel='stylesheet' type='text/css' href='countdown.css'>
-        <link rel='stylesheet' type='text/css' href='loader.css'>
+        <link rel='icon' href='images/flight-icon.png'>
+        <link rel='stylesheet' type='text/css' href='stylesheets/countdown.css'>
+        <link rel='stylesheet' type='text/css' href='stylesheets/loader.css'>
         <link href="http://db.onlinewebfonts.com/c/63f874d192fb3892d88d5e26f942b5e2?family=DS-Digital" rel="stylesheet" type="text/css"/>
-        <script type='text/javascript' src="countdown.js"></script>
+        <script type='text/javascript' src="javascripts/countdown.js"></script>
     </head>
 
     <body>
         <div id="loader"></div>
         <div id="content">
             <div class="logo">
-                <img id="logo" class="logo" src="flight.png" />
+                <img id="logo" class="logo" src="images/flight.png" />
             </div>
             <div id="countdown">
                 <div id="short">
-                    <em>
-                        The stage is set! And, the curtain rises in ...
-                    </em>
+                    <em>The stage is set! The curtain rises in ...</em>
                 </div>
                 <table class="timer">
                     <tr>
@@ -40,12 +39,12 @@
                     <div class="contact">
                         <p id="contact-head">Contact us for more info!</p>
                         <div>
-                            <img class='icon' src='http://buffaloschoolsfoundation.org/wp-content/uploads/2010/04/contact_icon.png' />
+                            <img class='icon' src='images/contact-icon.png' />
                             +91 97 152 55152
                         </div>
-                        <div style="height: 1.2vw"></div>
+                        <div style="height: 1em"></div>
                         <div>
-                            <img class='icon' src='http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Email-icon.png' />
+                            <img class='icon' src='images/email-icon.png' />
                             mitflight16@gmail.com
                         </div>
                     </div>
@@ -58,12 +57,12 @@
         window.onload = function() {
             document.getElementById('loader').style.display = 'none';
             document.getElementById('content').style.display = 'block';
-            counter();  // to eliminate the initial delay when the page loads
+            counter();      // just to eliminate the initial delay when the page loads
             setInterval(counter, 1000);
-            setTimeout(function() {     // temporary workaround
+            setTimeout(function() {     // do stuff asynchronously
                 document.getElementById('logo').style.opacity = 1;
                 setTimeout(function() {
-                    document.getElementById('logo').style.opacity = 0.25;
+                    document.getElementById('logo').style.opacity = 0.2;
                     setTimeout(function() {
                         document.getElementById('countdown').style.opacity = 1;
                     }, 3000);
