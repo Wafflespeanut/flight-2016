@@ -18,7 +18,7 @@ body {
     margin: auto;
     padding-top: 1em;
     table-layout: fixed;
-    width: 750px;
+    width: 1000px;
 }
 
 .timer td {
@@ -36,19 +36,16 @@ body {
     font-size: 1.2em;
 }
 
-#short {
-    padding-top: 8%;
-    text-align: center;
+a[href^="mailto:"] {
+    text-decoration: none;
+    color: black;
 }
 
 .contact {
-    position: fixed;
     font-family: 'Verdana';
     font-size: 14px;
     padding-right: 2em;
     padding-bottom: 2em;
-    right: 0;
-    bottom: 0;
 }
 
 .icon {

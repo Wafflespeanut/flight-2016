@@ -1,5 +1,5 @@
 // change the constants to affect the countdown
-const DEADLINE = 'January 26 2016 10:00:00 GMT+05:30';  // any parseable date is enough
+const DEADLINE = 'January 26 2016 12:00:00 GMT+05:30';  // any parseable date is enough
 const BASE_UNIT = 'second';     // the base unit from which subsequent units are derived
 const FACTORS = [   // (singular) unit names and relative factors (object attributes are based on this)
     [BASE_UNIT, 1],     // BASE_UNIT shouldn't be removed!

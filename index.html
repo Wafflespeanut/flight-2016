@@ -2,24 +2,27 @@
 <html>
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
         <title>Flight 2016</title>
-        <link rel='icon' href='images/flight-icon.png'>
-        <link rel='stylesheet' type='text/css' href='stylesheets/countdown.css'>
-        <link rel='stylesheet' type='text/css' href='stylesheets/loader.css'>
-        <link href="http://db.onlinewebfonts.com/c/63f874d192fb3892d88d5e26f942b5e2?family=DS-Digital" rel="stylesheet" type="text/css"/>
+        <link rel='icon' href='images/flight-icon.png' />
+        <link rel='stylesheet' type='text/css' media="all" href='stylesheets/countdown.css' />
+        <link rel='stylesheet' type='text/css' media="all" href='stylesheets/loader.css' />
+        <link href="http://db.onlinewebfonts.com/c/63f874d192fb3892d88d5e26f942b5e2?family=DS-Digital" rel="stylesheet" type="text/css" />
         <script type='text/javascript' src="javascripts/countdown.js"></script>
     </head>
 
     <body>
-        <div id="loader"></div>
+        <div id="loader">
+            <img id="loader-img" src='images/propeller.png' />
+        </div>
         <div id="content">
             <div class="logo">
                 <img id="logo" class="logo" src="images/flight.png" />
             </div>
             <div id="countdown">
-                <div id="short">
-                    <em>The stage is set! The curtain rises in ...</em>
+                <div style="padding-top: 4em;">
+                    <div id="short" style="text-align: center">
+                        <em>The stage is set! The curtain rises in ...</em>
+                    </span>
                 </div>
                 <table class="timer">
                     <tr>
@@ -35,7 +38,8 @@
                         <td class="timer-disp" id="second-disp"></td>
                     </tr>
                 </table>
-                <div class="description">
+                <div style="height: 5em"></div>
+                <div class="description" style="padding-left: 1em">
                     <div class="contact">
                         <p id="contact-head">Contact us for more info!</p>
                         <div>
@@ -45,7 +49,7 @@
                         <div style="height: 1em"></div>
                         <div>
                             <img class='icon' src='images/email-icon.png' />
-                            mitflight16@gmail.com
+                            <a href="mailto:mitflight16@gmail.com">mitflight16@gmail.com</a>
                         </div>
                     </div>
                 </div>
