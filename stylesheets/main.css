@@ -17,15 +17,31 @@
     color: black;
 }
 
-.scrollpage {
+#scrollpage {
     height: 475px;
     overflow-y: scroll;
+    margin-right: -20px;
+}
+
+#scrollpage:focus {
+    outline: none;
 }
 
 .slide {
     padding-top: 200px;
     text-align: center;
     height: 300px;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    transition: all 0.2s ease-in;
+}
+
+.card:hover {
+    transform: scale(1.25);
 }
 
 #button {

@@ -5,9 +5,10 @@
         <title>Flight 2016</title>
         <link rel='icon' href='images/flight-icon.png'>
         <link rel='stylesheet' type='text/css' media="all" href='stylesheets/main.css' />
+        <script type='text/javascript' src="javascripts/pageload.js"></script>
     </head>
 
-    <body>
+    <body onload="focus_scroll_box()">
         <div id="content">
             <div id='header'>
                 <table class="tabs">
@@ -23,15 +24,17 @@
                     </tr>
                 </table>
             </div>
-            <div class='scrollpage'>
-                <div class='slide'>
-                    Welcome to Flight 2016!
-                </div>
-                <div class='slide'>
-                    Who we are?
-                </div>
-                <div class='slide'>
-                    What we do?
+            <div style='overflow: hidden; border: none'>
+                <div id='scrollpage' tabindex="-1">
+                    <div class='slide'>
+                        Welcome to Flight 2016!
+                    </div>
+                    <div class='slide'>
+                        Who we are?
+                    </div>
+                    <div class='slide'>
+                        What we do?
+                    </div>
                 </div>
             </div>
         </div>
