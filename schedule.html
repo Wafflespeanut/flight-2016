@@ -6,6 +6,7 @@
         <link rel='icon' href='images/flight-icon.png'>
         <link rel='stylesheet' type='text/css' media="all" href='stylesheets/main.css' />
         <link rel='stylesheet' type='text/css' media="all" href='stylesheets/clock.css' />
+        <script type='text/javascript' src="javascripts/clock.js"></script>
     </head>
 
     <body>
@@ -26,8 +27,16 @@
                     </tr>
                 </table>
             </div>
-            <div id='clock'>
-                Clock here!
+            <div style="padding-top: 25px"></div>
+            <div class='clock-container'>
+                <div id='clock'>
+                    <div id='axle'></div>
+                    <div id='hand'></div>
+                    <div class='point'></div>
+                    <div class='point'></div>
+                    <div class='point'></div>
+                    <div class='point'></div>
+                </div>
             </div>
         </div>
     </body>

@@ -10,6 +10,7 @@
 
 .tab {
     padding: 0px 40px 0px 40px;
+    cursor: default;
 }
 
 .tab a {
@@ -25,6 +26,10 @@
 
 #scrollpage:focus {
     outline: none;
+}
+
+.stack {
+    text-align: center;
 }
 
 .slide {
