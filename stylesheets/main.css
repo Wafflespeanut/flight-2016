@@ -2,6 +2,7 @@
     font-family: 'Helvetica';
     font-size: 1.5em;
     height: 100%;
+    overflow-y: hidden;
 }
 
 .tabs {
@@ -9,7 +10,7 @@
 }
 
 .tab {
-    padding: 0px 40px 0px 40px;
+    padding: 0px 60px 0px 60px;
     cursor: default;
 }
 

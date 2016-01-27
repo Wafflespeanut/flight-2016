@@ -21,7 +21,6 @@
                         </td>
                         <td class="tab"><a href="events.html">Events</a></td>
                         <td class="tab"><a href="workshops.html">Workshops</a></td>
-                        <td class="tab">Schedule</td>
                         <td class="tab"><a href="hospitality.html">Hospitality</a></td>
                         <td class="tab"><a href="contact.html">Contact us</a></td>
                     </tr>
@@ -32,16 +31,30 @@
                 <div id='clock'>
                     <div id='axle'></div>
                     <div id='hand'></div>
-                    <div class='point' onclick="move_hand_to(this)"></div>
-                    <div class='point' onclick="move_hand_to(this)"></div>
-                    <div class='point' onclick="move_hand_to(this)"></div>
-                    <div class='point' onclick="move_hand_to(this)"></div>
-                    <div class='point' onclick="move_hand_to(this)"></div>
-                    <div class='point' onclick="move_hand_to(this)"></div>
-                    <div class='point' onclick="move_hand_to(this)"></div>
+                    <div class='point' onclick="move_hand_to(this)">
+                        <div class='event-title'>Event 1</div>
+                        <div class='event-time'>March 11 2016 09:00:00 GMT+05:30</div>
+                    </div>
+                    <div class='point' onclick="move_hand_to(this)">
+                        <div class='event-title'>Event 2</div>
+                        <div class='event-time'>March 11 2016 10:00:00 GMT+05:30</div>
+                    </div>
+                    <div class='point' onclick="move_hand_to(this)">
+                        <div class='event-title'>Workshop 1</div>
+                        <div class='event-time'>March 11 2016 15:00:00 GMT+05:30</div>
+                    </div>
+                    <div class='point' onclick="move_hand_to(this)">
+                        <div class='event-title'>Event 4</div>
+                        <div class='event-time'>March 11 2016 15:15:00 GMT+05:30</div>
+                    </div>
+                    <div class='point' onclick="move_hand_to(this)">
+                        <div class='event-title'>Event 5</div>
+                        <div class='event-time'>March 11 2016 17:30:00 GMT+05:30</div>
+                    </div>
                 </div>
                 <div id='point-info'>
-
+                    <div id='display-event-title'></div>
+                    <div id='display-event-time'></div>
                 </div>
             </div>
         </div>
