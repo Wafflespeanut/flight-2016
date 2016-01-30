@@ -1,6 +1,7 @@
 // Stuff that depend on the values set in CSS
 const RADIUS = 200;
-const POINT_OPACITY_TIMEOUT = 1000;
+// Other constants
+const HAND_TIMEOUT = 2500;
 
 function Timer(callback, delay) {
     var timer_id;
@@ -12,7 +13,8 @@ function Timer(callback, delay) {
     this.resume = function() {
         if (timer_id) {
             clearInterval(timer_id);
-        } timer_id = setInterval(callback, delay);
+        } callback();     // so that there's no initial delay
+        timer_id = setInterval(callback, delay);
     };
 
     this.resume();
@@ -76,7 +78,7 @@ function EventDistributor() {       // assumes that all events begin & end in 12
                 points[i].style.opacity = 0;
                 points[i].style.visibility = 'hidden';
             }
-        } rotate_hand_to(points[current_points_idx[0]]);
+        }
     };
 
     this.current_points = function() {      // FIXME: could be an iterator, or the values could probably be stored
@@ -92,43 +94,56 @@ function EventDistributor() {       // assumes that all events begin & end in 12
     this.distribute();
 }
 
+function Clock() {
+    var pos = 0;    // since we rotate the hand once (initially) to set it to point the first event
+    var distributor = new EventDistributor();
+    var hand = document.getElementById('hand');
+    var title = document.getElementById('display-event-title');
+    var time = document.getElementById('display-event-time');
+    var points = distributor.current_points();
+
+    function rotate_hand_to(point) {
+        title.innerHTML = point.event_title;
+        time.innerHTML = point.event_time;
+        hand.style.transform = 'rotate(' + point.angle + 'deg)';
+    }
+
+    function rotate_hand() {
+        if (pos == points.length) {
+            distributor.distribute();
+            points = distributor.current_points();
+            pos = 0;
+        } rotate_hand_to(points[pos]);
+        pos += 1;
+    }
+
+    rotate_hand_to(points[0]);
+    var clock_timer = new Timer(rotate_hand, HAND_TIMEOUT);
+
+    this.move_hand_to = function(point) {
+        clock_timer.pause();
+        for (i = 0; i < points.length; i++) {
+            if (points[i] == point) {
+                rotate_hand_to(point);
+                pos = i;
+                break;
+            }
+        } clock_timer.resume();
+    }
+
+    this.next_date = function() {
+        clock_timer.pause();
+        pos = points.length;
+        clock_timer.resume();
+    }
+}
+
 function get_time_from_date(date) {
     var mins = date.getMinutes(), hours = date.getHours();
     var suffix = (hours - 12 > 0) ? ' PM' : ' AM'
     return hours % 12 + ':' + ('0' + mins).slice(-2) + suffix;
 }
 
-function rotate_hand_to(point) {
-    document.getElementById('display-event-title').innerHTML = point.event_title;
-    document.getElementById('display-event-time').innerHTML = point.event_time;
-    document.getElementById('hand').style.transform = 'rotate(' + point.angle + 'deg)';
-}
-
-function move_hand_to(e) {
-    window.clock_timer.pause();
-    var hand = document.getElementById('hand');
-    var points = window.distributor.current_points();
-
-    for (var i = 0; i < points.length; i++) {
-        if (points[i] == e) {
-            rotate_hand_to(points[i]);
-            hand.idx = i;
-            break;
-        }
-    } window.clock_timer.resume();
-}
-
 window.onload = function() {
-    window.distributor = new EventDistributor();
-    var points = window.distributor.current_points();
-    var hand = document.getElementById('hand');
-    hand.idx = 1;
-    window.clock_timer = new Timer(function() {       // put it inside the window so that we can access later
-        if (hand.idx == points.length) {
-            window.distributor.distribute();
-            points = window.distributor.current_points();
-            hand.idx = 0;
-        } rotate_hand_to(points[hand.idx]);
-        hand.idx += 1;
-    }, 2500);
+    window.event_clock = new Clock();   // put it inside the window so that we can access later (workaround)
 }
