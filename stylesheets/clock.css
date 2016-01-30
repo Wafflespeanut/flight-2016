@@ -48,6 +48,17 @@
     transition: transform 0.25s ease-in;
 }
 
+#day-box {
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-left: -75px;
+    margin-top: -15px;
+}
+
 .point {
     width: 12.5px;
     height: 12.5px;
@@ -58,10 +69,12 @@
     top: 49.5%;
     left: 49.5%;
     background-color: #000;
+    transition: opacity 0.75s ease-in, visibility 0.75s ease-in;
+    opacity: 0;
     cursor: pointer;
 }
 
-.event-title, .event-time {
+.event-title, .event-time, .event-end {
     visibility: hidden;
 }
 
