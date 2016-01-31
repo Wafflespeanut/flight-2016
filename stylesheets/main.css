@@ -29,6 +29,24 @@
     outline: none;
 }
 
+#arrow-up, #arrow-down {
+    position: absolute;
+    cursor: pointer;
+    width: 40px;
+    right: 2%;
+    z-index: 10;
+}
+
+#arrow-up {
+    top: 25%;
+    transform: rotate(-90deg);
+}
+
+#arrow-down {
+    bottom: 15%;
+    transform: rotate(90deg);
+}
+
 .stack {
     text-align: center;
 }
@@ -43,7 +61,7 @@
     width: 200px;
     height: 300px;
     display: inline-block;
-    transition: all 0.2s ease-in;
+    transition: all 0.35s ease-in-out;
 }
 
 .card:hover {
@@ -61,6 +79,6 @@
     cursor: pointer;
 }
 
-img, div, table, td {
+/*img, div, table, td {
     border: solid black;
-}
+}*/
