@@ -8,21 +8,29 @@ function focus_scroll_box() {
 }
 
 function Scroller() {
-    var pos = 0;
+    var pos = 0, last_height = 0;
     var scrollarea = document.getElementById('scroll-holder');
+    var slides = scrollarea.querySelectorAll('.slide');
     var up_arrow = document.getElementById('arrow-up');
     var down_arrow = document.getElementById('arrow-down');
+    var home_arrow = document.getElementById('double-up');
+    var end_arrow = document.getElementById('double-down');
+
     document.addEventListener('keydown', scroll, false);
     up_arrow.addEventListener('mouseup', up_up, false);
+    home_arrow.addEventListener('mouseup', home_up, false);
     up_arrow.addEventListener('mousedown', up_down, false);
     down_arrow.addEventListener('mouseup', down_up, false);
+    end_arrow.addEventListener('mouseup', end_up, false);
     down_arrow.addEventListener('mousedown', down_down, false);
-    var slides = scrollarea.querySelectorAll('.slide');
-    var last_height = 0;
 
     function up_up() {
         up_arrow.style.transform = 'translate(' + 0 + 'px, ' + 0 + 'px) rotate(' + UP + ')';
         previous_slide();
+    }
+
+    function home_up() {
+        first_slide();
     }
 
     function up_down() {
@@ -32,6 +40,10 @@ function Scroller() {
     function down_up() {
         down_arrow.style.transform = 'translate(' + 0 + 'px, ' + 0 + 'px) rotate(' + DOWN + ')';
         next_slide();
+    }
+
+    function end_up() {
+        last_slide();
     }
 
     function down_down() {
@@ -45,6 +57,17 @@ function Scroller() {
                 slides[i].style.transform = 'translateY(-' + last_height + 'px)';
             } pos += 1;
         }
+
+        if (pos == slides.length - 1) {
+            home_arrow.style.visibility = 'visible';
+            home_arrow.style.opacity = 1;
+        } else {
+            home_arrow.style.visibility = 'hidden';
+            home_arrow.style.opacity = 0;
+        }
+
+        end_arrow.style.visibility = 'hidden';
+        end_arrow.style.opacity = 0;
     }
 
     function previous_slide() {
@@ -54,23 +77,41 @@ function Scroller() {
                 slides[i].style.transform = 'translateY(-' + last_height + 'px)';
             } pos -= 1;
         }
+
+        if (pos == 0) {
+            end_arrow.style.visibility = 'visible';
+            end_arrow.style.opacity = 1;
+        } else {
+            end_arrow.style.visibility = 'hidden';
+            end_arrow.style.opacity = 0;
+        }
+
+        home_arrow.style.visibility = 'hidden';
+        home_arrow.style.opacity = 0;
+    }
+
+    function first_slide() {
+        pos = 1;
+        last_height = SCROLL_HEIGHT;
+        previous_slide();
+    }
+
+    function last_slide() {
+        pos = slides.length - 2;
+        last_height = SCROLL_HEIGHT * pos;
+        next_slide();
     }
 
     function scroll(e) {
         var key_code = e.keyCode;
-        console.log(key_code);
         if (key_code == 38 || key_code == 33 || (key_code == 32 && e.shiftKey)) {
             previous_slide();
         } else if (key_code == 40 || key_code == 34 || key_code == 32) {
             next_slide();
         } else if (key_code == 36) {
-            last_height = SCROLL_HEIGHT;
-            pos = 1;
-            previous_slide();
+            first_slide();
         } else if (key_code == 35) {
-            last_height = SCROLL_HEIGHT * (slides.length - 2);
-            pos = slides.length - 2;
-            next_slide();
+            last_slide();
         }
     }
 }
