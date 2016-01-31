@@ -21,7 +21,7 @@
 
 #scrollpage {
     height: 475px;
-    overflow-y: scroll;
+    overflow-y: hidden;
     margin-right: -20px;
 }
 
@@ -34,9 +34,9 @@
 }
 
 .slide {
-    padding-top: 200px;
     text-align: center;
-    height: 300px;
+    height: 475px;
+    transition: all 1.75s ease-in-out;
 }
 
 .card {

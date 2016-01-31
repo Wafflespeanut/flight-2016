@@ -49,7 +49,7 @@ function EventDistributor() {       // assumes that all events begin & end in 12
         points[i].event_title = event_titles[i].firstChild.nodeValue;
         if (points[i].children.length == 3) {
             // blindly assumes that there's an "end time" for the event, and that the first child contains the time
-            end_time = new Date(points[i].querySelectorAll('.event-end')[0].firstChild.nodeValue);
+            var end_time = new Date(points[i].querySelector('.event-end').firstChild.nodeValue);
             points[i].end_angle = (end_time.getHours() - 3) * 30 + end_time.getMinutes() / 2;
         }
 
@@ -101,11 +101,15 @@ function Clock() {
     var title = document.getElementById('display-event-title');
     var time = document.getElementById('display-event-time');
     var points = distributor.current_points();
+    var canvas = document.getElementById('arc-area');
 
     function rotate_hand_to(point) {
         title.innerHTML = point.event_title;
         time.innerHTML = point.event_time;
         hand.style.transform = 'rotate(' + point.angle + 'deg)';
+        if (point.end_angle != undefined) {
+            // TODO: draw arc
+        }
     }
 
     function rotate_hand() {
@@ -140,7 +144,7 @@ function Clock() {
 
 function get_time_from_date(date) {
     var mins = date.getMinutes(), hours = date.getHours();
-    var suffix = (hours - 12 > 0) ? ' PM' : ' AM'
+    var suffix = (hours - 12 > 0) ? ' PM' : ' AM';
     return hours % 12 + ':' + ('0' + mins).slice(-2) + suffix;
 }
 
