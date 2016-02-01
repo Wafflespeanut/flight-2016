@@ -5,6 +5,8 @@
         <title>Flight 2016</title>
         <link rel='icon' href='images/flight-icon.png'>
         <link rel='stylesheet' type='text/css' media="all" href='stylesheets/main.css' />
+        <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+        <script type='text/javascript' src="javascripts/events.js"></script>
     </head>
 
     <body>
@@ -17,10 +19,36 @@
                                 <img style='width: 150px; float: left' src='images/flight.png' />
                             </a>
                         </td>
-                        <td class="tab"><a href="events.html">Events</a></td>
-                        <td class="tab">Workshops</td>
-                        <td class="tab"><a href="hospitality.html">Hospitality</a></td>
-                        <td class="tab"><a href="contact.html">Contact us</a></td>
+                        <td class="tab">
+                            <a href="events.html">
+                                <div>
+                                    <img height=30px src='images/events.png' />
+                                    Events
+                                </div>
+                            </a>
+                        </td>
+                        <td class="tab">
+                            <div>
+                                <img width=30px src='images/workshop.png' />
+                                Workshops
+                            </div>
+                        </td>
+                        <td class="tab">
+                            <a href="sponsors.html">
+                                <div>
+                                    <img height=30px src='images/sponsors.png' />
+                                    Sponsors
+                                </div>
+                            </a>
+                        </td>
+                        <td class="tab">
+                            <a href="contact.html">
+                                <div>
+                                    <img height=28px src='images/phone.png' />
+                                    Contact us
+                                </div>
+                            </a>
+                        </td>
                     </tr>
                 </table>
             </div>
@@ -28,10 +56,43 @@
                 <div id='button' onclick="window.location='schedule.html'">Get Schedule!</div>
             </div>
             <div style="padding-top: 70px"></div>
-            <div class='stack'>
-                <div class='card'>Workshop 1</div>
-                <div class='card'>Workshop 2</div>
-                <div class='card'>Workshop 3</div>
+            <div class='stack' style='margin-left: -410px'>
+                <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
+                    <img class='card-logo' src='images/time.png'/>
+                    <div class='card-title'>Composites</div>
+                    <div class='card-description'>
+                        <em>
+                            (will be updated soon)
+                        </em>
+                    </div>
+                </div>
+                <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
+                    <img class='card-logo' src='images/time.png'/>
+                    <div class='card-title'>Jet</div>
+                    <div class='card-description'>
+                        <em>
+                            (will be updated soon)
+                        </em>
+                    </div>
+                </div>
+                <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
+                    <img class='card-logo' src='images/time.png'/>
+                    <div class='card-title'>ANSYS</div>
+                    <div class='card-description'>
+                        <em>
+                            (will be updated soon)
+                        </em>
+                    </div>
+                </div>
+                <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
+                    <img class='card-logo' src='images/time.png'/>
+                    <div class='card-title'>CANSAT</div>
+                    <div class='card-description'>
+                        <em>
+                            (will be updated soon)
+                        </em>
+                    </div>
+                </div>
             </div>
         </div>
     </body>

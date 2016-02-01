@@ -24,7 +24,7 @@ function time_calc() {      // all of this stunt is to construct an object out o
 function counter() {
     var elem, unit, factor, countdown = time_calc();
     if (countdown.total <= 0) {
-        return; // site launch!
+        window.location = 'future.html';
     }
 
     for (var i = 0; i < FACTORS.length; i++) {
