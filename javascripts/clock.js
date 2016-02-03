@@ -1,5 +1,5 @@
 // Stuff that depend on the values set in CSS
-const RADIUS = 200;
+const RADIUS = 215;
 // Other constants
 const HAND_TIMEOUT = 2500;
 

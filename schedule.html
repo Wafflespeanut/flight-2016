@@ -6,29 +6,47 @@
         <link rel='icon' href='images/flight-icon.png'>
         <link rel='stylesheet' type='text/css' media="all" href='stylesheets/main.css' />
         <link rel='stylesheet' type='text/css' media="all" href='stylesheets/clock.css' />
+        <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
         <script type='text/javascript' src="javascripts/clock.js"></script>
     </head>
 
     <body>
         <div id="content">
             <div id='header'>
-                <table class="tabs">
+                <table>
                     <tr>
                         <td class="tab">
                             <a href="future.html">
-                                <img style='width: 150px; float: left' src='images/flight.png' />
+                                <img style='width: 150px; float: left' src='images/flight-white.png' />
                             </a>
                         </td>
-                        <td class="tab"><a href="events.html">Events</a></td>
-                        <td class="tab"><a href="workshops.html">Workshops</a></td>
-                        <td class="tab"><a href="hospitality.html">Hospitality</a></td>
-                        <td class="tab"><a href="contact.html">Contact us</a></td>
+                        <td class="tab">
+                            <a href="events.html">
+                                <div class='tab-text'><img height=30px src='images/events.png' />Events</div>
+                            </a>
+                        </td>
+                        <td class="tab">
+                            <a href="workshops.html">
+                                <div class='tab-text'><img width=30px src='images/workshop.png' />Workshops</div>
+                            </a>
+                        </td>
+                        <td class="tab">
+                            <a href="sponsors.html">
+                                <div class='tab-text'><img height=30px src='images/sponsors.png' />Sponsors</div>
+                            </a>
+                        </td>
+                        <td class="tab">
+                            <a href="contact.html">
+                                <div class='tab-text'><img height=28px src='images/phone.png' />Contact us</div>
+                            </a>
+                        </td>
                     </tr>
                 </table>
             </div>
             <div style="padding-top: 25px"></div>
             <div class='clock-container'>
                 <div id='clock'>
+                    <img id='face' src='images/clockface.png' />
                     <div id='axle'></div>
                     <div id='hand'></div>
                     <div id='arc-area'></div>

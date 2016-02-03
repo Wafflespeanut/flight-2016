@@ -40,12 +40,21 @@
 
 #hand {
     width: 175px;
-    height: 0px;
+    height: 2px;
     position: absolute;
     transform-origin: 0px;
     top: 50%;
     left: 50%;
     transition: transform 0.25s ease-in;
+}
+
+#face {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    margin-left: -200px;
+    margin-top: -200px;
 }
 
 #day-box {
@@ -67,12 +76,17 @@
     position: absolute;
     margin-left: -6.25px;
     margin-top: -6.25px;
-    top: 49.5%;
-    left: 49.5%;
+    top: 50%;
+    left: 50%;
     background-color: #000;
     transition: opacity 0.75s ease-in, visibility 0.75s ease-in;
     opacity: 0;
     cursor: pointer;
+}
+
+#day-box, #hand {
+    border: solid black;
+    border-width: thin;
 }
 
 .event-title, .event-time, .event-end {

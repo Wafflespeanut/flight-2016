@@ -12,69 +12,59 @@
     <body>
         <div id="content">
             <div id='header'>
-                <table class="tabs">
+                <table>
                     <tr>
                         <td class="tab">
                             <a href="future.html">
-                                <img style='width: 150px; float: left' src='images/flight.png' />
+                                <img style='width: 150px; float: left' src='images/flight-white.png' />
                             </a>
                         </td>
                         <td class="tab">
-                            <div>
-                                <img height=30px src='images/events.png' />
-                                Events
-                            </div>
+                            <div class='tab-text'><img height=30px src='images/events.png' />Events</div>
                         </td>
                         <td class="tab">
                             <a href="workshops.html">
-                                <div>
-                                    <img width=30px src='images/workshop.png' />
-                                    Workshops
-                                </div>
+                                <div class='tab-text'><img width=30px src='images/workshop.png' />Workshops</div>
                             </a>
                         </td>
                         <td class="tab">
                             <a href="sponsors.html">
-                                <div>
-                                    <img height=30px src='images/sponsors.png' />
-                                    Sponsors
-                                </div>
+                                <div class='tab-text'><img height=30px src='images/sponsors.png' />Sponsors</div>
                             </a>
                         </td>
                         <td class="tab">
                             <a href="contact.html">
-                                <div>
-                                    <img height=28px src='images/phone.png' />
-                                    Contact us
-                                </div>
+                                <div class='tab-text'><img height=28px src='images/phone.png' />Contact us</div>
                             </a>
                         </td>
                     </tr>
                 </table>
             </div>
-            <div style="text-align: center; padding-top: 30px">
+            <div style="text-align: center; padding-top: 10%">
                 <div id='button' onclick="window.location='schedule.html'">Get Schedule!</div>
             </div>
             <div style="padding-top: 40px"></div>
             <div id='scroll-holder'>
                 <img class='arrow' id='arrow-left' src='images/side-arrow.png' />
                 <img class='arrow' id='arrow-right' src='images/side-arrow.png' />
-                <div id='scrollpage' style='height: 350px'>
+                <div id='scrollpage'>
                     <div class='stack'>
                         <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
-                            <img class='card-logo' src='images/time.png'/>
+                            <img class='card-logo' src='images/drone.png'/>
                             <div class='card-title'>Drone Racing Championship</div>
                             <div class='card-description'>
-                                <em>
-                                    <p>Are you ready to take the challenge of MITians?</p>
-                                    This year, we bring you the real competition...
-                                    <p>The drone racing!</p>
-                                    <p>Come and grab the MIT Drone racing championship!</p>
-                                </em>
+                                <div class='description-box'>
+                                    <em>
+                                        <p>Are you ready to take the challenge of MITians?</p>
+                                        This year, we bring you the real competition...
+                                        <p>The drone racing!</p>
+                                        <p>Come and grab the MIT Drone racing championship!</p>
+                                    </em>
+                                </div>
                             </div>
                         </div>
                         <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
-                            <img class='card-logo' src='images/time.png'/>
+                            <img class='card-logo' src='images/rc.png'/>
                             <div class='card-title'>RC Competition</div>
                             <div class='card-description'>
                                 <em>
@@ -84,7 +74,7 @@
                             </div>
                         </div>
                         <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
-                            <img class='card-logo' src='images/time.png'/>
+                            <img class='card-logo' src='images/presentation.png'/>
                             <div class='card-title'>Paper Presentation</div>
                             <div class='card-description'>
                                 <em>
@@ -93,19 +83,21 @@
                                 </em>
                             </div>
                         </div>
-                        <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
-                            <img class='card-logo' src='images/time.png'/>
-                            <div class='card-title'>Air Crash Investigation</div>
-                            <div class='card-description'>
-                                <em>
-                                    <p>Flying is the fastest and one of the safest modes of transport.</p>
-                                    <p>But what happens when tragedy strikes? It is rare but it does happen.</p>
-                                </em>
+                        <a href="events/aircrash.html">
+                            <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
+                                <img class='card-logo' src='images/aircrash.png'/>
+                                <div class='card-title'>Air Crash Investigation</div>
+                                <div class='card-description'>
+                                    <em>
+                                        <p>Flying is the fastest and one of the safest modes of transport.</p>
+                                        <p>But what happens when tragedy strikes? It is rare but it does happen.</p>
+                                    </em>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                         <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
-                            <img class='card-logo' src='images/time.png'/>
-                            <div class='card-title' style="padding-top: 40px">Technical Quiz</div>
+                            <img class='card-logo' src='images/quiz.png'/>
+                            <div class='card-title'>Technical Quiz</div>
                             <div class='card-description'>
                                 <em>
                                     <p>Are you someone who loves digging into journals and technical magazines?
@@ -117,8 +109,8 @@
                     </div>
                     <div class='stack'>
                         <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
-                            <img class='card-logo' src='images/time.png'/>
-                            <div class='card-title' style='padding-top: 40px'>CAD Modelling</div>
+                            <img class='card-logo' src='images/CAD.png'/>
+                            <div class='card-title'>CAD Modelling</div>
                             <div class='card-description'>
                                 <em>
                                     <p>Drawings and diagrams are the best communication tools for engineers.</p>
@@ -127,14 +119,14 @@
                             </div>
                         </div>
                         <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
-                            <img class='card-logo' src='images/time.png'/>
-                            <div class='card-title' style="padding-top: 40px">Connexions</div>
+                            <img class='card-logo' src='images/connexions.png'/>
+                            <div class='card-title'>Connexions</div>
                             <div class='card-description'>
                                 <em>Can you solve the mysteries of the aviation using pictures, then try connexions quiz.</em>
                             </div>
                         </div>
                         <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
-                            <img class='card-logo' src='images/time.png'/>
+                            <img class='card-logo' src='images/simulator.png'/>
                             <div class='card-title'>Flight Simulator</div>
                             <div class='card-description'>
                                 <em>
@@ -144,8 +136,8 @@
                             </div>
                         </div>
                         <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
-                            <img class='card-logo' src='images/time.png'/>
-                            <div class='card-title' style="padding-top: 40px">Treasure Hunt</div>
+                            <img class='card-logo' src='images/treasure.png'/>
+                            <div class='card-title'>Treasure Hunt</div>
                             <div class='card-description'>
                                 <em>
                                     “You can either be a victim of the world or an adventurer in search of treasure. It all depends upon how you view your life.”
@@ -154,17 +146,17 @@
                             </div>
                         </div>
                         <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
-                            <img class='card-logo' src='images/time.png'/>
-                            <div class='card-title' style="padding-top: 40px">Glider</div>
+                            <img class='card-logo' src='images/glider.png'/>
+                            <div class='card-title'>Glider</div>
                             <div class='card-description'>
                                 <em>It’s not flying, it’s falling with style.</em>
                             </div>
                         </div>
                     </div>
-                    <div class='stack' style='margin-left: -410px'>
+                    <div class='stack'>
                         <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
-                            <img class='card-logo' src='images/time.png'/>
-                            <div class='card-title' style="padding-top: 40px">Boomerang</div>
+                            <img class='card-logo' src='images/boom.png'/>
+                            <div class='card-title'>Boomerang</div>
                             <div class='card-description'>
                                 <em>
                                     <p>The unique body and curves of a boomerang makes it the only projectile that can fly parallel to the ground and defy gravity.</p>
@@ -173,8 +165,8 @@
                             </div>
                         </div>
                         <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
-                            <img class='card-logo' src='images/time.png'/>
-                            <div class='card-title' style="padding-top: 40px">Paradive</div>
+                            <img class='card-logo' src='images/paradive.png'/>
+                            <div class='card-title'>Paradive</div>
                             <div class='card-description'>
                                 <em>
                                     <p>Hold an egg at ceiling’s height. Drop it.</p>
@@ -183,7 +175,7 @@
                             </div>
                         </div>
                         <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
-                            <img class='card-logo' src='images/time.png'/>
+                            <img class='card-logo' src='images/bottle.png'/>
                             <div class='card-title'>Bottle Rocketry</div>
                             <div class='card-description'>
                                 <em>
@@ -193,8 +185,8 @@
                             </div>
                         </div>
                         <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
-                            <img class='card-logo' src='images/time.png'/>
-                            <div class='card-title' style="padding-top: 40px">UAV Hovering</div>
+                            <img class='card-logo' src='images/hover.png'/>
+                            <div class='card-title'>UAV Hovering</div>
                             <div class='card-description'>
                                 <em>If balance is your thing, then this is the place for you!</em>
                             </div>

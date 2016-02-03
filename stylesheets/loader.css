@@ -1,6 +1,5 @@
 #content {
     display: none;
-    max-width: 1280px;
 }
 
 /* Display loader until the page loads completely */
@@ -8,8 +7,12 @@
 #loader {
     position: fixed;
     display: block;
-    top: 40%;
-    left: 45%;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
     animation: rotate 1s linear infinite;
     -moz-animation: rotate 1s linear infinite;
     -webkit-animation: rotate 1s linear infinite;
@@ -17,8 +20,9 @@
     -ms-animation: rotate 1s linear infinite;
 }
 
-#loader-img {
+#loader img {
     width: 100px;
+    height: 100px;
 }
 
 /* Meh, these browsers... So much duplication! */

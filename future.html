@@ -5,49 +5,41 @@
         <title>Flight 2016</title>
         <link rel='icon' href='images/flight-icon.png'>
         <link rel='stylesheet' type='text/css' media="all" href='stylesheets/main.css' />
+        <link rel='stylesheet' type='text/css' media="all" href='stylesheets/loader.css' />
         <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
         <script type='text/javascript' src="javascripts/pageload.js"></script>
     </head>
 
-    <body onload="focus_scroll_box()">
+    <body>
+        <div id="loader">
+            <img src='images/propeller.png' />
+        </div>
         <div id="content">
             <div id='header'>
-                <table class="tabs">
+                <table>
                     <tr>
                         <td class="tab">
-                            <img style='width: 150px; float: left' src='images/flight.png' />
+                            <img style='width: 150px; float: left' src='images/flight-white.png' />
                         </td>
                         <td class="tab">
                             <a href="events.html">
-                                <div>
-                                    <img height=30px src='images/events.png' />
-                                    Events
-                                </div>
+                                <div class='tab-text'><img height=30px src='images/events.png' />Events</div>
                             </a>
                         </td>
                         <td class="tab">
                             <a href="workshops.html">
-                                <div>
-                                    <img width=30px src='images/workshop.png' />
-                                    Workshops
-                                </div>
+                                <div class='tab-text'><img width=30px src='images/workshop.png' />Workshops</div>
                             </a>
                         </td>
                         <td class="tab">
-                            <a href="hospitality.html">
-                                <div>
-                                    <img height=30px src='images/sponsors.png' />
-                                    Sponsors
-                                </div>
+                            <a href="sponsors.html">
+                                <div class='tab-text'><img height=30px src='images/sponsors.png' />Sponsors</div>
                             </a>
                         </td>
                         <td class="tab">
                             <a href="contact.html">
-                                <div>
-                                    <img height=28px src='images/phone.png' />
-                                    Contact us
-                                </div>
+                                <div class='tab-text'><img height=28px src='images/phone.png' />Contact us</div>
                             </a>
                         </td>
                     </tr>
@@ -58,38 +50,26 @@
                 <img id='arrow-down' src='images/arrow.png' />
                 <img id='double-up' src='images/double-arrow.png' />
                 <img id='double-down' src='images/double-arrow.png' />
-                <div id='scrollpage' tabindex="-1">
+                <div id='scrollpage'>
                     <div style='background-image: url("images/kalam.jpg")' class='slide bg-image'>
                         <div class="bg-dissolve">
-                            <div class='slide-front'>
-                                Welcome to Flight 2016!
-                            </div>
-                            <div class='slide-footer'>
-                                In the memory of our beloved alumni...
+                            <div class='slide-front'>Welcome!</div>
+                            <div class='slide-footer'>In the memory of our beloved alumnus...</div>
+                        </div>
+                    </div>
+                    <div style="background-image: url('images/gate.jpg'); top: 100%" class='slide bg-image'>
+                        <div class="bg-dissolve">
+                            <div class='slide-head'>Who are we?</div>
+                            <div class='slide-content'>
+                                <p>We, "Majestians" are the members of the Association of Aeronautical Engineers (AAE).</p>
                             </div>
                         </div>
                     </div>
-                    <div style="background-image: url('images/gate.jpg')" class='slide bg-image'>
+                    <div style="background-image: url('images/logo.png'); background-size: 80%; background-position: center; top: 200%" class='slide bg-image'>
                         <div class="bg-dissolve">
-                            <div class='slide-head'>
-                                Who are we?
-                            </div>
+                            <div class='slide-head'>What we do?</div>
                             <div class='slide-content'>
-                                <p>Madras Institute of technology, a pioneering institute providing higher education with the motto of ‘In service of India’.</p>
-                                <p>MIT has ben making imitable strides in keeping with the prophetic view as conceived by its founder Rajam and beloved alumni Dr. A. P. J. Abdul Kalam.</p>
-                                <p>Association of Aeronautical Engineers is a student body organisation of department of Aeronautical Engineering, MIT.</p>
-                                <p>AAE is responsible for arranging guest lectures and symposiums.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="background-image: url('images/logo.png'); background-size: 50%; background-position: center" class='slide bg-image'>
-                        <div class="bg-dissolve">
-                            <div class='slide-head'>
-                                What we do?
-                            </div>
-                            <div class='slide-content'>
-                                <p>In the month of March every year, MIT witnesses the illuminating, inspiring technical event Flight drawing the most brilliant mind towards MIT.</p>
-                                <p>Flight is one of the creative technical event in the field of Aerospace Engineering.</p>
+                                <p>We conduct a national-level intercollegiate technical symposium</p>
                             </div>
                         </div>
                     </div>
