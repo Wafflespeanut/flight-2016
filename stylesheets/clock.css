@@ -85,7 +85,11 @@
     transition: opacity 0.75s ease-in, visibility 0.75s ease-in, transform 0.1s ease-in;
     cursor: pointer;
     border-radius: 50%;
-    background-color: white;
+    background-color: skyblue;
+}
+
+.workshop {
+    border: 1px solid green;
 }
 
 #day-box, #hand {
