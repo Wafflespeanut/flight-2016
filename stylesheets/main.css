@@ -91,7 +91,7 @@ body {
 
 #arrow-right, #arrow-left {
     height: 80px;
-    top: 50%;
+    top: 60%;
     margin-top: -40px;
     opacity: 0.8;
 }
@@ -99,11 +99,6 @@ body {
 .slide {
     font-family: 'San Francisco';
     text-align: center;
-    top: 0;
-    left: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
     transition: all 1s ease-in-out;
 }
 
@@ -171,14 +166,20 @@ body {
     transform: translateY(300px);
 }
 
-#button {
+.button-container {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    margin-left: -100px;
+    padding-top: 10%;
+}
+
+.button {
     background-color: #4CAF50;
     border-radius: 12px;
     padding: 15px 32px;
-    text-align: center;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
 }
 
@@ -192,6 +193,11 @@ body {
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 .slide-head {
@@ -240,7 +246,9 @@ a[href^="mailto:"] {
 }
 
 .event-table {
-    height: 100%;
+    padding-top: 10%;
+    font: 'Helvetica';
+    color: white;
 }
 
 .event-col {
@@ -264,7 +272,7 @@ a[href^="mailto:"] {
     width: 1px;
     height: 75%;
     top: 20%;
-    background-color: black;
+    background-color: white;
 }
 
 .event-detail {
@@ -273,9 +281,8 @@ a[href^="mailto:"] {
 }
 
 .event-head {
-    font: 'Helvetica';
-    font-size: 40px;
-    text-align: center;
+    font-family: 'San Francisco';
+    font-size: 50px;
 }
 
 /*img, div, table, td {

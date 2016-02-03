@@ -16,12 +16,13 @@
 }
 
 #point-info {
-    width: 300px;
+    width: 400px;
     height: 300px;
+    color: white;
     position: absolute;
     top: 25%;
-    left: 75%;
-    margin-left: -100px;
+    left: 80%;
+    margin-left: -200px;
     margin-top: -50px;
     text-align: center;
 }
@@ -35,7 +36,7 @@
     left: 50%;
     margin-left: -12.5px;
     margin-top: -12.5px;
-    background-color: #000;
+    background-color: white;
 }
 
 #hand {
@@ -46,6 +47,7 @@
     top: 50%;
     left: 50%;
     transition: transform 0.25s ease-in;
+    background-color: white;
 }
 
 #face {
@@ -55,33 +57,35 @@
     width: 400px;
     margin-left: -200px;
     margin-top: -200px;
+    opacity: 0.8;
 }
 
 #day-box {
-    width: 150px;
+    width: 200px;
     height: 30px;
     border-radius: 10px;
     position: absolute;
     top: 35%;
     left: 50%;
-    margin-left: -75px;
+    margin-left: -100px;
     margin-top: -15px;
     cursor: pointer;
+    color: white;
 }
 
-.point {
-    width: 12.5px;
-    height: 12.5px;
-    border-radius: 50%;
+.event-icon {
+    width: 25px;
+    height: 25px;
     position: absolute;
-    margin-left: -6.25px;
-    margin-top: -6.25px;
     top: 50%;
     left: 50%;
-    background-color: #000;
-    transition: opacity 0.75s ease-in, visibility 0.75s ease-in;
     opacity: 0;
+    margin-left: -12.5px;
+    margin-top: -12.5px;
+    transition: opacity 0.75s ease-in, visibility 0.75s ease-in, transform 0.1s ease-in;
     cursor: pointer;
+    border-radius: 50%;
+    background-color: white;
 }
 
 #day-box, #hand {
@@ -93,7 +97,7 @@
     visibility: hidden;
 }
 
-#arc-area {
+/*#arc-area {
     width: 430px;
     height: 430px;
     position: absolute;
@@ -101,7 +105,7 @@
     left: 50%;
     margin-left: -215px;
     margin-top: -215px;
-}
+}*/
 
 #display-event-title, #display-event-time {
     height: 35px;

@@ -43,7 +43,10 @@
                     </tr>
                 </table>
             </div>
-            <div style="padding-top: 25px"></div>
+            <div style='background-image: url("images/events.jpg")' class='slide bg-image'>
+                <div class="bg-dissolve"></div>
+            </div>
+            <div style="padding-top: 10%"></div>
             <div class='clock-container'>
                 <div id='clock'>
                     <img id='face' src='images/clockface.png' />
@@ -52,27 +55,24 @@
                     <div id='arc-area'></div>
                     <div id='day-box' onclick="window.event_clock.next_date()"></div>
                     <!-- The formats of datetime & description should be as follows! -->
-                    <div class='point' onclick="window.event_clock.move_hand_to(this)">
-                        <div class='event-title'>Event 1</div>
-                        <div class='event-time'>March 11 2016 09:00:00 GMT+05:30</div>
-                    </div>
-                    <div class='point' onclick="window.event_clock.move_hand_to(this)">
-                        <div class='event-title'>Event 2</div>
-                        <div class='event-time'>March 11 2016 10:00:00 GMT+05:30</div>
-                    </div>
-                    <div class='point' onclick="window.event_clock.move_hand_to(this)">
-                        <div class='event-title'>Workshop 1</div>
-                        <div class='event-time'>March 11 2016 15:00:00 GMT+05:30</div>
-                        <div class='event-end'>March 11 2016 18:00:00 GMT+05:30</div>
-                    </div>
-                    <div class='point' onclick="window.event_clock.move_hand_to(this)">
-                        <div class='event-title'>Event 4</div>
-                        <div class='event-time'>March 12 2016 15:15:00 GMT+05:30</div>
-                    </div>
-                    <div class='point' onclick="window.event_clock.move_hand_to(this)">
-                        <div class='event-title'>Event 5</div>
-                        <div class='event-time'>March 12 2016 17:30:00 GMT+05:30</div>
-                    </div>
+                    <img class='event-icon' src='images/aircrash.png'
+                         onclick="window.location='events/aircrash.html'"
+                         onmouseover="window.event_clock.move_hand_to(this); scale_point(this)"
+                         onmouseout="set_point(this); window.event_clock.resume()" />
+                    <div class='event-title'>Aircrash Investigation</div>
+                    <div class='event-time'>March 11 2016 11:00:00 GMT+05:30</div>
+
+                    <img class='event-icon' src='images/simulator.png'
+                         onmouseover="window.event_clock.move_hand_to(this); scale_point(this)"
+                         onmouseout="set_point(this); window.event_clock.resume()" />
+                    <div class='event-title'>Flight Simulator</div>
+                    <div class='event-time'>March 11 2016 11:30:00 GMT+05:30</div>
+
+                    <img class='event-icon' src='images/drone.png'
+                         onmouseover="window.event_clock.move_hand_to(this); scale_point(this)"
+                         onmouseout="set_point(this); window.event_clock.resume()" />
+                    <div class='event-title'>Drone Racing Championship</div>
+                    <div class='event-time'>March 11 2016 16:00:00 GMT+05:30</div>
                 </div>
                 <div id='point-info'>
                     <div id='display-event-title'></div>
