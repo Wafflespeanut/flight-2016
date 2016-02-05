@@ -47,7 +47,6 @@
     top: 50%;
     left: 50%;
     transition: transform 0.25s ease-in;
-    background-color: white;
 }
 
 #face {
@@ -62,7 +61,7 @@
 
 #day-box {
     width: 200px;
-    height: 30px;
+    height: 35px;
     border-radius: 10px;
     position: absolute;
     top: 35%;
@@ -93,8 +92,8 @@
 }
 
 #day-box, #hand {
-    border: solid black;
-    border-width: thin;
+    border: solid white;
+    border-width: 1px;
 }
 
 .event-title, .event-time, .event-end {

@@ -1,0 +1,38 @@
+.slide {
+    font-family: 'San Francisco';
+    text-align: center;
+    transition: all 1s ease-in-out;
+}
+
+.slide-front {
+    padding-top: 200px;
+    font-size: 90px;
+    color: white;
+}
+
+.slide-head {
+    font-size: 65px;
+    padding-top: 150px;
+    color: white;
+}
+
+.slide-content {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: white;
+}
+
+.slide-footer {
+    font-family: 'Playball', cursive;
+    color: white;
+    font-size: 30px;
+    position: fixed;
+    bottom: 20%;
+    right: 8%;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
