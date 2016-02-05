@@ -7,42 +7,13 @@
         <link rel='stylesheet' type='text/css' media="all" href='stylesheets/main.css' />
         <link rel='stylesheet' type='text/css' media="all" href='stylesheets/clock.css' />
         <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+        <script type='text/javascript' src="javascripts/header.js"></script>
         <script type='text/javascript' src="javascripts/clock.js"></script>
     </head>
 
     <body>
         <div id="content">
-            <div id='header'>
-                <table>
-                    <tr>
-                        <td class="tab">
-                            <a href="future.html">
-                                <img style='width: 150px; float: left' src='images/flight-white.png' />
-                            </a>
-                        </td>
-                        <td class="tab">
-                            <a href="events.html">
-                                <div class='tab-text'><img height=30px src='images/events.png' />Events</div>
-                            </a>
-                        </td>
-                        <td class="tab">
-                            <a href="workshops.html">
-                                <div class='tab-text'><img height=30px src='images/workshop.png' />Workshops</div>
-                            </a>
-                        </td>
-                        <td class="tab">
-                            <a href="sponsors.html">
-                                <div class='tab-text'><img height=30px src='images/sponsors.png' />Sponsors</div>
-                            </a>
-                        </td>
-                        <td class="tab">
-                            <a href="contact.html">
-                                <div class='tab-text'><img height=30px src='images/phone.png' />Contact us</div>
-                            </a>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+            <div id='header-area'></div>
             <div style='background-image: url("images/morning.jpg")' class='bg-image'>
                 <div class="bg-dissolve"></div>
             </div>
@@ -56,7 +27,7 @@
                     <div id='day-box' onclick="window.event_clock.next_date()"></div>
                     <!-- The formats of datetime & description should be as follows! -->
                     <img class='event-icon' src='images/aircrash.png'
-                         onclick="window.location='events/aircrash.html'"
+                         onclick="window.location='aircrash.html'"
                          onmouseover="window.event_clock.move_hand_to(this)"
                          onmouseout="window.event_clock.resume()" />
                     <div class='event-title'>Aircrash Investigation</div>
@@ -147,4 +118,12 @@
             </div>
         </div>
     </body>
+
+    <script>
+        window.onload = function() {
+            window.event_clock = new Clock();   // put it inside the window so that we can access later (workaround)
+            document.getElementById('header-area').innerHTML = HEADER;
+            apply_mobile_header_attrs();
+        }
+    </script>
 </html>

@@ -111,7 +111,3 @@ function Scroller() {
         }
     }
 }
-
-window.onload = function() {
-    Scroller();
-}

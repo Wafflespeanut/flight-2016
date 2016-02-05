@@ -10,7 +10,8 @@
         <link rel='stylesheet' type='text/css' media="all" href='stylesheets/slides.css' />
         <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
-        <script type='text/javascript' src="javascripts/pageload.js"></script>
+        <script type='text/javascript' src="javascripts/header.js"></script>
+        <script type='text/javascript' src="javascripts/future.js"></script>
     </head>
 
     <body>
@@ -18,35 +19,7 @@
             <img src='images/propeller.png' />
         </div>
         <div id="content">
-            <div id='header'>
-                <table>
-                    <tr>
-                        <td class="tab">
-                            <img style='width: 150px; float: left' src='images/flight-white.png' />
-                        </td>
-                        <td class="tab">
-                            <a href="events.html">
-                                <div class='tab-text'><img height=30px src='images/events.png' />Events</div>
-                            </a>
-                        </td>
-                        <td class="tab">
-                            <a href="workshops.html">
-                                <div class='tab-text'><img height=30px src='images/workshop.png' />Workshops</div>
-                            </a>
-                        </td>
-                        <td class="tab">
-                            <a href="sponsors.html">
-                                <div class='tab-text'><img height=30px src='images/sponsors.png' />Sponsors</div>
-                            </a>
-                        </td>
-                        <td class="tab">
-                            <a href="contact.html">
-                                <div class='tab-text'><img height=30px src='images/phone.png' />Contact us</div>
-                            </a>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+            <div id='header-area'></div>
             <div id='scroll-holder'>
                 <img id='arrow-up' src='images/arrow.png' />
                 <img id='arrow-down' src='images/arrow.png' />
@@ -79,4 +52,18 @@
             </div>
         </div>
     </body>
+
+    <script>
+        window.onload = function() {
+            document.getElementById('header-area').innerHTML = HEADER;
+            apply_mobile_header_attrs();
+            var content = document.getElementById('content');
+            document.getElementById('loader').style.display = 'none';
+            content.style.display = 'block';
+            setTimeout(function() {
+                document.querySelector('.slide-footer').style.opacity = 0.6;
+            }, 2000);
+            Scroller();
+        }
+    </script>
 </html>

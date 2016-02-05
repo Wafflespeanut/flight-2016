@@ -7,41 +7,14 @@
         <link rel='stylesheet' type='text/css' media="all" href='stylesheets/main.css' />
         <link rel='stylesheet' type='text/css' media="all" href='stylesheets/cards.css' />
         <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+        <script type='text/javascript' src="javascripts/header.js"></script>
         <script type='text/javascript' src="javascripts/events.js"></script>
     </head>
 
     <body>
         <div id="content">
-            <div id='header'>
-                <table>
-                    <tr>
-                        <td class="tab">
-                            <a href="future.html">
-                                <img style='width: 150px; float: left' src='images/flight-white.png' />
-                            </a>
-                        </td>
-                        <td class="tab">
-                            <div class='tab-text'><img height=30px src='images/events.png' />Events</div>
-                        </td>
-                        <td class="tab">
-                            <a href="workshops.html">
-                                <div class='tab-text'><img height=30px src='images/workshop.png' />Workshops</div>
-                            </a>
-                        </td>
-                        <td class="tab">
-                            <a href="sponsors.html">
-                                <div class='tab-text'><img height=30px src='images/sponsors.png' />Sponsors</div>
-                            </a>
-                        </td>
-                        <td class="tab">
-                            <a href="contact.html">
-                                <div class='tab-text'><img height=30px src='images/phone.png' />Contact us</div>
-                            </a>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div style='background-image: url("images/launch.jpg")' class='slide bg-image'>
+            <div id='header-area'></div>
+            <div style='background-image: url("images/launch.jpg")' class='bg-image'>
                 <div class="bg-dissolve"></div>
             </div>
             <div class='button-container'>
@@ -87,7 +60,7 @@
                                 </em>
                             </div>
                         </div>
-                        <a href="events/aircrash.html">
+                        <a href="aircrash.html">
                             <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
                                 <img class='card-logo' src='images/aircrash.png'/>
                                 <div class='card-title'>Air Crash Investigation</div>
@@ -200,4 +173,12 @@
             </div>
         </div>
     </body>
+
+    <script>
+        window.onload = function() {
+            document.getElementById('header-area').innerHTML = HEADER;
+            apply_mobile_header_attrs();
+            Scroller();
+        }
+    </script>
 </html>

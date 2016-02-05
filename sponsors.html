@@ -7,54 +7,22 @@
         <link rel='icon' href='images/flight-icon.png'>
         <link rel='stylesheet' type='text/css' media="all" href='stylesheets/main.css' />
         <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+        <script type='text/javascript' src="javascripts/header.js"></script>
     </head>
 
     <body>
         <div id="content">
-            <div id='header'>
-                <div class='tab'>
-                    <a href="future.html">
-                        <img id='home-logo' style='width: 150px' src='images/flight-white.png' />
-                        <div id='home-tab' class='tab-content'>
-                            <img src='images/home.png' />
-                            <span class='tab-text'>Home</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="tab">
-                    <a href="events.html">
-                        <div class='tab-content'>
-                            <img src='images/events.png' />
-                            <span class='tab-text'>Events</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="tab">
-                    <a href="workshops.html">
-                        <div class='tab-content'>
-                            <img src='images/workshop.png' />
-                            <span class='tab-text'>Workshops</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="tab">
-                    <div class='tab-content'>
-                        <img src='images/sponsors.png' />
-                        <span class='tab-text'>Sponsors</span>
-                    </div>
-                </div>
-                <div class="tab">
-                    <a href="contact.html">
-                        <div class='tab-content'>
-                            <img src='images/phone.png' />
-                            <span class='tab-text'>Contact us</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div style='background-image: url("images/events.jpg")' class='slide bg-image'>
+            <div id='header-area'></div>
+            <div style='background-image: url("images/sponsors.jpg")' class='bg-image'>
                 <div class="bg-dissolve"></div>
             </div>
         </div>
     </body>
+
+    <script>
+        window.onload = function() {
+            document.getElementById('header-area').innerHTML = HEADER;
+            apply_mobile_header_attrs();
+        }
+    </script>
 </html>

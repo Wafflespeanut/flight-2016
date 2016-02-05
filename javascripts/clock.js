@@ -182,7 +182,3 @@ function set_point(point) {
         point.style.opacity = 0.5;
     }
 }
-
-window.onload = function() {
-    window.event_clock = new Clock();   // put it inside the window so that we can access later (workaround)
-}

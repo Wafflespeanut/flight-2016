@@ -114,13 +114,3 @@ function Scroller() {
         }
     }
 }
-
-window.onload = function() {
-    var content = document.getElementById('content');
-    document.getElementById('loader').style.display = 'none';
-    content.style.display = 'block';
-    setTimeout(function() {
-        document.querySelector('.slide-footer').style.opacity = 0.6;
-    }, 2000);
-    Scroller();
-}

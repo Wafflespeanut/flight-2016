@@ -6,42 +6,22 @@
         <link rel='icon' href='images/flight-icon.png'>
         <link rel='stylesheet' type='text/css' media="all" href='stylesheets/main.css' />
         <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+        <script type='text/javascript' src="javascripts/header.js"></script>
     </head>
 
     <body>
         <div id="content">
-            <div id='header'>
-                <table>
-                    <tr>
-                        <td class="tab">
-                            <a href="future.html">
-                                <img style='width: 150px; float: left' src='images/flight-white.png' />
-                            </a>
-                        </td>
-                        <td class="tab">
-                            <a href="events.html">
-                                <div class='tab-text'><img height=30px src='images/events.png' />Events</div>
-                            </a>
-                        </td>
-                        <td class="tab">
-                            <a href="workshops.html">
-                                <div class='tab-text'><img height=30px src='images/workshop.png' />Workshops</div>
-                            </a>
-                        </td>
-                        <td class="tab">
-                            <a href="sponsors.html">
-                                <div class='tab-text'><img height=30px src='images/sponsors.png' />Sponsors</div>
-                            </a>
-                        </td>
-                        <td class="tab">
-                            <div class='tab-text'><img height=30px src='images/phone.png' />Contact us</div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div style='background-image: url("images/events.jpg")' class='slide bg-image'>
+            <div id='header-area'></div>
+            <div style='background-image: url("images/contact.jpg")' class='bg-image'>
                 <div class="bg-dissolve"></div>
             </div>
         </div>
     </body>
+
+    <script>
+        window.onload = function() {
+            document.getElementById('header-area').innerHTML = HEADER;
+            apply_mobile_header_attrs();
+        }
+    </script>
 </html>
