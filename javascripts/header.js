@@ -5,7 +5,7 @@ const HEADER = '<div id="mobile-header"> \
     <img id="header-button" src="images/propeller.png" /> \
 </div> \
 <div id="header"> \
-    <div id="mobile-bg" style="background-color: grey" class="bg-image"> \
+    <div id="mobile-bg" class="bg-image"> \
         <div class="bg-dissolve"></div> \
     </div> \
     <div class="tab"> \

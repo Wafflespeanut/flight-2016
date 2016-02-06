@@ -1,38 +1,77 @@
+#slide-1 {
+    background-image: url('../images/kalam.jpg');
+}
+
+#slide-2 {
+    background-image: url('../images/gate.jpg');
+    top: 100%;
+}
+
+#slide-3 {
+    background-image: url('../images/logo.png');
+    background-size: 80%;
+    top: 200%;
+}
+
 .slide {
     font-family: 'San Francisco';
-    text-align: center;
     transition: all 1s ease-in-out;
+    background-size: cover;
 }
 
-.slide-front {
-    padding-top: 200px;
-    font-size: 90px;
+div[class^='slide-'] {
     color: white;
+    text-align: center;
 }
 
-.slide-head {
-    font-size: 65px;
-    padding-top: 150px;
-    color: white;
+.slide-front, .slide-head {
+    padding-top: 15%;
+    font-size: 7vw;
 }
 
 .slide-content {
     font-family: 'Roboto';
-    font-weight: 300;
-    font-size: 20px;
-    padding-top: 30px;
-    padding-left: 100px;
-    padding-right: 100px;
-    color: white;
+    font-size: 1.8vw;
 }
 
 .slide-footer {
     font-family: 'Playball', cursive;
-    color: white;
-    font-size: 30px;
+    font-size: 2.5vw;
     position: fixed;
     bottom: 20%;
     right: 8%;
     opacity: 0;
     transition: opacity 1s ease-in;
+}
+
+@media all and (max-width: 700px) {
+    .slide-front {
+        font-size: 17vw;
+        padding-top: 60%;
+    }
+
+    .slide-head {
+        font-size: 15vw;
+        padding-top: 40%;
+    }
+
+    .slide-content {
+        padding-left: 4%;
+        padding-right: 4%;
+        font-size: 5vw;
+    }
+
+    .slide-footer {
+        font-size: 80%;
+        left: 0;
+        right: 0;
+    }
+
+    .slide-footer {
+        font-size: 6vw;
+    }
+
+    #slide-3 {
+        background-size: 150%;
+    }
 }
