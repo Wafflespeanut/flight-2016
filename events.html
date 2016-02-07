@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Flight 2016</title>
         <link rel='icon' href='images/flight-icon.png'>
         <link rel='stylesheet' type='text/css' media="all" href='stylesheets/main.css' />
@@ -22,152 +23,122 @@
             </div>
             <div style="padding-top: 20%"></div>
             <div id='scroll-holder'>
-                <img class='arrow' id='arrow-left' src='images/side-arrow.png' />
-                <img class='arrow' id='arrow-right' src='images/side-arrow.png' />
-                <div id='scrollpage'>
-                    <div class='stack'>
-                        <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
-                            <img class='card-logo' src='images/drone.png'/>
-                            <div class='card-title'>Drone Racing Championship</div>
-                            <div class='card-description'>
-                                <div class='description-box'>
-                                    <em>
-                                        <p>Are you ready to take the challenge of MITians?</p>
-                                        This year, we bring you the real competition...
-                                        <p>The drone racing!</p>
-                                        <p>Come and grab the MIT Drone racing championship!</p>
-                                    </em>
-                                </div>
-                            </div>
-                        </div>
-                        <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
-                            <img class='card-logo' src='images/rc.png'/>
-                            <div class='card-title'>RC Competition</div>
-                            <div class='card-description'>
-                                <em>
-                                    <p>Ever wondered how it feels to design your own aircraft and see it soar into the sky?</p>
-                                    <p>Then, take a break and come to MIT!</p>
-                                </em>
-                            </div>
-                        </div>
-                        <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
-                            <img class='card-logo' src='images/presentation.png'/>
-                            <div class='card-title'>Paper Presentation</div>
-                            <div class='card-description'>
-                                <em>
-                                    <p>How well you know your basics is reflected in how well you can articulate your ideas in a short time.</p>
-                                    <p>Come and share your ideas to better the future of the aviation industry with us!</p>
-                                </em>
-                            </div>
-                        </div>
-                        <a href="aircrash.html">
-                            <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
-                                <img class='card-logo' src='images/aircrash.png'/>
-                                <div class='card-title'>Air Crash Investigation</div>
-                                <div class='card-description'>
-                                    <em>
-                                        <p>Flying is the fastest and one of the safest modes of transport.</p>
-                                        <p>But what happens when tragedy strikes? It is rare but it does happen.</p>
-                                    </em>
-                                </div>
-                            </div>
-                        </a>
-                        <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
-                            <img class='card-logo' src='images/quiz.png'/>
-                            <div class='card-title'>Technical Quiz</div>
-                            <div class='card-description'>
-                                <em>
-                                    <p>Are you someone who loves digging into journals and technical magazines?
-                                    Someone who brawn is so heavy and can challenge any flight enthusiast for a knowledge war?</p>
-                                    <p>Then gear up! This is the right place for you!</p>
-                                </em>
-                            </div>
+                <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
+                    <img class='card-logo' src='images/drone.png'/>
+                    <div class='card-title'>Drone Racing Championship</div>
+                    <div class='card-description'>
+                        <div class='description-box'>
+                            <p>Are you ready to take the challenge of MITians?</p>
+                            This year, we bring you the real competition...
+                            <p>The drone racing!</p>
+                            <p>Come and grab the MIT Drone racing championship!</p>
                         </div>
                     </div>
-                    <div class='stack'>
-                        <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
-                            <img class='card-logo' src='images/cad.png'/>
-                            <div class='card-title'>CAD Modelling</div>
-                            <div class='card-description'>
-                                <em>
-                                    <p>Drawings and diagrams are the best communication tools for engineers.</p>
-                                    <p>If you have the passion for designing, this is the right place for you.</p>
-                                </em>
-                            </div>
-                        </div>
-                        <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
-                            <img class='card-logo' src='images/connexions.png'/>
-                            <div class='card-title'>Connexions</div>
-                            <div class='card-description'>
-                                <em>Can you solve the mysteries of the aviation using pictures, then try connexions quiz.</em>
-                            </div>
-                        </div>
-                        <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
-                            <img class='card-logo' src='images/simulator.png'/>
-                            <div class='card-title'>Flight Simulator</div>
-                            <div class='card-description'>
-                                <em>
-                                    <p>Are you ready to tackle the nature in a simulation world?</p>
-                                    <p>If you can, then come here to show your piloting skills in the "Flight Simulator"</p>
-                                </em>
-                            </div>
-                        </div>
-                        <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
-                            <img class='card-logo' src='images/treasure.png'/>
-                            <div class='card-title'>Treasure Hunt</div>
-                            <div class='card-description'>
-                                <em>
-                                    “You can either be a victim of the world or an adventurer in search of treasure. It all depends upon how you view your life.”
-                                    <p align=right>- Paulo Coelho</p>
-                                </em>
-                            </div>
-                        </div>
-                        <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
-                            <img class='card-logo' src='images/glider.png'/>
-                            <div class='card-title'>Glider</div>
-                            <div class='card-description'>
-                                <em>It’s not flying, it’s falling with style.</em>
-                            </div>
-                        </div>
+                </div>
+                <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
+                    <img class='card-logo' src='images/rc.png'/>
+                    <div class='card-title'>RC Competition</div>
+                    <div class='card-description'>
+                        <p>Ever wondered how it feels to design your own aircraft and see it soar into the sky?</p>
+                        <p>Then, take a break and come to MIT!</p>
                     </div>
-                    <div class='stack'>
-                        <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
-                            <img class='card-logo' src='images/boom.png'/>
-                            <div class='card-title'>Boomerang</div>
+                </div>
+                <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
+                    <img class='card-logo' src='images/presentation.png'/>
+                    <div class='card-title'>Paper Presentation</div>
+                    <div class='card-description'>
+                        <p>How well you know your basics is reflected in how well you can articulate your ideas in a short time.</p>
+                        <p>Come and share your ideas to better the future of the aviation industry with us!</p>
+                    </div>
+                </div>
+                <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
+                    <a href="aircrash.html">
+                        <div>
+                            <img class='card-logo' src='images/aircrash.png'/>
+                            <div class='card-title'>Air Crash Investigation</div>
                             <div class='card-description'>
-                                <em>
-                                    <p>The unique body and curves of a boomerang makes it the only projectile that can fly parallel to the ground and defy gravity.</p>
-                                    <p>Let's see what you can do with it...</p>
-                                </em>
+                                <p>Flying is the fastest and one of the safest modes of transport.</p>
+                                <p>But what happens when tragedy strikes? It is rare but it does happen.</p>
                             </div>
                         </div>
-                        <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
-                            <img class='card-logo' src='images/paradive.png'/>
-                            <div class='card-title'>Paradive</div>
-                            <div class='card-description'>
-                                <em>
-                                    <p>Hold an egg at ceiling’s height. Drop it.</p>
-                                    <p>What happens? Can you design a container that will prevent the egg from braking or cracking?</p>
-                                </em>
-                            </div>
-                        </div>
-                        <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
-                            <img class='card-logo' src='images/bottle.png'/>
-                            <div class='card-title'>Bottle Rocketry</div>
-                            <div class='card-description'>
-                                <em>
-                                    <p>It’s simple than it sounds to make a working bottle rocked and does not cost you much money.</p>
-                                    <p>With a bottle and some cardboard assembling is easy, but getting it to launch is what needs prowess.</p>
-                                </em>
-                            </div>
-                        </div>
-                        <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
-                            <img class='card-logo' src='images/hover.png'/>
-                            <div class='card-title'>UAV Hovering</div>
-                            <div class='card-description'>
-                                <em>If balance is your thing, then this is the place for you!</em>
-                            </div>
-                        </div>
+                    </a>
+                </div>
+                <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
+                    <img class='card-logo' src='images/quiz.png'/>
+                    <div class='card-title'>Technical Quiz</div>
+                    <div class='card-description'>
+                        <p>Are you someone who loves digging into journals and technical magazines?
+                        Someone who brawn is so heavy and can challenge any flight enthusiast for a knowledge war?</p>
+                        <p>Then gear up! This is the right place for you!</p>
+                    </div>
+                </div>
+                <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
+                    <img class='card-logo' src='images/cad.png'/>
+                    <div class='card-title'>CAD Modelling</div>
+                    <div class='card-description'>
+                        <p>Drawings and diagrams are the best communication tools for engineers.</p>
+                        <p>If you have the passion for designing, this is the right place for you.</p>
+                    </div>
+                </div>
+                <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
+                    <img class='card-logo' src='images/connexions.png'/>
+                    <div class='card-title'>Connexions</div>
+                    <div class='card-description'>
+                        <p>Can you solve the mysteries of the aviation using pictures, then try connexions quiz.</p>
+                    </div>
+                </div>
+                <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
+                    <img class='card-logo' src='images/simulator.png'/>
+                    <div class='card-title'>Flight Simulator</div>
+                    <div class='card-description'>
+                        <p>Are you ready to tackle the nature in a simulation world?</p>
+                        <p>If you can, then come here to show your piloting skills in the "Flight Simulator"</p>
+                    </div>
+                </div>
+                <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
+                    <img class='card-logo' src='images/treasure.png'/>
+                    <div class='card-title'>Treasure Hunt</div>
+                    <div class='card-description'>
+                        <p>“You can either be a victim of the world or an adventurer in search of treasure. It all depends upon how you view your life.”</p>
+                        <p align=right>- Paulo Coelho</p>
+                    </div>
+                </div>
+                <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
+                    <img class='card-logo' src='images/glider.png'/>
+                    <div class='card-title'>Glider</div>
+                    <div class='card-description'>
+                        <p>It’s not flying, it’s falling with style.</p>
+                    </div>
+                </div>
+                <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
+                    <img class='card-logo' src='images/boom.png'/>
+                    <div class='card-title'>Boomerang</div>
+                    <div class='card-description'>
+                        <p>The unique body and curves of a boomerang makes it the only projectile that can fly parallel to the ground and defy gravity.</p>
+                        <p>Let's see what you can do with it...</p>
+                    </div>
+                </div>
+                <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
+                    <img class='card-logo' src='images/paradive.png'/>
+                    <div class='card-title'>Paradive</div>
+                    <div class='card-description'>
+                        <p>Hold an egg at ceiling’s height. Drop it.</p>
+                        <p>What happens? Can you design a container that will prevent the egg from braking or cracking?</p>
+                    </div>
+                </div>
+                <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
+                    <img class='card-logo' src='images/bottle.png'/>
+                    <div class='card-title'>Bottle Rocketry</div>
+                    <div class='card-description'>
+                        <p>It’s simple than it sounds to make a working bottle rocked and does not cost you much money.</p>
+                        <p>With a bottle and some cardboard assembling is easy, but getting it to launch is what needs prowess.</p>
+                    </div>
+                </div>
+                <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
+                    <img class='card-logo' src='images/hover.png'/>
+                    <div class='card-title'>UAV Hovering</div>
+                    <div class='card-description'>
+                        <p>If balance is your thing, then this is the place for you!</p>
                     </div>
                 </div>
             </div>

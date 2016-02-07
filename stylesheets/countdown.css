@@ -1,3 +1,8 @@
+@@font-face {
+    font-family: 'DS-Digital';
+    src: url('../fonts/ds-digital.woff');   /* http://db.onlinewebfonts.com/c/63f874d192fb3892d88d5e26f942b5e2?family=DS-Digital */
+}
+
 body {
     font-family: 'Helvetica';
     font-size: 1.5em;

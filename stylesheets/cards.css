@@ -17,6 +17,11 @@
     background-color: skyblue;
     border-radius: 20px;
     position: relative;
+    border: solid 1px black;
+}
+
+.card div {
+    height: 100%;
 }
 
 .card:hover {

@@ -1,6 +1,6 @@
 @font-face {
     font-family: "San Francisco";
-    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff");
+    src: url("../fonts/sf-ultralight.woff");   /* https://gist.github.com/AndrewBarba/2c0f6612ceef30f5f55d */
 }
 
 * {
@@ -191,7 +191,7 @@ body {
         bottom: 1%;
     }
 
-    #double-up, #double-down {
+    #double-up, #double-down, #arrow-left, #arrow-right {
         display: none;
     }
 }
