@@ -1,3 +1,4 @@
+const MAX_WIDTH = 700;
 // probably ridiculous way of doing this, say whatever you want, I'm very lazy...
 const HEADER = '<div id="mobile-header"> \
     <img id="mobile-logo" src="images/flight-white.png" /> \
@@ -64,4 +65,14 @@ function apply_mobile_header_attrs() {
             head_button.style.transform = 'rotate(90deg)';
         }
     }, false);
+}
+
+function insert_contact() {     // useful for pages dedicated to events
+    if (window.innerWidth <= MAX_WIDTH) {
+        var contact = document.getElementById('side-col');
+        var event_detail = document.getElementById('event-detail');
+        while (contact.childNodes.length) {
+            event_detail.appendChild(contact.firstChild);
+        }
+    }
 }

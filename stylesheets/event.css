@@ -1,39 +1,76 @@
-.event-table {
-    padding-top: 10%;
-    font: 'Helvetica';
+#event-container {
+    width: 100%;
+    height: 100%;
+}
+
+#side-col, #col-sep, #main-col {
+    position: absolute;
+    top: 25%;
     color: white;
 }
 
-.event-col {
-    position: relative;
+#side-col {
+    width: 20%;
+    padding-left: 1%;
+    font-size: 1.2vw;
 }
 
-.event-detail {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    margin-left: -50%;
-    margin-top: -10%;
-}
-
-.line-sep {
-    border-width: thin;
-    border-style: solid;
-    position: absolute;
+#col-sep {
+    left: 21%;
+    border: solid thin white;
     width: 1px;
-    height: 75%;
-    top: 20%;
-    background-color: white;
+    height: 70%;
 }
 
-.event-detail {
-    padding-left: 20px;
-    font-size: 20px;
+#div-sep {
+    height: 0.5vw;
 }
 
-.event-head {
+#main-col {
+    width: 75%;
+    left: 21%;
+}
+
+#event-detail {
+    padding-left: 3vw;
+    font-size: 1.5vw;
+}
+
+#event-head {
     font-family: 'San Francisco';
-    font-size: 50px;
+    font-size: 5vw;
+}
+
+@media all and (max-width: 700px) {
+    body {
+        overflow-y: scroll;
+    }
+
+    #col-sep {
+        display: none;
+    }
+
+    #side-col {
+        width: 95%;
+        padding-left: 1%;
+        font-size: 5vw;
+    }
+
+    #main-col {
+        width: 95%;
+        top: 15%;
+        left: 0;
+    }
+
+    #div-sep {
+        height: 3vw;
+    }
+
+    #event-head {
+        font-size: 10vw;
+    }
+
+    #event-detail {
+        font-size: 5vw;
+    }
 }

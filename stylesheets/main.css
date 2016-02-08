@@ -230,7 +230,7 @@ body {
 
 .bg-image {
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
     height: 100%;
@@ -241,14 +241,7 @@ body {
 
 a[href^="mailto:"] {
     text-decoration: none;
-    color: black;
-}
-
-.contact {
-    font-family: 'Verdana';
-    font-size: 14px;
-    padding-right: 2em;
-    padding-bottom: 2em;
+    color: white;
 }
 
 .icon {

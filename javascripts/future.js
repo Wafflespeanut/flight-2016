@@ -11,13 +11,15 @@ function Scroller() {
     var home_arrow = document.getElementById('double-up');
     var end_arrow = document.getElementById('double-down');
 
-    document.addEventListener('keydown', scroll, false);
-    up_arrow.addEventListener('mouseup', up_up, false);
-    home_arrow.addEventListener('mouseup', home_up, false);
-    up_arrow.addEventListener('mousedown', up_down, false);
-    down_arrow.addEventListener('mouseup', down_up, false);
-    end_arrow.addEventListener('mouseup', end_up, false);
-    down_arrow.addEventListener('mousedown', down_down, false);
+    if (window.innerWidth > MAX_WIDTH) {
+        document.addEventListener('keydown', scroll, false);
+        up_arrow.addEventListener('mouseup', up_up, false);
+        home_arrow.addEventListener('mouseup', home_up, false);
+        up_arrow.addEventListener('mousedown', up_down, false);
+        down_arrow.addEventListener('mouseup', down_up, false);
+        end_arrow.addEventListener('mouseup', end_up, false);
+        down_arrow.addEventListener('mousedown', down_down, false);
+    }
 
     function up_up() {
         up_arrow.style.transform = 'translate(' + 0 + 'px, ' + 0 + 'px) rotate(' + UP + ')';

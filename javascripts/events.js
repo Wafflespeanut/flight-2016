@@ -1,6 +1,5 @@
 const CARDS_PER_STACK = 5;
 const IMAGE_WIDTH = 50;
-const MAX_WIDTH = 700;
 const SCROLL_WIDTH = 150;
 const TITLE_TRANS_HEIGHT = 25;
 const DESC_TRANS_HEIGHT = 85;
@@ -47,7 +46,6 @@ function Scroller() {
     var pos = 0;
     var scroll_area = document.getElementById('scroll-holder');
     var cards = document.querySelectorAll('.card');
-    document.addEventListener('keydown', scroll, false);
     var num_cards = cards.length;
 
     if (window.innerWidth <= MAX_WIDTH) {
@@ -58,6 +56,7 @@ function Scroller() {
             stack.appendChild(cards[i]);
         }
     } else {
+        document.addEventListener('keydown', scroll, false);
         for (i = 0; i < num_cards; i++) {
             if (i % CARDS_PER_STACK == 0) {
                 var stack = document.createElement('div');
