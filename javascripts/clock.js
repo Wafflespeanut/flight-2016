@@ -1,5 +1,5 @@
 // Stuff that depend on the values set in CSS
-const RADIUS = 225;
+const RADIUS = (window.innerWidth <= 700) ? 44 : 20;
 // Other constants
 const HAND_TIMEOUT = 2500;
 const BLEND_OPACITY_TIME = 500;
@@ -178,7 +178,7 @@ function set_point(point) {
     if (point) {
         var x = RADIUS * Math.cos(Math.PI * point.angle / 180);
         var y = RADIUS * Math.sin(Math.PI * point.angle / 180);
-        point.style.transform = 'translate(' + x + 'px, ' + y + 'px)';
+        point.style.transform = 'translate(' + x + 'vw, ' + y + 'vw)';
         point.style.opacity = 0.5;
     }
 }
