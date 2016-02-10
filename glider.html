@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Flight 2016</title>
+        <link rel='icon' href='images/flight-icon.png'>
+        <link rel='stylesheet' type='text/css' media="all" href='stylesheets/main.css' />
+        <link rel='stylesheet' type='text/css' media="all" href='stylesheets/event.css' />
+        <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+        <script type='text/javascript' src="javascripts/header.js"></script>
+    </head>
+    <body>
+        <div id="content">
+            <div id='header-area'></div>
+            <div style='background-image: url("images/aircrash.jpg"); position: fixed' class='bg-image'>
+                <div class="bg-dissolve"></div>
+            </div>
+            <div id='event-container'>
+                <div id='side-col'>
+                    <p id="contact-head"><b>Contact: </b>Praveen Kumar</p>
+                    <img class='icon' src='images/contact-icon.png' />
+                    <div>+91 95 001 91497</div>
+                    <div style="height: 1em"></div>
+                    <div>
+                        <img class='icon' src='images/email-icon.png' />
+                        <a href="mailto:mitflight16@gmail.com">mitflight16@gmail.com</a>
+                    </div>
+                </div>
+                <div id='col-sep'></div>
+                <div id='main-col'>
+                    <div id='event-detail'>
+                        <div id='event-head'>Glider Competition</div>
+                        <p>“It’s not flying, it’s falling with style.”
+                        The first bit of excitement for every aero engineer is to design an object capable of flight. Needless to say, ornithopters and gliders were the very first flying objects designed by man.
+                        If you are good with wood and your hands, and if the air is your friend; if you are confident of making the sleek polished ship cruise for long, then this is the place for you.
+                        </p>
+                        <b>Event description:</b>
+                        <p>Teams will be flying their gliders across the event field and the object of this competition is to seek a very smooth and slow descending glider.</p>
+                        <ul>
+                          <li>There will be two rounds.</li>
+                          <li>First round is a preliminary round consisting of a written test on basics of flight.</li>
+                          <li>The shortlisted candidates will be required to fly their gliders. The glider that flies the farthest wins.</li>
+                        </ul>
+                        <b>Rules:</b>
+                         <ul>
+                           <li>Participants are required to produce college ID without fail.</li>
+                           <li>Maximum of two per team.</li>
+                           <li>Participants shortlisted for the final round need to bring their own gliders to the venue.</li>
+                           <li>Not more than one attempt is allowed</li>
+                        </ul>
+                       <b>Date:</b> March 12
+                       <div id='div-sep'></div>
+                       <b>Time:</b> 11:00 AM
+                       <div id='div-sep'></div>
+                       <b>Entry amount:</b> &#8377; 350 /-
+                       <b>PRIZE money &#8377; 2500 </b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        window.onload = function() {
+            document.getElementById('header-area').innerHTML = HEADER;
+            apply_mobile_header_attrs();
+            insert_contact();
+        }
+    </script>
+</html>

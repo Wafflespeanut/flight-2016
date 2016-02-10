@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Flight 2016</title>
+        <link rel='icon' href='images/flight-icon.png'>
+        <link rel='stylesheet' type='text/css' media="all" href='stylesheets/main.css' />
+        <link rel='stylesheet' type='text/css' media="all" href='stylesheets/event.css' />
+        <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+        <script type='text/javascript' src="javascripts/header.js"></script>
+    </head>
+    <body>
+        <div id="content">
+            <div id='header-area'></div>
+            <div style='background-image: url("images/aircrash.jpg"); position: fixed' class='bg-image'>
+                <div class="bg-dissolve"></div>
+            </div>
+            <div id='event-container'>
+                <div id='side-col'>
+                    <p id="contact-head"><b>Contact: </b>Nishanth</p>
+                    <img class='icon' src='images/contact-icon.png' />
+                    <div>+91 97 897 07847</div>
+                    <div style="height: 1em"></div>
+                    <div>
+                        <img class='icon' src='images/email-icon.png' />
+                        <a href="mailto:mitflight16@gmail.com">mitflight16@gmail.com</a>
+                    </div>
+                </div>
+                <div id='col-sep'></div>
+                <div id='main-col'>
+                    <div id='event-detail'>
+                        <div id='event-head'>Technical Quiz</div>
+                        <br />
+                        Life has a way of testing us; every day is a new quiz and every morning we wake up is proof that we have passed.
+                        Are you someone who loves digging into journals and technical magazines?
+                        Someone who loves the newspaper and craves to learn a new thing every day?
+                        Someone who brawn is so heavy and can challenge any flight enthusiast for a knowledge war?
+                        Then gear up! This is the right place to show your skills.
+                        <br />
+                        <br />
+                        <b>Event description:</b>
+                        <p>A list of questions will be given and the participants are expected to
+                          answer the questions to the best of their knowledge within the given time frame.
+                          Team answering the most number of questions correct wins.</p>
+                       <b>Rules:</b>
+                       <ul>
+                           <li>Participants need to produce their college ID cards without fail.</li>
+                           <li>Maximum of two per team. Any number of teams allowed per college. </li>
+                           <li>There will be two rounds.</li>
+                           <ul>
+                       <li>Round 1:</li>
+                       	Written- basics of aeronautics, current affairs, general aptitude and logical reasoning.  (30 minutes)
+                       <li>Round 2:</li>
+                       	On stage event. Questions will mostly be related to aeronautical and aerospace topics.
+                      </ul>
+                    </ul>
+                       <b>Date:</b> March 11
+                       <div id='div-sep'></div>
+                       <b>Time:</b> 1:30 - 3:00 PM
+                       <div id='div-sep'></div>
+                       <b>Entry amount:</b> &#8377; 350 /-
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        window.onload = function() {
+            document.getElementById('header-area').innerHTML = HEADER;
+            apply_mobile_header_attrs();
+            insert_contact();
+        }
+    </script>
+</html>

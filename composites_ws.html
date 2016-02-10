@@ -8,6 +8,7 @@
         <link rel='stylesheet' type='text/css' media="all" href='stylesheets/main.css' />
         <link rel='stylesheet' type='text/css' media="all" href='stylesheets/event.css' />
         <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
         <script type='text/javascript' src="javascripts/header.js"></script>
     </head>
     <body>
@@ -18,7 +19,13 @@
             </div>
             <div id='event-container'>
                 <div id='side-col'>
-                    <p id="contact-head"><b>Contact:</b> Ganesh</p>
+                    <!-- <div style="height: 6px"></div>
+                    <div id='prize-container'>
+                        <img src='images/prize.png'/>
+                        <div>INR 5000</div>
+                    </div> -->
+                    <div style="height: 6px"></div>
+                    <p id="contact-head"><b>Contact: </b>Ganesh</p>
                     <img class='icon' src='images/contact-icon.png' />
                     <div>+91 95 245 57146</div>
                     <div style="height: 1em"></div>
@@ -31,30 +38,38 @@
                 <div id='main-col'>
                     <div id='event-detail'>
                         <div id='event-head'>Composites Workshop</div>
-                        <br />
-                        <b>Workshop description:</b>
-                        <p>This workshop is to train students on the basic fabrication of a glass epoxy laminate by hand layup,
-                          cured by compression molding, and to introduce to them the procedures involved in testing the laminates for tensile,
-                          compression and flexural tests.
-                          The students will also be introduced to impact strength determination and dynamic mechanical analysis. </p>
-                       <b>Workshop Format:</b>
-                       <ul>
-                          <li>Introductory lecture</li>
-                              <li>Fabrication of laminates by hand layup</li>
-                              <li>Testing of laminates on Universal Testing Machine</li>
-                              <li>Laboratory tour to introduce Impact testing and dynamic mechanical analysis</li>
-                              <li>Lecture on future trends in composites for the aerospace industry</li>
-                              <li>Students quiz</li>
-                       </ul>
-                       <b>Guidelines:</b>
-                       <ul>
-                          <li>Fee per individual - &#8377; 450</li>
-                          <li>Duration - 1-day workshop, 8 hours</li>
-                          <li>Also note that your registration will be confirmed only after payment on first come first serve basis.</li>
-                       </ul>
-                       <b>Date:</b> March 11
+                        <hr />
+                        <div id='event-desc'>
+                            <b>Workshop description:</b>
+                            <p>This workshop is to train students on the basic fabrication of a glass epoxy laminate by hand layup,
+                                cured by compression molding, and to introduce to them the procedures involved in testing the laminates
+                                for tensile, compression and flexural tests. 
+                                The students will also be introduced to impact strength determination and dynamic mechanical analysis. </p>
+                           <b>Workshop format:</b>
+                           <br />
+                           <ul>
+                               <li>Introductory lecture</li>
+                               <li>Fabrication of laminates by hand layup</li>
+                               <li>Testing of laminates on Universal Testing Machine</li>
+                               <li>Laboratory tour to introduce Impact testing and dynamic mechanical analysis</li>
+                               <li>Lecture on future trends in composites for the aerospace industry</li>
+                               <li>Students quiz</li>
+                           </ul>
+                        </div>
+                        <ul id='event-list'>
+                            <li><strong>Date:</strong> March 11</li>
+                            <li><strong>Time:</strong> 09:00 AM - 04:30 PM</li>
+                            <li><strong>Registration:</strong> &#8377; 450  <sup>*</sup> per Individual
+                                <span id='pay' onclick='window.location = "https://in.explara.com/widget-new/composites-workshop"'>Pay!</span>
+                            </li>
+                            <li>ID card &amp; payment proof is required!</li>
+                        </ul>
                     </div>
+                    <br />
                 </div>
+                <!-- <div id='footer'>
+                    * &#8377; 2200 has to be paid in advance
+                </div> -->
             </div>
         </div>
     </body>
@@ -64,6 +79,7 @@
             document.getElementById('header-area').innerHTML = HEADER;
             apply_mobile_header_attrs();
             insert_contact();
+            transit_list();
         }
     </script>
 </html>
