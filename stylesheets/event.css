@@ -12,7 +12,28 @@
 #side-col {
     width: 20%;
     padding-left: 1%;
-    font-size: 1.2vw;
+    font-size: 1.4vw;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#prize-container {
+    text-align: center;
+}
+
+#prize-container div {
+    font-size: 3vw;
+}
+
+#prize-container img {
+    width: 10vw;
+}
+
+#pay {
+    border: solid thin white;
+    border-radius: 0.5vw;
+    margin-left: 1vw;
+    padding: 0.5% 2%;
+    cursor: pointer;
 }
 
 #col-sep {
@@ -32,6 +53,7 @@
 }
 
 #event-detail {
+    font-family: 'Open Sans', sans-serif;
     padding-left: 3vw;
     font-size: 1.5vw;
 }
@@ -39,6 +61,35 @@
 #event-head {
     font-family: 'San Francisco';
     font-size: 5vw;
+}
+
+#event-desc {
+    font-size: 1.8vw;
+    padding-top: 1vw;
+}
+
+#event-list {
+    list-style-position: outside;
+    list-style-type: circle;
+}
+
+#event-list li {
+    padding: 1%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease-in;
+}
+
+#footer {
+    position: fixed;
+    background-color: black;
+    left: 0;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 1.25vw;
 }
 
 @media all and (max-width: 700px) {
@@ -56,6 +107,21 @@
         font-size: 5vw;
     }
 
+    #prize-container {
+        text-align: justify;
+        padding-left: 5vw;
+    }
+
+    #prize-container div {
+        font-size: 10vw;
+        padding-left: 20vw;
+    }
+
+    #prize-container img {
+        width: 15vw;
+        float: left;
+    }
+
     #main-col {
         width: 95%;
         top: 15%;
@@ -67,10 +133,25 @@
     }
 
     #event-head {
-        font-size: 10vw;
+        font-size: 12vw;
     }
 
     #event-detail {
         font-size: 5vw;
+    }
+
+    #event-desc {
+        font-size: 5.5vw;
+        padding-top: 4vw;
+    }
+
+    #pay {
+        border-radius: 2vw;
+        margin-left: 7vw;
+        padding: 2% 5%;
+    }
+
+    #footer {
+        font-size: 4vw;
     }
 }

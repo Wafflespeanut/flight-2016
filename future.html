@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Flight 2016</title>
         <link rel='icon' href='images/flight-icon.png'>
-        <link rel='stylesheet' type='text/css' media="all" href='stylesheets/loader.css' />
         <link rel='stylesheet' type='text/css' media="all" href='stylesheets/main.css' />
         <link rel='stylesheet' type='text/css' media="all" href='stylesheets/slides.css' />
         <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
@@ -15,9 +14,6 @@
     </head>
 
     <body>
-        <div id="loader">
-            <img src='images/propeller.png' />
-        </div>
         <div id="content">
             <div id='header-area'></div>
             <div id='scroll-holder'>
@@ -55,12 +51,6 @@
         window.onload = function() {
             document.getElementById('header-area').innerHTML = HEADER;
             apply_mobile_header_attrs();
-            var content = document.getElementById('content');
-            document.getElementById('loader').style.display = 'none';
-            content.style.display = 'block';
-            setTimeout(function() {
-                document.querySelector('.slide-footer').style.opacity = 0.6;
-            }, 2000);
             Scroller();
         }
     </script>

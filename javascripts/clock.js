@@ -106,13 +106,14 @@ function Clock() {
         set_point(prev_point);
         title.innerHTML = point.event_title;
         time.innerHTML = point.event_time;
-        if (prev_point && prev_point.event_period != point.event_period) {
-            blend.style.opacity = 1;
-            setTimeout(function() {     // workaround for background image transition
-                background.style.backgroundImage = 'url("images/' + point.event_period + '.jpg")';
-                blend.style.opacity = BLEND_OPACITY;
-            }, BLEND_OPACITY_TIME);
-        } hand.style.transform = 'rotate(' + point.angle + 'deg)';
+        // if (prev_point && prev_point.event_period != point.event_period) {
+        //     blend.style.opacity = 1;
+        //     setTimeout(function() {     // workaround for background image transition
+        //         background.style.backgroundImage = 'url("images/' + point.event_period + '.jpg")';
+        //         blend.style.opacity = BLEND_OPACITY;
+        //     }, BLEND_OPACITY_TIME);
+        // }
+        hand.style.transform = 'rotate(' + point.angle + 'deg)';
         scale_point(point);
         prev_point = point;
     }

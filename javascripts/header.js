@@ -1,3 +1,4 @@
+const LIST_ITEM_TIMEOUT = 200;
 const MAX_WIDTH = 700;
 // probably ridiculous way of doing this, say whatever you want, I'm very lazy...
 const HEADER = '<div id="mobile-header"> \
@@ -56,6 +57,15 @@ function apply_mobile_header_attrs() {
     var mob_header = document.getElementById('mobile-header');
     var header = document.getElementById('header');
     var head_button = document.getElementById('header-button');
+    var container = document.getElementById('event-container');
+    if (container) {
+        container.addEventListener('click', function() {
+            if (header.style.top == '10%') {
+                header.style.top = '-100%';
+                head_button.style.transform = 'rotate(0deg)';
+            }
+        }, false);
+    }
     mob_header.addEventListener('click', function() {
         if (header.style.top == '10%') {
             header.style.top = '-100%';
@@ -74,5 +84,19 @@ function insert_contact() {     // useful for pages dedicated to events
         while (contact.childNodes.length) {
             event_detail.appendChild(contact.firstChild);
         }
+    }
+}
+
+function show_elem(elem, timeout) {
+    setTimeout(function() {
+        elem.style.visibility = 'visible';
+        elem.style.opacity = 1;
+    }, timeout)
+}
+
+function transit_list() {
+    var event_list = document.querySelectorAll('#event-list li');
+    for (i = 0; i < event_list.length; i++) {
+        show_elem(event_list[i], (i + 1) * LIST_ITEM_TIMEOUT);
     }
 }
