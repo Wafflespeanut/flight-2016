@@ -8,6 +8,7 @@
         <link rel='stylesheet' type='text/css' media="all" href='stylesheets/main.css' />
         <link rel='stylesheet' type='text/css' media="all" href='stylesheets/event.css' />
         <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
         <script type='text/javascript' src="javascripts/header.js"></script>
     </head>
     <body>
@@ -18,6 +19,12 @@
             </div>
             <div id='event-container'>
                 <div id='side-col'>
+                    <div style="height: 6px"></div>
+                    <div id='prize-container'>
+                        <img src='images/prize.png'/>
+                        <div>INR 2500</div>
+                    </div>
+                    <div style="height: 6px"></div>
                     <p id="contact-head"><b>Contact: </b>Mohideen Meeran</p>
                     <img class='icon' src='images/contact-icon.png' />
                     <div>+91 96 293 22383</div>
@@ -31,7 +38,8 @@
                 <div id='main-col'>
                     <div id='event-detail'>
                         <div id='event-head'>CAD Modelling</div>
-                        <br />
+                        <hr />
+                        <div id='event-desc'>
                         Drawings and diagrams are the best communication tools for engineers.
                         If you have the passion for designing, this is the right place for you.
                         This FLIGHT 2k16 will bring you an exclusive CAD based design event.
@@ -48,12 +56,19 @@
                            required to complete the design using CATIA V5 as per the problem statement given on the spot. </li>
                           <li>Participants will be given a time of 60 minutes to complete their CAD models. </li>
                        </ul>
-                       <b>Date:</b> March 11
-                       <div id='div-sep'></div>
-                       <b>Time:</b> 3:00 PM
-                       <div id='div-sep'></div>
-                       <b>Entry amount:</b> &#8377; 350 /-
-                       <b>PRIZE MONEY: &#8377; 2500</b>
+                   </div>
+                       <ul id='event-list'>
+                           <li><strong>Date:</strong> March 11</li>
+                           <li><strong>Time:</strong> 03:00 PM</li>
+                           <li><strong>Entry amount:</strong> &#8377; 350 <sup>*</sup>
+                               <span id='pay' onclick='window.location = "https://in.explara.com/widget-new/general-registration-day-1"'>Pay!</span>
+                           </li>
+                           <li>Max. 3 per team</li>
+                           <li>ID card &amp; payment proof is required!</li>
+                       </ul>
+                    </div>
+                    <div id='footer'>
+                        * Note that you'll be paying for all events on day 1!
                     </div>
                 </div>
             </div>
@@ -65,6 +80,7 @@
             document.getElementById('header-area').innerHTML = HEADER;
             apply_mobile_header_attrs();
             insert_contact();
+            transit_list();
         }
     </script>
 </html>
