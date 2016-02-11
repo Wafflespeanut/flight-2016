@@ -14,6 +14,15 @@
     </head>
 
     <body>
+        <noscript>
+            <style>
+                #content { display: none; }
+            </style>
+            <div id="noscriptmsg">
+                <p>You don't have javascript enabled.</p>
+                <p>Well, Good luck with that.</p>
+            </div>
+        </noscript>
         <div id="content">
             <div id='header-area'></div>
             <div id='scroll-holder'>
@@ -39,7 +48,7 @@
                     <div class="bg-dissolve">
                         <div class='slide-head'>What we do?</div>
                         <div class='slide-content'>
-                            <p>We conduct a national-level intercollegiate technical symposium</p>
+                            <p>Every year, AAE conducts a national-level intercollegiate technical symposium, "FLIGHT"!</p>
                         </div>
                     </div>
                 </div>
@@ -49,8 +58,10 @@
 
     <script>
         window.onload = function() {
-            document.getElementById('header-area').innerHTML = HEADER;
-            apply_mobile_header_attrs();
+            apply_header();
+            setTimeout(function() {
+                document.querySelector('.slide-footer').style.opacity = 0.6;
+            }, 2000);
             Scroller();
         }
     </script>

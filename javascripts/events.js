@@ -1,4 +1,3 @@
-const CARDS_PER_STACK = 5;
 const IMAGE_WIDTH = 50;
 const SCROLL_WIDTH = 150;
 const TITLE_TRANS_HEIGHT = 25;
@@ -42,7 +41,7 @@ function card_close(e) {
     }
 }
 
-function Scroller() {
+function Scroller(CARDS_PER_STACK) {
     var pos = 0;
     var scroll_area = document.getElementById('scroll-holder');
     var cards = document.querySelectorAll('.card');

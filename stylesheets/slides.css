@@ -66,13 +66,9 @@ div[class^='slide-'] {
     }
 
     .slide-footer {
-        font-size: 80%;
+        font-size: 6vw;
         left: 0;
         right: 0;
-    }
-
-    .slide-footer {
-        font-size: 6vw;
     }
 
     #slide-3 {

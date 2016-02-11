@@ -6,23 +6,73 @@
         <title>Flight 2016</title>
         <link rel='icon' href='images/flight-icon.png'>
         <link rel='stylesheet' type='text/css' media="all" href='stylesheets/main.css' />
+        <link rel='stylesheet' type='text/css' media="all" href='stylesheets/event.css' />
         <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
         <script type='text/javascript' src="javascripts/header.js"></script>
     </head>
 
     <body>
+        <noscript>
+            <style>
+                #content { display: none; }
+            </style>
+            <div id="noscriptmsg">
+                <p>You don't have javascript enabled.</p>
+                <p>Well, Good luck with that.</p>
+            </div>
+        </noscript>
         <div id="content">
             <div id='header-area'></div>
-            <div style='background-image: url("images/contact.jpg")' class='bg-image'>
-                <div class="bg-dissolve"></div>
+            <div style='background-color: black' class='bg-image'>
+                <div class="bg-dissolve" style='opacity: 0'></div>
+            </div>
+            <div id='event-container'>
+                <div id='side-col'>
+                    <!-- <div style="height: 6px"></div>
+                    <p id="contact-head"><b>Contact: </b>Sooriyan</p>
+                    <div>+91 76 671 52323</div>
+                    <div style="height: 1em"></div> -->
+                </div>
+                <div id='col-sep'></div>
+                <div id='main-col'>
+                    <div id='map'>
+                        <script>
+                            function initialize() {
+                                var lat_long = {lat: 12.9493065, lng: 80.1407562};
+                                var map = new google.maps.Map(document.getElementById('map'), {
+                                    center: lat_long,
+                                    zoom: 15,
+                                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                                });
+                                var marker = new google.maps.Marker({
+                                    position: lat_long,
+                                    map: map,
+                                    draggable: false
+                                });
+                                var info_window = new google.maps.InfoWindow({
+                                    content: '<strong>Madras Institute of Technology</strong>\
+                                              <br/> \
+                                              MIT Road, Radha Nagar, Chromepet, Chennai. \
+                                              <br /> \
+                                              (near Chromepet Railway Station) \
+                                              <br />'
+                                });
+                                info_window.open(map, marker);
+                            }
+                        </script>
+                        <script src="https://maps.googleapis.com/maps/api/js?callback=initialize" async defer></script>
+                    </div>
+                </div>
+                <div id='footer'>
+                    <!--  -->
+                </div>
             </div>
         </div>
     </body>
 
     <script>
         window.onload = function() {
-            document.getElementById('header-area').innerHTML = HEADER;
-            apply_mobile_header_attrs();
+            apply_header();
         }
     </script>
 </html>

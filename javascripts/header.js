@@ -36,12 +36,10 @@ const HEADER = '<div id="mobile-header"> \
         </a> \
     </div> \
     <div class="tab"> \
-        <a href="sponsors.html"> \
-            <div class="tab-content"> \
-                <img src="images/sponsors.png" /> \
-                <span class="tab-text">Sponsors</span> \
-            </div> \
-        </a> \
+        <div class="tab-content"> \
+            <img src="images/sponsors.png" /> \
+            <span class="tab-text">Sponsors</span> \
+        </div> \
     </div> \
     <div class="tab"> \
         <a href="contact.html"> \
@@ -53,26 +51,28 @@ const HEADER = '<div id="mobile-header"> \
     </div> \
 </div>'
 
+function apply_header() {
+    document.getElementById('header-area').innerHTML = HEADER;
+    apply_mobile_header_attrs();
+}
+
 function apply_mobile_header_attrs() {
     var mob_header = document.getElementById('mobile-header');
     var header = document.getElementById('header');
     var head_button = document.getElementById('header-button');
-    var container = document.getElementById('event-container');
-    if (container) {
-        container.addEventListener('click', function() {
+    document.addEventListener('click', function(event) {
+        var target = event.target || event.srcElement;
+        if (mob_header.contains(target)) {
             if (header.style.top == '10%') {
                 header.style.top = '-100%';
                 head_button.style.transform = 'rotate(0deg)';
+            } else {
+                header.style.top = '10%';
+                head_button.style.transform = 'rotate(90deg)';
             }
-        }, false);
-    }
-    mob_header.addEventListener('click', function() {
-        if (header.style.top == '10%') {
+        } else if (header.style.top == '10%') {
             header.style.top = '-100%';
             head_button.style.transform = 'rotate(0deg)';
-        } else {
-            header.style.top = '10%';
-            head_button.style.transform = 'rotate(90deg)';
         }
     }, false);
 }

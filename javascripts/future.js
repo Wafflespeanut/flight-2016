@@ -11,7 +11,7 @@ function Scroller() {
     var home_arrow = document.getElementById('double-up');
     var end_arrow = document.getElementById('double-down');
 
-    if (window.innerWidth > MAX_WIDTH) {
+    if (window.innerWidth > MAX_WIDTH) {        // FIXME: screwed up! refactor some day...
         document.addEventListener('keydown', scroll, false);
         up_arrow.addEventListener('mouseup', up_up, false);
         home_arrow.addEventListener('mouseup', home_up, false);

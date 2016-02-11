@@ -18,6 +18,13 @@ body {
     width: 100%;
 }
 
+#noscriptmsg {
+    font-family: 'Roboto';
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 20px;
+}
+
 #content {
     font-family: "Verdana";
     font-size: 1.5em;

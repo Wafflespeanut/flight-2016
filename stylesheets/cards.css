@@ -78,6 +78,11 @@
         border-radius: 4vw;
     }
 
+    .card:hover {
+        width: 95%;
+        height: 14vw;
+    }
+
     .card-logo {
         width: 12%;
         top: 5%;
