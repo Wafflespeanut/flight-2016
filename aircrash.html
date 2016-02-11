@@ -11,6 +11,7 @@
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
         <script type='text/javascript' src="javascripts/header.js"></script>
     </head>
+
     <body>
         <div id="content">
             <div id='header-area'></div>
@@ -22,7 +23,7 @@
                     <div style="height: 6px"></div>
                     <div id='prize-container'>
                         <img src='images/prize.png'/>
-                        <div>INR 2500</div>
+                        <div>Prize: 2500</div>
                     </div>
                     <div style="height: 6px"></div>
                     <p id="contact-head"><b>Contact: </b>Sooriyan</p>
@@ -33,6 +34,7 @@
                         <img class='icon' src='images/email-icon.png' />
                         <a href="mailto:mitflight16@gmail.com">mitflight16@gmail.com</a>
                     </div>
+                    <br />
                 </div>
                 <div id='col-sep'></div>
                 <div id='main-col'>
@@ -44,8 +46,7 @@
                             will be analyzed and brainstorming will be done.
                         </div>
                         <ul id='event-list'>
-                            <li><strong>Date:</strong> March 11</li>
-                            <li><strong>Time:</strong> 11 AM - 12:30 PM</li>
+                            <li><strong>Time:</strong> March 11 (11 AM - 12:30 PM)</li>
                             <li><strong>Entry amount:</strong> &#8377; 350 <sup>*</sup>
                                 <span id='pay' onclick='window.location = "https://in.explara.com/widget-new/general-registration-day-1"'>Pay!</span>
                             </li>
@@ -53,7 +54,6 @@
                             <li>ID card &amp; payment proof is required!</li>
                         </ul>
                     </div>
-                    <br />
                 </div>
                 <div id='footer'>
                     * Note that you'll be paying for all events on day 1!
@@ -64,8 +64,7 @@
 
     <script>
         window.onload = function() {
-            document.getElementById('header-area').innerHTML = HEADER;
-            apply_mobile_header_attrs();
+            apply_header();
             insert_contact();
             transit_list();
         }

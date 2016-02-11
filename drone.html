@@ -14,7 +14,7 @@
     <body>
         <div id="content">
             <div id='header-area'></div>
-            <div style='background-image: url("images/aircrash.jpg"); position: fixed' class='bg-image'>
+            <div style='background-image: url("images/drone-race.jpg"); position: fixed' class='bg-image'>
                 <div class="bg-dissolve"></div>
             </div>
             <div id='event-container'>
@@ -22,7 +22,7 @@
                     <div style="height: 6px"></div>
                     <div id='prize-container'>
                         <img src='images/prize.png'/>
-                        <div>INR 50000</div>
+                        <div>Prize: 50000</div>
                     </div>
                     <p id="contact-head"><b>Contact: </b>Vimal</p>
                     <img class='icon' src='images/contact-icon.png' />
@@ -32,44 +32,28 @@
                         <img class='icon' src='images/email-icon.png' />
                         <a href="mailto:mitflight16@gmail.com">mitflight16@gmail.com</a>
                     </div>
+                    <br />
                 </div>
                 <div id='col-sep'></div>
                 <div id='main-col'>
                     <div id='event-detail'>
-                        <div id='event-head'>MIT DRONE RACING CHAMPIONSHIOP</div>
+                        <div id='event-head'>Drone Racing Championship</div>
                         <hr />
                         <div id='event-desc'>
-                        Are you ready to take the challenge of MITians?
-                        This year we bring you the real competition-The drone racing.
-                        Come and grab the MIT Drone racing championship…
-                        <br /><br />
-                        <b>ABOUT:</b>
-                        <br /><br />
-                        The real race begins at this year’s FLIGHT at the exclusive mega event-“MIT DRONE RACING CHAMPIONSHIP”
-                        where we will host the battle of drones, vying for the ultimate championship.
-                        So get ready with your drone.!!
-                        <br /><br />
-                        <b>Event description:</b>
-                        <br />
-                        <p>The teams are then expected to operate their drones around the given race course and the
-                          stability and time period of drone to remain airborne will be scrutinized.</p>
-                           <b>Event format:</b>
-                           <ul>
-                               <li>Drone has to be within given specification.</li>
-                               <li>The drone has to pass the given path within the given time.</li>
-                               <li>Two rounds.</li>
-                               <li>Judges decision will be final.</li>
-                           </ul>
+                            There will be two rounds. The teams are expected to operate their drones<sup>*</sup> around the given race course.
+                            Winners will be decided based on the stability and time period of drone to remain airborne.
                        </div>
                        <ul id='event-list'>
-                           <li><strong>Date:</strong> March 11</li>
-                           <li><strong>Time:</strong> 04:00 PM</li>
-                           <li><strong>Entry amount:</strong> &#8377; 5000 <sup>*</sup>
+                           <li><strong>Time:</strong> March 11 at 04:00 PM</li>
+                           <li><strong>Entry amount:</strong> &#8377; 5000
                                <span id='pay' onclick='window.location = "https://in.explara.com/widget-new/uav-quad-copter-competition"'>Pay!</span>
                            </li>
-                           <li>Max. <strong>3</strong> per team</li>
+                           <li>Max. 3 per team</li>
                            <li>ID card &amp; payment proof is required!</li>
                     </div>
+                </div>
+                <div id='footer'>
+                    * Drone specification will be updated by February 16
                 </div>
             </div>
         </div>
@@ -77,8 +61,7 @@
 
     <script>
         window.onload = function() {
-            document.getElementById('header-area').innerHTML = HEADER;
-            apply_mobile_header_attrs();
+            apply_header();
             insert_contact();
             transit_list();
         }

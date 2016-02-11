@@ -11,10 +11,11 @@
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
         <script type='text/javascript' src="javascripts/header.js"></script>
     </head>
+
     <body>
         <div id="content">
             <div id='header-area'></div>
-            <div style='background-image: url("images/aircrash.jpg"); position: fixed' class='bg-image'>
+            <div style='background-image: url("images/treasure.jpg"); position: fixed' class='bg-image'>
                 <div class="bg-dissolve"></div>
             </div>
             <div id='event-container'>
@@ -22,10 +23,10 @@
                     <div style="height: 6px"></div>
                     <div id='prize-container'>
                         <img src='images/prize.png'/>
-                        <div>INR 2500</div>
+                        <div>Prize: 2500</div>
                     </div>
                     <div style="height: 6px"></div>
-                    <p id="contact-head"><b>Contact: </b>Lalithkumar</p>
+                    <p id="contact-head"><b>Contact: </b>Lalith Kumar</p>
                     <img class='icon' src='images/contact-icon.png' />
                     <div>+91 80 152 14460</div>
                     <div style="height: 1em"></div>
@@ -33,6 +34,7 @@
                         <img class='icon' src='images/email-icon.png' />
                         <a href="mailto:mitflight16@gmail.com">mitflight16@gmail.com</a>
                     </div>
+                    <br />
                 </div>
                 <div id='col-sep'></div>
                 <div id='main-col'>
@@ -40,35 +42,13 @@
                         <div id='event-head'>Treasure Hunt</div>
                         <hr />
                         <div id='event-desc'>
-                        <b>Event description:</b>
-                        <p> Are you a Sherlock Holmes or Hercule Poirot? If so… Have a look over this event.
-                          Are you the clever guy in your team to give solutions for your friend in trouble?
-                          You think you can solve the mystery with your logical and sharp brain?
-                          Then get your Watson to solve the clues hidden around MIT and win your way to glory. </p>
-                        <b>Event Format:</b>
-                        <br />
-                        This event consist of two rounds.
-                        <ul>
-                          <li>Round-One</li>
-                          <ul>
-                            <li>consists of 30 questions based on logic, riddles, aptitude and many more.</li>
-                            <li>Time limit - 45 minutes</li>
-                          </ul>
-                           <li>Second Round</li>
-                          <ul>
-                           <li>clues to the treasure will be scattered across the college.</li>
-                           <li>The first one to get the treasure wins! </li>
-                         </ul>
-                       </ul>
-                        <b>Rules:</b>
-                         <ul>
-                           <li>Participants are required to produce college ID without fail.</li>
-                           <li>Maximum of three per team.</li>
-                        </ul>
-                    </div>
+                            There will be two rounds - for the first round, you'll be given 30 questions (based on logic, riddles and fun),
+                            you're supposed to crack them (within 45 minutes).
+                            <p>The next round requires some <em>legwork</em>, as you'll be looking for clues scattered across
+                            our campus, clues that will lead to something - the first team to get the <em>"something"</em> wins!</p>
+                        </div>
                     <ul id='event-list'>
-                        <li><strong>Date:</strong> March 11</li>
-                        <li><strong>Time:</strong> 12:00 PM</li>
+                        <li><strong>Time:</strong> March 11 at 12:00 PM</li>
                         <li><strong>Entry amount:</strong> &#8377; 350 <sup>*</sup>
                             <span id='pay' onclick='window.location = "https://in.explara.com/widget-new/general-registration-day-1"'>Pay!</span>
                         </li>
@@ -86,8 +66,7 @@
 
     <script>
         window.onload = function() {
-            document.getElementById('header-area').innerHTML = HEADER;
-            apply_mobile_header_attrs();
+            apply_header();
             insert_contact();
             transit_list();
         }

@@ -36,12 +36,6 @@ const HEADER = '<div id="mobile-header"> \
         </a> \
     </div> \
     <div class="tab"> \
-        <div class="tab-content"> \
-            <img src="images/sponsors.png" /> \
-            <span class="tab-text">Sponsors</span> \
-        </div> \
-    </div> \
-    <div class="tab"> \
         <a href="contact.html"> \
             <div class="tab-content"> \
                 <img src="images/phone.png" /> \
@@ -53,10 +47,6 @@ const HEADER = '<div id="mobile-header"> \
 
 function apply_header() {
     document.getElementById('header-area').innerHTML = HEADER;
-    apply_mobile_header_attrs();
-}
-
-function apply_mobile_header_attrs() {
     var mob_header = document.getElementById('mobile-header');
     var header = document.getElementById('header');
     var head_button = document.getElementById('header-button');

@@ -11,10 +11,11 @@
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
         <script type='text/javascript' src="javascripts/header.js"></script>
     </head>
+
     <body>
         <div id="content">
             <div id='header-area'></div>
-            <div style='background-image: url("images/aircrash.jpg"); position: fixed' class='bg-image'>
+            <div style='background-image: url("images/simulator.jpg"); position: fixed' class='bg-image'>
                 <div class="bg-dissolve"></div>
             </div>
             <div id='event-container'>
@@ -22,7 +23,7 @@
                     <div style="height: 6px"></div>
                     <div id='prize-container'>
                         <img src='images/prize.png'/>
-                        <div>INR 2500</div>
+                        <div>Prize: 2500</div>
                     </div>
                     <div style="height: 6px"></div>
                     <p id="contact-head"><b>Contact: </b>Krishna Raja</p>
@@ -33,30 +34,24 @@
                         <img class='icon' src='images/email-icon.png' />
                         <a href="mailto:mitflight16@gmail.com">mitflight16@gmail.com</a>
                     </div>
+                    <br />
                 </div>
                 <div id='col-sep'></div>
                 <div id='main-col'>
                     <div id='event-detail'>
-                        <div id='event-head'>FLIGHT SIMULATOR</div>
+                        <div id='event-head'>Flight Simulator</div>
                         <hr />
                         <div id='event-desc'>
-                        <b>Event description:</b>
-                        <p>Are you ready to tackle the nature in a simulation world.
-                          If u can , then come to MIT to show your piloting skills in the FLIGHT SIMULATOR</p>
-                       <b>Rules:</b>
-                       <ul>
-                         <li>First round is quiz related to aeronautics</li>
-                          <li>In second round the user has to fly in the given simulated condition within the given time limit. </li>
-                       </ul>
-                   </div>
-                   <ul id='event-list'>
-                       <li><strong>Date:</strong> March 11</li>
-                       <li><strong>Time:</strong> 11:30 AM - 03:00 PM</li>
-                       <li><strong>Entry amount:</strong> &#8377; 350 <sup>*</sup>
-                           <span id='pay' onclick='window.location = "https://in.explara.com/widget-new/general-registration-day-1"'>Pay!</span>
-                       </li>
-                       <li>ID card &amp; payment proof is required!</li>
-                   </ul>
+                            There will be two rounds - the first round is a quiz on aeronautics.
+                            Once you get through that, all you have to do is fly the aircraft in the simulator.
+                        </div>
+                        <ul id='event-list'>
+                            <li><strong>Time:</strong> March 11 (11:30 AM - 03:00 PM)</li>
+                            <li><strong>Entry amount:</strong> &#8377; 350 <sup>*</sup>
+                                <span id='pay' onclick='window.location = "https://in.explara.com/widget-new/general-registration-day-1"'>Pay!</span>
+                            </li>
+                            <li>ID card &amp; payment proof is required!</li>
+                        </ul>
                     </div>
                 </div>
                 <div id='footer'>
@@ -68,8 +63,7 @@
 
     <script>
         window.onload = function() {
-            document.getElementById('header-area').innerHTML = HEADER;
-            apply_mobile_header_attrs();
+            apply_header();
             insert_contact();
             transit_list();
         }

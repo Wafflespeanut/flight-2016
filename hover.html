@@ -14,7 +14,7 @@
     <body>
         <div id="content">
             <div id='header-area'></div>
-            <div style='background-image: url("images/aircrash.jpg"); position: fixed' class='bg-image'>
+            <div style='background-image: url("images/hover.jpg"); position: fixed' class='bg-image'>
                 <div class="bg-dissolve"></div>
             </div>
             <div id='event-container'>
@@ -22,10 +22,10 @@
                     <div style="height: 6px"></div>
                     <div id='prize-container'>
                         <img src='images/prize.png'/>
-                        <div>INR 2500</div>
+                        <div>Prize: 2500</div>
                     </div>
                     <div style="height: 6px"></div>
-                    <p id="contact-head"><b>Contact: </b>Vishal krishnan</p>
+                    <p id="contact-head"><b>Contact: </b>Vishal Krishnan</p>
                     <img class='icon' src='images/contact-icon.png' />
                     <div>+91 80 152 05470</div>
                     <div style="height: 1em"></div>
@@ -33,6 +33,7 @@
                         <img class='icon' src='images/email-icon.png' />
                         <a href="mailto:mitflight16@gmail.com">mitflight16@gmail.com</a>
                     </div>
+                    <br />
                 </div>
                 <div id='col-sep'></div>
                 <div id='main-col'>
@@ -40,28 +41,14 @@
                         <div id='event-head'>UAV Hovering</div>
                         <hr />
                         <div id='event-desc'>
-                            Walked on a rope as a kid?
-                            Or played the lemon on the spoon game?
-                            Juggled 4 balls at the same time with none falling even once?
-                            If balance is your thing, then this is the place for you.
-                            <br />
-                            <b>Event Description:</b>
-                            <br />
-                            The object of this contest is to complete the course in the shortest period of time with acquiring more points while accurately tracking the path from start to finish.
-                            <br />
-                            <b>	Event Format:</b>
-                            <br />
-                            This is an all-girls event. The participants need to finish the track laid with hurdles in the shortest time from start to finish points.
-                            <br />
-                            <b>	Rules:</b>
-                            <br />
+                            <strong>This is an all-girls event.</strong>
+                            The objective of this contest is to complete the track course,
+                            acquiring points while accurately tracking the path from start to finish.
+                            The participants need to finish the track laid with hurdles in the shortest time from start to finish.
                             <ul>
-                            <li>Participants are required to produce college ID without fail. </li>
-                            <li>Participants who stray away from the track at any point will be disqualified. </li>
                         </div>
                         <ul id='event-list'>
-                            <li><strong>Date:</strong> March 12</li>
-                            <li><strong>Time:</strong> 03:30 PM</li>
+                            <li><strong>Time:</strong> March 12 at 03:30 PM</li>
                             <li><strong>Entry amount:</strong> &#8377; 350 <sup>*</sup>
                                 <span id='pay' onclick='window.location = "https://in.explara.com/widget-new/general-registrationday-2"'>Pay!</span>
                             </li>
@@ -79,8 +66,7 @@
 
     <script>
         window.onload = function() {
-            document.getElementById('header-area').innerHTML = HEADER;
-            apply_mobile_header_attrs();
+            apply_header();
             insert_contact();
             transit_list();
         }

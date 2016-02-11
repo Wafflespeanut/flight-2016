@@ -11,10 +11,11 @@
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
         <script type='text/javascript' src="javascripts/header.js"></script>
     </head>
-    <body>
+
+    <body style="overflow-y: scroll">
         <div id="content">
             <div id='header-area'></div>
-            <div style='background-image: url("images/aircrash.jpg"); position: fixed' class='bg-image'>
+            <div style='background-image: url("images/paradive.jpg"); position: fixed' class='bg-image'>
                 <div class="bg-dissolve"></div>
             </div>
             <div id='event-container'>
@@ -22,10 +23,10 @@
                     <div style="height: 6px"></div>
                     <div id='prize-container'>
                         <img src='images/prize.png'/>
-                        <div>INR 2500</div>
+                        <div>Prize: 2500</div>
                     </div>
                     <div style="height: 6px"></div>
-                    <p id="contact-head"><b>Contact: </b>Sakthivel</p>
+                    <p id="contact-head"><b>Contact: </b>Sakthi Vel</p>
                     <img class='icon' src='images/contact-icon.png' />
                     <div>+91 73 052 39714</div>
                     <div style="height: 1em"></div>
@@ -33,6 +34,7 @@
                         <img class='icon' src='images/email-icon.png' />
                         <a href="mailto:mitflight16@gmail.com">mitflight16@gmail.com</a>
                     </div>
+                    <br />
                 </div>
                 <div id='col-sep'></div>
                 <div id='main-col'>
@@ -40,33 +42,22 @@
                         <div id='event-head'>Paradive</div>
                         <hr />
                         <div id='event-desc'>
-                        <b>Event Description:</b>
-                        Hold an egg at ceiling’s height. Drop it.
-                        What happens? Can you design a container that will prevent the egg from braking or cracking?
-                        That’s not really so hard if you think about what you will use inside the container to cushion the egg’s fall. That is the focus of Paradive- an “eggscellent” activity.
-                        Each team will be provided with a paradive kit and time will be provided for designing the parachute.
-                        The team whose parachute stays in air for the longest time and lands without damage to the egg wins!
-                        <b>Event Format:</b>
-                        <ul>
-                        <li>	There will be two rounds.</li>
-                        <li>	First round is a preliminary round consisting of a written test on basics of aviation.</li>
-                        <li>	The second and final round will be an on the spot event. Shortlisted candidates will be given the paradive kit. </li>
-                        </ul>
-                        <b>Rules:</b>
-                        <ul>
-                        <li>	Participants are required to produce college ID without fail. </li>
-                        <li>	Maximum of two per team.</li>
-                        <li>	Participants will be given a time of 10 minutes to design their parachute on spot.</li>
-                        <li>	Only materials provided by the organisers can be used. </li>
-                        <li>	Any modification to the egg will lead to disqualification.  </li>
-                        </ul>
+                            There will be two rounds:
+                            <ul>
+                                <li>Round 1 is a preliminary written test (on basics of flight)</li>
+                                <li>
+                                    Shortlisted candidates proceed to round 2, where they'll drop their "eggs", and land it perfectly (of course!).
+                                    The participants will be given a "paradive kit", and will be asked to design
+                                    a parachute on spot (in 10 mins!).
+                                </li>
+                            </ul>
                         </div>
                         <ul id='event-list'>
-                            <li><strong>Date:</strong> March 12</li>
-                            <li><strong>Time:</strong> 02:00 PM - 04:00 PM</li>
+                            <li><strong>Time:</strong> March 12 (02:00 PM - 04:00 PM)</li>
                             <li><strong>Entry amount:</strong> &#8377; 350 <sup>*</sup>
                                 <span id='pay' onclick='window.location = "https://in.explara.com/widget-new/general-registrationday-2"'>Pay!</span>
                             </li>
+                            <li>Max. 2 per team</li>
                             <li>ID card &amp; payment proof is required!</li>
                         </ul>
                     </div>
@@ -81,8 +72,7 @@
 
     <script>
         window.onload = function() {
-            document.getElementById('header-area').innerHTML = HEADER;
-            apply_mobile_header_attrs();
+            apply_header();
             insert_contact();
             transit_list();
         }

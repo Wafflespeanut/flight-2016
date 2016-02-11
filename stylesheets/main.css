@@ -13,9 +13,12 @@ body {
 
 #header {
     position: fixed;
-    top: 1%;
+    top: 0;
+    left: 0;
     z-index: 9999;
     width: 100%;
+    background: black;
+    background: linear-gradient(black, transparent);
 }
 
 #noscriptmsg {
@@ -46,6 +49,10 @@ body {
 
 .tab a {
     text-decoration: none;
+}
+
+.tab a div:first-child {
+    padding-top: 20px;
 }
 
 .tab-content {
@@ -115,13 +122,17 @@ body {
         left: 0%;
         z-index: 999;
         transition: all 0.5s ease-in-out;
+        background: none;
     }
 
     .tab {
         float: none;
         width: 100%;
         border-bottom: solid grey 1px;
-        padding: none;
+    }
+
+    .tab a div:first-child {
+        padding: 3vw;
     }
 
     .tab-content img {

@@ -34,78 +34,91 @@
                     <div class='event-time'>March 11 2016 11:00:00 GMT+05:30</div>
 
                     <img class='event-icon' src='images/simulator.png'
+                         onclick="window.location='simulator.html'"
                          onmouseover="window.event_clock.move_hand_to(this)"
                          onmouseout="window.event_clock.resume()" />
                     <div class='event-title'>Flight Simulator</div>
                     <div class='event-time'>March 11 2016 11:30:00 GMT+05:30</div>
 
                     <img class='event-icon' src='images/treasure.png'
+                         onclick="window.location='treasure.html'"
                          onmouseover="window.event_clock.move_hand_to(this)"
                          onmouseout="window.event_clock.resume()" />
                     <div class='event-title'>Treasure Hunt</div>
                     <div class='event-time'>March 11 2016 12:00:00 GMT+05:30</div>
 
                     <img class='event-icon' src='images/presentation.png'
+                         onclick="window.location='presentation.html'"
                          onmouseover="window.event_clock.move_hand_to(this)"
                          onmouseout="window.event_clock.resume()" />
                     <div class='event-title'>Paper Presentation</div>
                     <div class='event-time'>March 11 2016 13:30:00 GMT+05:30</div>
 
                     <img class='event-icon' src='images/quiz.png'
+                         onclick="window.location='quiz.html'"
                          onmouseover="window.event_clock.move_hand_to(this)"
                          onmouseout="window.event_clock.resume()" />
                     <div class='event-title'>Technical Quiz</div>
                     <div class='event-time'>March 11 2016 13:40:00 GMT+05:30</div>
 
                     <img class='event-icon' src='images/cad.png'
+                         onclick="window.location='cad.html'"
                          onmouseover="window.event_clock.move_hand_to(this)"
                          onmouseout="window.event_clock.resume()" />
                     <div class='event-title'>CAD Modelling</div>
                     <div class='event-time'>March 11 2016 15:00:00 GMT+05:30</div>
 
                     <img class='event-icon' src='images/connexions.png'
+                         onclick="window.location='connexions.html'"
                          onmouseover="window.event_clock.move_hand_to(this)"
                          onmouseout="window.event_clock.resume()" />
                     <div class='event-title'>Connexions</div>
                     <div class='event-time'>March 11 2016 15:10:00 GMT+05:30</div>
 
                     <img class='event-icon' src='images/drone.png'
+                         onclick="window.location='drone.html'"
                          onmouseover="window.event_clock.move_hand_to(this)"
                          onmouseout="window.event_clock.resume()" />
                     <div class='event-title'>Drone Racing Championship</div>
                     <div class='event-time'>March 11 2016 16:00:00 GMT+05:30</div>
 
                     <img class='event-icon' src='images/rc.png'
+                         onclick="window.location='rc.html'"
                          onmouseover="window.event_clock.move_hand_to(this)"
                          onmouseout="window.event_clock.resume()" />
                     <div class='event-title'>RC Competition</div>
                     <div class='event-time'>March 12 2016 09:30:00 GMT+05:30</div>
 
                     <img class='event-icon' src='images/boom.png'
+                         onclick="window.location='boom.html'"
                          onmouseover="window.event_clock.move_hand_to(this)"
                          onmouseout="window.event_clock.resume()" />
                     <div class='event-title'>Boomerang</div>
                     <div class='event-time'>March 12 2016 10:00:00 GMT+05:30</div>
 
                     <img class='event-icon' src='images/glider.png'
+                         onclick="window.location='glider.html'"
                          onmouseover="window.event_clock.move_hand_to(this)"
                          onmouseout="window.event_clock.resume()" />
                     <div class='event-title'>Glider</div>
                     <div class='event-time'>March 12 2016 11:00:00 GMT+05:30</div>
 
                     <img class='event-icon' src='images/paradive.png'
+                         onclick="window.location='paradive.html'"
                          onmouseover="window.event_clock.move_hand_to(this)"
                          onmouseout="window.event_clock.resume()" />
                     <div class='event-title'>Paradive</div>
                     <div class='event-time'>March 12 2016 14:00:00 GMT+05:30</div>
 
                     <img class='event-icon' src='images/bottle.png'
+                         onclick="window.location='bottle.html'"
                          onmouseover="window.event_clock.move_hand_to(this)"
                          onmouseout="window.event_clock.resume()" />
                     <div class='event-title'>Bottle Rocketry</div>
                     <div class='event-time'>March 12 2016 15:00:00 GMT+05:30</div>
 
                     <img class='event-icon' src='images/hover.png'
+                         onclick="window.location='hover.html'"
                          onmouseover="window.event_clock.move_hand_to(this)"
                          onmouseout="window.event_clock.resume()" />
                     <div class='event-title'>UAV Hovering</div>
@@ -122,8 +135,7 @@
     <script>
         window.onload = function() {
             window.event_clock = new Clock();   // put it inside the window so that we can access later (workaround)
-            document.getElementById('header-area').innerHTML = HEADER;
-            apply_mobile_header_attrs();
+            apply_header();
         }
     </script>
 </html>

@@ -11,10 +11,11 @@
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
         <script type='text/javascript' src="javascripts/header.js"></script>
     </head>
-    <body>
+
+    <body style='overflow-y: scroll;'>
         <div id="content">
             <div id='header-area'></div>
-            <div style='background-image: url("images/aircrash.jpg"); position: fixed' class='bg-image'>
+            <div style='background-image: url("images/glider.jpg"); position: fixed' class='bg-image'>
                 <div class="bg-dissolve"></div>
             </div>
             <div id='event-container'>
@@ -22,7 +23,7 @@
                     <div style="height: 6px"></div>
                     <div id='prize-container'>
                         <img src='images/prize.png'/>
-                        <div>INR 2500</div>
+                        <div>Prize: 2500</div>
                     </div>
                     <div style="height: 6px"></div>
                     <p id="contact-head"><b>Contact: </b>Praveen Kumar</p>
@@ -33,6 +34,7 @@
                         <img class='icon' src='images/email-icon.png' />
                         <a href="mailto:mitflight16@gmail.com">mitflight16@gmail.com</a>
                     </div>
+                    <br />
                 </div>
                 <div id='col-sep'></div>
                 <div id='main-col'>
@@ -40,38 +42,29 @@
                         <div id='event-head'>Glider Competition</div>
                         <hr />
                         <div id='event-desc'>
-                        <p>“It’s not flying, it’s falling with style.”
-                        The first bit of excitement for every aero engineer is to design an object capable of flight. Needless to say, ornithopters and gliders were the very first flying objects designed by man.
-                        If you are good with wood and your hands, and if the air is your friend; if you are confident of making the sleek polished ship cruise for long, then this is the place for you.
-                        </p>
-                        <b>Event description:</b>
-                        <p>Teams will be flying their gliders across the event field and the object of this competition is to seek a very smooth and slow descending glider.</p>
-                        <ul>
-                          <li>There will be two rounds.</li>
-                          <li>First round is a preliminary round consisting of a written test on basics of flight.</li>
-                          <li>The shortlisted candidates will be required to fly their gliders. The glider that flies the farthest wins.</li>
-                        </ul>
-                        <b>Rules:</b>
-                         <ul>
-                           <li>Participants are required to produce college ID without fail.</li>
-                           <li>Maximum of two per team.</li>
-                           <li>Participants shortlisted for the final round need to bring their own gliders to the venue.</li>
-                           <li>Not more than one attempt is allowed</li>
+                            Teams will be flying their gliders across the event field.
+                            The objective here is to seek a smooth and slow descending glider (in a single attempt!).
+                            <p>
+                                There will be two rounds:
+                                <ul>
+                                    <li>Round 1 is a preliminary written test (on basics of flight)</li>
+                                    <li>Shortlisted candidates proceed to round 2, where they'll fly their gliders</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <ul id='event-list'>
+                            <li><strong>Time:</strong> March 12 at 11:00 AM </li>
+                            <li><strong>Entry amount:</strong> &#8377; 350 <sup>*</sup>
+                                <span id='pay' onclick='window.location = "https://in.explara.com/widget-new/general-registrationday-2"'>Pay!</span>
+                            </li>
+                            <li>Max. 2 per team</li>
+                            <li>ID card &amp; payment proof is required!</li>
                         </ul>
                     </div>
-                    <ul id='event-list'>
-                        <li><strong>Date:</strong> March 12</li>
-                        <li><strong>Time:</strong> 11:00 AM </li>
-                        <li><strong>Entry amount:</strong> &#8377; 350 <sup>*</sup>
-                            <span id='pay' onclick='window.location = "https://in.explara.com/widget-new/general-registrationday-2"'>Pay!</span>
-                        </li>
-                        <li>Max. <strong>2</strong> per team</li>
-                        <li>ID card &amp; payment proof is required!</li>
-                    </ul>
-                    </div>
+                    <br />
                 </div>
                 <div id='footer'>
-                    * Note that you'll be paying for all events on day 1!
+                    * Note that you'll be paying for all events on day 2!
                 </div>
             </div>
         </div>
@@ -79,8 +72,7 @@
 
     <script>
         window.onload = function() {
-            document.getElementById('header-area').innerHTML = HEADER;
-            apply_mobile_header_attrs();
+            apply_header();
             insert_contact();
             transit_list();
         }

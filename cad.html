@@ -11,10 +11,11 @@
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
         <script type='text/javascript' src="javascripts/header.js"></script>
     </head>
+
     <body>
         <div id="content">
             <div id='header-area'></div>
-            <div style='background-image: url("images/aircrash.jpg"); position: fixed' class='bg-image'>
+            <div style='background-image: url("images/cad.jpg"); position: fixed' class='bg-image'>
                 <div class="bg-dissolve"></div>
             </div>
             <div id='event-container'>
@@ -22,7 +23,7 @@
                     <div style="height: 6px"></div>
                     <div id='prize-container'>
                         <img src='images/prize.png'/>
-                        <div>INR 2500</div>
+                        <div>Prize: 2500</div>
                     </div>
                     <div style="height: 6px"></div>
                     <p id="contact-head"><b>Contact: </b>Mohideen Meeran</p>
@@ -33,6 +34,7 @@
                         <img class='icon' src='images/email-icon.png' />
                         <a href="mailto:mitflight16@gmail.com">mitflight16@gmail.com</a>
                     </div>
+                    <br />
                 </div>
                 <div id='col-sep'></div>
                 <div id='main-col'>
@@ -40,26 +42,12 @@
                         <div id='event-head'>CAD Modelling</div>
                         <hr />
                         <div id='event-desc'>
-                        Drawings and diagrams are the best communication tools for engineers.
-                        If you have the passion for designing, this is the right place for you.
-                        This FLIGHT 2k16 will bring you an exclusive CAD based design event.
-                        <br /><br />
-                        <b>Event description:</b>
-                        <p>The basics of modelling will be tested in the first round after which in the consecutive rounds,
-                          the participants are required to complete designs using CATIA V5.
-                          The fastest designer with most accuracy of the given problem will be declared winner. </p>
-                       <b>Event format:</b>
-                       <ul>
-                         <li>There will be two rounds.</li>
-                         <li>First round is a preliminary round consisting of a written test on basics of Computer Aided Design and Engineering Graphics.</li>
-                         <li>Candidates shortlisted for the second and final round will be
-                           required to complete the design using CATIA V5 as per the problem statement given on the spot. </li>
-                          <li>Participants will be given a time of 60 minutes to complete their CAD models. </li>
-                       </ul>
-                   </div>
+                            There will be a preliminary round consisting of a written test on basics of CAD and Engineering Graphics.
+                            Shortlisted candidates will be required to complete the given problem using CATIA V5 in our lab.
+                       </div>
                        <ul id='event-list'>
-                           <li><strong>Date:</strong> March 11</li>
-                           <li><strong>Time:</strong> 03:00 PM</li>
+                           <li><strong>Time:</strong> March 11 at 03:00 PM</li>
+                           <li><strong>Duration:</strong> 1 hour</li>
                            <li><strong>Entry amount:</strong> &#8377; 350 <sup>*</sup>
                                <span id='pay' onclick='window.location = "https://in.explara.com/widget-new/general-registration-day-1"'>Pay!</span>
                            </li>
@@ -77,8 +65,7 @@
 
     <script>
         window.onload = function() {
-            document.getElementById('header-area').innerHTML = HEADER;
-            apply_mobile_header_attrs();
+            apply_header();
             insert_contact();
             transit_list();
         }

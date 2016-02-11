@@ -11,10 +11,11 @@
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
         <script type='text/javascript' src="javascripts/header.js"></script>
     </head>
+
     <body>
         <div id="content">
             <div id='header-area'></div>
-            <div style='background-image: url("images/aircrash.jpg"); position: fixed' class='bg-image'>
+            <div style='background-image: url("images/connexions.jpg"); position: fixed' class='bg-image'>
                 <div class="bg-dissolve"></div>
             </div>
             <div id='event-container'>
@@ -22,7 +23,7 @@
                     <div style="height: 6px"></div>
                     <div id='prize-container'>
                         <img src='images/prize.png'/>
-                        <div>INR 2500</div>
+                        <div>Prize: 2500</div>
                     </div>
                     <p id="contact-head"><b>Contact: </b>Karthi</p>
                     <img class='icon' src='images/contact-icon.png' />
@@ -32,6 +33,7 @@
                         <img class='icon' src='images/email-icon.png' />
                         <a href="mailto:mitflight16@gmail.com">mitflight16@gmail.com</a>
                     </div>
+                    <br />
                 </div>
                 <div id='col-sep'></div>
                 <div id='main-col'>
@@ -39,31 +41,16 @@
                         <div id='event-head'>Connexions</div>
                         <hr />
                         <div id='event-desc'>
-                        <b>Event description:</b>
-                        <p> Can you solve the mysteries of the aviation using pictures, then solve the connexions.</p>
-                        <b>Event Format:</b>
-                        <ul>
-                           <li>This is a picture based quiz event.</li>
-                           <li>Questions for the first round will be based on general non filmy pictures.</li>
-                           <li>Subsequent rounds will have aviation related questions.</li>
-                         </ul>
-                        <b>Rules:</b>
-                         <ul>
-                           <li>Participants are required to produce college ID without fail.</li>
-                           <li>Maximum of four per team.</li>
-                           <li>Unanswered questions will be passed on to subsequent teams leading to bonus points.</li>
-                           <li>Time taken to answer a question is 30 seconds.</li>
-                             An additional 10 seconds will be provided for each team in the case of failure to answer in the first 30 seconds.
-                             If the team succeeds during this time half the score will be awarded.</li>
-                        </ul>
-                    </div>
+                            This will be a picture-based quiz event (presumably). You're supposed to find that "one trait" which
+                            is shared by the pictures shown to you. There will be two rounds, and the only thing that distinguishes
+                            them is their difficulty...
+                        </div>
                     <ul id='event-list'>
-                        <li><strong>Date:</strong> March 11</li>
-                        <li><strong>Time:</strong> 03:00 PM</li>
+                        <li><strong>Time:</strong> March 11 at 03:00 PM</li>
                         <li><strong>Entry amount:</strong> &#8377; 350 <sup>*</sup>
                             <span id='pay' onclick='window.location = "https://in.explara.com/widget-new/general-registration-day-1"'>Pay!</span>
                         </li>
-                        <li>Max. 3 per team</li>
+                        <li>Max. 4 per team</li>
                         <li>ID card &amp; payment proof is required!</li>
                     </ul>
                     </div>
@@ -77,8 +64,7 @@
 
     <script>
         window.onload = function() {
-            document.getElementById('header-area').innerHTML = HEADER;
-            apply_mobile_header_attrs();
+            apply_header();
             insert_contact();
             transit_list();
         }

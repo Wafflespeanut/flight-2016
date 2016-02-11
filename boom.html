@@ -11,10 +11,10 @@
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
         <script type='text/javascript' src="javascripts/header.js"></script>
     </head>
-    <body>
+    <body style="overflow-y: scroll">
         <div id="content">
             <div id='header-area'></div>
-            <div style='background-image: url("images/aircrash.jpg"); position: fixed' class='bg-image'>
+            <div style='background-image: url("images/boom.jpg"); position: fixed' class='bg-image'>
                 <div class="bg-dissolve"></div>
             </div>
             <div id='event-container'>
@@ -22,10 +22,10 @@
                     <div style="height: 6px"></div>
                     <div id='prize-container'>
                         <img src='images/prize.png'/>
-                        <div>INR 2500</div>
+                        <div>Prize: 2500</div>
                     </div>
                     <div style="height: 6px"></div>
-                    <p id="contact-head"><b>Contact: </b>Sakthivel</p>
+                    <p id="contact-head"><b>Contact: </b>Sakthi Vel</p>
                     <img class='icon' src='images/contact-icon.png' />
                     <div>+91 73 052 39714</div>
                     <div style="height: 1em"></div>
@@ -33,6 +33,7 @@
                         <img class='icon' src='images/email-icon.png' />
                         <a href="mailto:mitflight16@gmail.com">mitflight16@gmail.com</a>
                     </div>
+                    <br />
                 </div>
                 <div id='col-sep'></div>
                 <div id='main-col'>
@@ -40,31 +41,22 @@
                         <div id='event-head'>Boomerang</div>
                         <hr />
                         <div id='event-desc'>
-                            It’s fun to throw a boomerang just like Mowgli in Jungle Book did.
-                            The unique body and curves of a boomerang makes it the only projectile
-                            that can fly parallel to the ground and defy gravity.
-                            <b>Event Description:</b>
-                            <br />
-                            Teams should bring their own boomerangs and will contest with each other in projecting them across the course.
-                            <b>Event Format:</b>
-                            <ul>
-                            <li>	Consists of two rounds. </li>
-                            <li>	The first round is a preliminary round where a written test on basics of flight will be conducted.</li>
-                            <li>	Shortlisted candidates to the second and final round will be required to fly their boomerang. </li>
-                            <li>	The boomerang with the greatest range and best precision wins. </li>
-                        </ul>
-                            <b>Rules:</b>
-                            <ul>
-                            <li>	Participants are required to produce college ID without fail. </li>
-                            <li>	Participants must bring their designed boomerang to the venue for the final round. </li>
-                        </ul>
+                            The participants will contest with each other in projecting them across the course.
+                            The boomerang with the greatest range and precision wins!
+                            <p>
+                                There will be two rounds:
+                                <ul>
+                                    <li>Round 1 is a preliminary written test (on basics of flight)</li>
+                                    <li>Shortlisted candidates proceed to round 2, where they'll throw their boomerangs</li>
+                                </ul>
+                            </p>
                         </div>
                         <ul id='event-list'>
-                            <li><strong>Date:</strong> March 12</li>
-                            <li><strong>Time:</strong> 10:00 AM</li>
+                            <li><strong>Time:</strong> March 12 at 10:00 AM</li>
                             <li><strong>Entry amount:</strong> &#8377; 350 <sup>*</sup>
                                 <span id='pay' onclick='window.location = "https://in.explara.com/widget-new/general-registrationday-2"'>Pay!</span>
                             </li>
+                            <li>Max. 2 per team</li>
                             <li>ID card &amp; payment proof is required!</li>
                         </ul>
                     </div>
@@ -79,8 +71,7 @@
 
     <script>
         window.onload = function() {
-            document.getElementById('header-area').innerHTML = HEADER;
-            apply_mobile_header_attrs();
+            apply_header();
             insert_contact();
             transit_list();
         }

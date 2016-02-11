@@ -14,7 +14,7 @@
     <body>
         <div id="content">
             <div id='header-area'></div>
-            <div style='background-image: url("images/aircrash.jpg"); position: fixed' class='bg-image'>
+            <div style='background-image: url("images/rc.jpg"); position: fixed' class='bg-image'>
                 <div class="bg-dissolve"></div>
             </div>
             <div id='event-container'>
@@ -22,7 +22,7 @@
                     <div style="height: 6px"></div>
                     <div id='prize-container'>
                         <img src='images/prize.png'/>
-                        <div>INR 15000</div>
+                        <div>Prize: 15000</div>
                     </div>
                     <div style="height: 6px"></div>
                     <p id="contact-head"><b>Contact: </b>Abdul Basidh</p>
@@ -33,6 +33,7 @@
                         <img class='icon' src='images/email-icon.png' />
                         <a href="mailto:mitflight16@gmail.com">mitflight16@gmail.com</a>
                     </div>
+                    <br />
                 </div>
                 <div id='col-sep'></div>
                 <div id='main-col'>
@@ -40,32 +41,21 @@
                         <div id='event-head'>RC Competition</div>
                         <hr />
                         <div id='event-desc'>
-                        <p>Ever wondered how it feels to design your own aircraft and see it soar into the sky?
-                        Then take a break and come to Madras Institute of Technology!  </p>
-                        <b>Event description:</b>
-                        <p> Each team will be demonstrating their models’ acrobatic skills within the given time and will be judged on it. </p>
-                        <b>Rules:</b>
-                         <ul>
-                           <li>Participants are required to produce college ID without fail.</li>
-                           <li>Maximum of two per team.</li>
-                           <li>Participants need to bring their own RC models.</li>
-                           <li>2 minutes per team and they should do acrobatics with their models</li>
-                           <li>Judges decision is final and they are validated based on the acrobatic stunts</li>
+                            Each team will be given 2 minutes to execute the given trajectory<sup>*</sup> with their models. Judgement
+                            will be based on the timing &amp; stability
+                        </div>
+                        <ul id='event-list'>
+                            <li><strong>Time:</strong> March 12 (09:30 AM - 02:00 PM)</li>
+                            <li><strong>Entry amount:</strong> &#8377; 1600
+                                <span id='pay' onclick='window.location = "https://in.explara.com/widget-new/rc-competition"'>Pay!</span>
+                            </li>
+                            <li>Max. 2 per team</li>
+                            <li>ID card &amp; payment proof is required!</li>
                         </ul>
-                    </div>
-                    <ul id='event-list'>
-                        <li><strong>Date:</strong> March 12</li>
-                        <li><strong>Time:</strong> 09:30 AM - 02:00 PM</li>
-                        <li><strong>Entry amount:</strong> &#8377; 1600 <sup>*</sup>
-                            <span id='pay' onclick='window.location = "https://in.explara.com/widget-new/rc-competition"'>Pay!</span>
-                        </li>
-                        <li>Max. 3 per team</li>
-                        <li>ID card &amp; payment proof is required!</li>
-                    </ul>
                     </div>
                 </div>
                 <div id='footer'>
-                    *  Trajectory will be updated by Feburary 16
+                    * Trajectory will be updated by Feburary 16
                 </div>
             </div>
         </div>
@@ -73,8 +63,7 @@
 
     <script>
         window.onload = function() {
-            document.getElementById('header-area').innerHTML = HEADER;
-            apply_mobile_header_attrs();
+            apply_header();
             insert_contact();
             transit_list();
         }
