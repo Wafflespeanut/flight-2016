@@ -11,19 +11,15 @@
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
         <script type='text/javascript' src="javascripts/header.js"></script>
     </head>
+
     <body>
         <div id="content">
             <div id='header-area'></div>
-            <div style='background-image: url("images/aircrash.jpg"); position: fixed' class='bg-image'>
+            <div style='background-image: url("images/ansys.jpg"); position: fixed' class='bg-image'>
                 <div class="bg-dissolve"></div>
             </div>
             <div id='event-container'>
                 <div id='side-col'>
-                    <!-- <div style="height: 6px"></div>
-                    <div id='prize-container'>
-                        <img src='images/prize.png'/>
-                        <div>INR 5000</div>
-                    </div> -->
                     <div style="height: 6px"></div>
                     <p id="contact-head"><b>Contact: </b>Meeran</p>
                     <img class='icon' src='images/contact-icon.png' />
@@ -43,29 +39,27 @@
                             There will be two introductory sessions (4 hours each)
                             - one on ANSYS APDL, and the other on ANSYS CFX.
                         </div>
-                        <ul id='event-list'>
-                            <li><strong>Date:</strong> March 11</li>
+                        <ul class='event-list'>
+                            <li><strong>Date:</strong> March 11 at 09:00 AM</li>
                             <li><strong>Duration:</strong> 8 Hours</li>
-                            <li><strong>Registration:</strong> &#8377; 350  <sup>*</sup>
+                            <li><strong>Entry fee:</strong> &#8377; 350 <sup>*</sup>
                                 <span id='pay' onclick='window.location = "https://in.explara.com/widget-new/ansys"'>Pay!</span>
                             </li>
-                            <li>Max. <strong>3</strong> per team</li>
                             <li>ID card &amp; payment proof is required!</li>
                         </ul>
                     </div>
                     <br />
                 </div>
-                <!-- <div id='footer'>
-                    * &#8377; 2200 has to be paid in advance
-                </div> -->
+                <div id='footer'>
+                    * That's per person!
+                </div>
             </div>
         </div>
     </body>
 
     <script>
         window.onload = function() {
-            document.getElementById('header-area').innerHTML = HEADER;
-            apply_mobile_header_attrs();
+            apply_header();
             insert_contact();
             transit_list();
         }

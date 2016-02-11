@@ -17,6 +17,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+#side-col hr {
+    display: none;
+}
+
 #prize-container {
     text-align: center;
 }
@@ -65,21 +69,32 @@
     font-size: 5vw;
 }
 
+#event-sub-head {
+    font-family: 'San Francisco';
+    font-size: 3vw;
+}
+
 #event-desc {
     font-size: 1.8vw;
     padding-top: 1vw;
 }
 
-#event-list {
+.event-list {
     list-style-position: outside;
     list-style-type: circle;
 }
 
-#event-list li {
+.event-list li {
     padding: 1%;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.4s ease-in;
+}
+
+#col-group {
+    font-family: 'San Francisco';
+    font-size: 4vw;
+    margin-left: 10%;
 }
 
 #footer {
@@ -98,8 +113,17 @@
     width: 70%;
     height: 25vw;
     background-color: #ccc;
-    margin-left: 20%;
     color: black;
+}
+
+#contact-head {
+    font-size: 3vw;
+}
+
+.contact {
+    font-family: 'Open Sans';
+    font-size: 1.6vw;
+    padding: 2%;
 }
 
 @media all and (max-width: 700px) {
@@ -116,6 +140,10 @@
         padding-left: 1%;
         position: absolute;
         font-size: 5vw;
+    }
+
+    #side-col hr {
+        display: block;
     }
 
     #prize-container {
@@ -147,6 +175,10 @@
         font-size: 12vw;
     }
 
+    #event-sub-head {
+        font-size: 8vw;
+    }
+
     #event-detail {
         font-size: 5vw;
     }
@@ -166,12 +198,28 @@
         font-size: 4vw;
     }
 
+    #col-group {
+        font-family: 'San Francisco';
+        font-size: 10vw;
+        margin-left: 2%;
+    }
+
     #map {
         width: 100%;
-        height: 100vw;
+        height: 80vw;
         background-color: #ccc;
-        margin-left: 2%;
         overflow: hidden;
         color: black;
+    }
+
+    .contact {
+        font-family: 'Open Sans';
+        font-size: 5vw;
+        padding: 2%;
+    }
+
+    #contact-head {
+        font-size: 7vw;
+        font-weight: bold;
     }
 }

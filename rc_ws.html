@@ -14,7 +14,7 @@
     <body>
         <div id="content">
             <div id='header-area'></div>
-            <div style='background-image: url("images/aircrash.jpg"); position: fixed' class='bg-image'>
+            <div style='background-image: url("images/rc-homemade.jpg"); position: fixed' class='bg-image'>
                 <div class="bg-dissolve"></div>
             </div>
             <div id='event-container'>
@@ -27,50 +27,36 @@
                         <img class='icon' src='images/email-icon.png' />
                         <a href="mailto:mitflight16@gmail.com">mitflight16@gmail.com</a>
                     </div>
+                    <br />
                 </div>
                 <div id='col-sep'></div>
                 <div id='main-col'>
                     <div id='event-detail'>
-                        <div id='event-head'>RC fixed wing workshop</div>
-                        <br />
+                        <div id='event-head'>R/C Fixed-wing Workshop</div>
                         <div id='event-desc'>
-                        <b>Workshop description:</b>
-                        <p>This aero design workshop is of building a full structured r/c plane from scratch (structure alone).
-                          This workshop helps to understand the theory of flight and fabricating it. </p>
-                      </div>
-                       <b>Workshop format:</b>
-                       <br />
-                       This workshop is two days,
-                       <ul>
-                         <b><li>First day:</li></b>
-                         <ul>
-                           <li>First session is introductory session.</li>
-                           <li>Second session is fabrication of plane completes the first day.</li>
-                         </ul>
-                         <b><li>Second day:</li></b>
-                         <ul>
-                           <li>flying your designed plane with the electronics by experts.</li>
-                         </ul>
-                      </ul>
-                       <b>Details:</b>
-                       <ul id='event-list'>
-                           <li><strong>Date:</strong> March 11 &amp; 12</li>
-                           <li>Maximum no of participant: <strong>4</strong> per Team.</li>
-                           <li><strong>Duration:</strong> 8 Hours</li>
-                           <li><strong>Registration:</strong> &#8377; 2800  <sup>*</sup> per Team.
-                               <span id='pay' onclick='window.location = "https://in.explara.com/widget-new/rc-fixed-wing-workshop"'>Pay!</span>
-                           </li>
-                           <li>ID card &amp; payment proof is required!</li>
-                       </ul>
+                            This <b>2-day</b> workshop is on building a R/C plane from scratch! In the first day, there
+                            will be an introductory session on flight dynamics, followed by the design &amp; fabrication
+                            of your plane strucuture. The next day, the experts will make your plane fly!
                     </div>
+                    <ul class='event-list'>
+                        <li><strong>Dates:</strong> March 11 &amp; 12</li>
+                        <li><strong>Duration:</strong> 8 Hours (each day)</li>
+                        <li>Max. 4 per team</li>
+                        <li><strong>Entry fee:</strong> &#8377; 2800 <sup>*</sup>
+                            <span id='pay' onclick='window.location = "https://in.explara.com/widget-new/rc-fixed-wing-workshop"'>Pay!</span>
+                        </li>
+                        <li>ID card &amp; payment proof is required!</li>
+                    </ul>
+                </div>
+                <div id='footer'>
+                    * That's per team!
                 </div>
             </div>
         </div>
     </body>
     <script>
         window.onload = function() {
-            document.getElementById('header-area').innerHTML = HEADER;
-            apply_mobile_header_attrs();
+            apply_header();
             insert_contact();
             transit_list();
         }

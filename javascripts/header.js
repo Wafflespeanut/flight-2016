@@ -70,7 +70,7 @@ function apply_header() {
 function insert_contact() {     // useful for pages dedicated to events
     if (window.innerWidth <= MAX_WIDTH) {
         var contact = document.getElementById('side-col');
-        var event_detail = document.getElementById('event-detail');
+        var event_detail = document.getElementById('event-detail') || document.getElementById('col-group');
         while (contact.childNodes.length) {
             event_detail.appendChild(contact.firstChild);
         }
@@ -85,7 +85,7 @@ function show_elem(elem, timeout) {
 }
 
 function transit_list() {
-    var event_list = document.querySelectorAll('#event-list li');
+    var event_list = document.querySelectorAll('.event-list li');
     for (i = 0; i < event_list.length; i++) {
         show_elem(event_list[i], (i + 1) * LIST_ITEM_TIMEOUT);
     }

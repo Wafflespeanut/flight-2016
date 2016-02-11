@@ -24,14 +24,21 @@ div[class^='slide-'] {
     text-align: center;
 }
 
-.slide-front, .slide-head {
+.slide-front {
     padding-top: 15%;
+    font-size: 7vw;
+}
+
+.slide-head {
+    padding-top: 12.5%;
     font-size: 7vw;
 }
 
 .slide-content {
     font-family: 'Roboto';
     font-size: 1.8vw;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
 }
 
 .slide-footer {
@@ -56,12 +63,12 @@ div[class^='slide-'] {
 
     .slide-head {
         font-size: 15vw;
-        padding-top: 40%;
+        padding-top: 20vw;
     }
 
     .slide-content {
-        padding-left: 4%;
-        padding-right: 4%;
+        padding-left: 5%;
+        padding-right: 5%;
         font-size: 5vw;
     }
 

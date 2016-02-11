@@ -11,19 +11,15 @@
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
         <script type='text/javascript' src="javascripts/header.js"></script>
     </head>
-    <body>
+
+    <body style="overflow-y: scroll">
         <div id="content">
             <div id='header-area'></div>
-            <div style='background-image: url("images/aircrash.jpg"); position: fixed' class='bg-image'>
+            <div style='background-image: url("images/cansat.jpg"); position: fixed' class='bg-image'>
                 <div class="bg-dissolve"></div>
             </div>
             <div id='event-container'>
                 <div id='side-col'>
-                    <!-- <div style="height: 6px"></div>
-                    <div id='prize-container'>
-                        <img src='images/prize.png'/>
-                        <div>INR 5000</div>
-                    </div> -->
                     <div style="height: 6px"></div>
                     <p id="contact-head"><b>Contact: </b>Kathiresh</p>
                     <img class='icon' src='images/contact-icon.png' />
@@ -37,31 +33,27 @@
                 <div id='col-sep'></div>
                 <div id='main-col'>
                     <div id='event-detail'>
-                        <div id='event-head'>CAN SATELLITE (CANSAT)</div>
+                        <div id='event-head'>CanSat Workshop</div>
                         <hr />
                         <div id='event-desc'>
-                            <b>Workshop description:</b>
-                            <p>A CanSat is a simulation of a real satellite,
-                              integrated within the volume and shape of a aerodynamic box.
-                              The challenge for the students is to fit all the major subsystems found in a satellite,
-                              such as power, sensors and a communication system, into this minimal volume. </p>
-                           <b>Workshop format:</b>
-                           <br />
-                           <br />
-                           Theory class about Understanding Rocket and its flight Dynamics.
-                           <ul>
-                                <li>Design and Fabrication of Rocket and its frame.</li>
-                                <li>Design and fabrication of parachute. </li>
-                                <li>Design and assembly of payload (Arduino, Sensors, PCB..,). </li>
-                                <li>Programming to onboard computer. </li>
-                                <li>Testing and calibration of sensors. </li>
-                                <li>Launching of satellite. </li>
-                          </ul>
+                            <p>A CanSat is a simulation of a real satellite, integrated within the volume and shape of an aerodynamic box.
+                              The challenge for the students is to fit all the major subsystems
+                              such as power, sensors, communication system, etc. into this minimal volume. </p>
+                            <div id='event-sub-head'>Schedule for the day:</div>
+                            <ul>
+                                <li>Theory about rocket and its flight dynamics</li>
+                                <li>Design &amp; fabrication of rocket and its frame</li>
+                                <li>Design &amp; fabrication of parachute</li>
+                                <li>Design &amp; assembly of payload (Arduino, Sensors, PCB, ...)</li>
+                                <li>Programming the onboard computer</li>
+                                <li>Testing &amp; calibration of sensors</li>
+                                <li>Satellite launch!</li>
+                            </ul>
                         </div>
-                        <ul id='event-list'>
-                            <li><strong>Date:</strong> March 11 &amp; 12</li>
-                            <li><strong>Time:</strong> 09:00 AM - 04:30 PM</li>
-                            <li><strong>Registration:</strong> &#8377; 8500  <sup>*</sup>
+                        <ul class='event-list'>
+                            <li><strong>Date:</strong> March 11 at 09:00 AM</li>
+                            <li><strong>Duration:</strong> 8 Hours</li>
+                            <li><strong>Entry fee:</strong> &#8377; 8500 <sup>*</sup>
                                 <span id='pay' onclick='window.location = "https://in.explara.com/widget-new/cansat"'>Pay!</span>
                             </li>
                             <li>Max. 3 per team</li>
@@ -79,8 +71,7 @@
 
     <script>
         window.onload = function() {
-            document.getElementById('header-area').innerHTML = HEADER;
-            apply_mobile_header_attrs();
+            apply_header();
             insert_contact();
             transit_list();
         }

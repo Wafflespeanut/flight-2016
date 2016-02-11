@@ -14,7 +14,7 @@
     <body>
         <div id="content">
             <div id='header-area'></div>
-            <div style='background-image: url("images/aircrash.jpg"); position: fixed' class='bg-image'>
+            <div style='background-image: url("images/uav-control.jpg"); position: fixed' class='bg-image'>
                 <div class="bg-dissolve"></div>
             </div>
             <div id='event-container'>
@@ -27,6 +27,8 @@
                         <img class='icon' src='images/email-icon.png' />
                         <a href="mailto:mitflight16@gmail.com">mitflight16@gmail.com</a>
                     </div>
+                    <br />
+                    <br />
                 </div>
                 <div id='col-sep'></div>
                 <div id='main-col'>
@@ -34,27 +36,23 @@
                         <div id='event-head'>UAV Flight Controller</div>
                         <hr />
                         <div id='event-desc'>
-                        <b>Workshop description:</b>
-                        <p>A workshop on Flight controller integration and is about designing,
-                          developing and integrating a flight controller for a UAV.
-                          Workshop focuses on microcontroller selection together with a barometer,
-                          gyroscope, accelerometer and GPS (optional) integration to a flight controller system
-                          which can perform semi-autonomous or fully autonomous flight required for an unmanned aerial vehicle.</p>
-                      </div>
-                        <ul id='event-list'>
-                          <li>Maximum no of participant: <strong>5</strong> per Team.</li>
-                              <li><strong>Date:</strong> March 11 &amp; 12</li>
-                              <li><strong>Time:</strong> 09;30 AM - 04:30 PM</li>
-                              <li><strong>Entry amount:</strong> &#8377; 6200 <sup>*</sup>
-                                  <span id='pay' onclick='window.location = "https://in.explara.com/widget-new/uav-flight-control-workshop"'>Pay!</span>
-                              </li>
+                            This workshop is about designing, developing and integrating a flight controller
+                            into an UAV. We will be focusing on the selection of microcontroller, along with the integration of
+                            barometer, gyroscope &amp; accelerometer (and optional GPS) into the flight controller,
+                            which can finally perform a semi- (or fully) autonomous flight required for an UAV.
+                        </div>
+                        <ul class='event-list'>
+                            <li><strong>Dates:</strong> March 11 &amp; 12</li>
+                            <li><strong>Duration:</strong> 8 hours (each day)</li>
+                            <li>Max. 5 per team</li>
+                            <li><strong>Entry amount:</strong> &#8377; 6200 <sup>*</sup>
+                                <span id='pay' onclick='window.location = "https://in.explara.com/widget-new/uav-flight-control-workshop"'>Pay!</span>
+                            </li>
                        </ul>
                     </div>
                 </div>
                 <div id='footer'>
-                    The kit will be handed over to the participants at the end of the workshop.<br />
-                    This workshop is two days.
-                    &#8377; 2200 has to be paid in advance.
+                    &#8377; 2200 has to be paid in advance. The kit will be given to you by the end of the workshop.
                 </div>
             </div>
         </div>
@@ -62,8 +60,7 @@
 
     <script>
         window.onload = function() {
-            document.getElementById('header-area').innerHTML = HEADER;
-            apply_mobile_header_attrs();
+            apply_header();
             insert_contact();
             transit_list();
         }

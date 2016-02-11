@@ -94,6 +94,7 @@ function Clock() {
     var pos = 0;
     var distributor = new EventDistributor();
     var hand = document.getElementById('hand');
+    var info_box = document.getElementById('point-info');
     var title = document.getElementById('display-event-title');
     var time = document.getElementById('display-event-time');
     var background = document.querySelector('.bg-image');
@@ -106,6 +107,7 @@ function Clock() {
         set_point(prev_point);
         title.innerHTML = point.event_title;
         time.innerHTML = point.event_time;
+        title.setAttribute('onclick', point.getAttribute('onclick'));
         // if (prev_point && prev_point.event_period != point.event_period) {
         //     blend.style.opacity = 1;
         //     setTimeout(function() {     // workaround for background image transition

@@ -44,7 +44,7 @@ body {
     font-size: 1em;
     float: left;
     position: relative;
-    padding: 1% 3%;
+    padding: 1% 5%;
 }
 
 .tab a {
@@ -52,7 +52,7 @@ body {
 }
 
 .tab a div:first-child {
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
 .tab-content {
