@@ -97,6 +97,12 @@
     margin-left: 10%;
 }
 
+/*#col-group div {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}*/
+
 #footer {
     position: fixed;
     background-color: black;
@@ -116,7 +122,8 @@
     color: black;
 }
 
-#contact-head {
+.contact-head {
+    font-family: 'Open Sans';
     font-size: 3vw;
 }
 
@@ -124,6 +131,18 @@
     font-family: 'Open Sans';
     font-size: 1.6vw;
     padding: 2%;
+}
+
+.contact-sub-head {
+    font-size: 2vw;
+}
+
+.thin-sep {
+    height: 1vw;
+}
+
+.thick-sep {
+    height: 2vw;
 }
 
 @media all and (max-width: 700px) {
@@ -218,8 +237,12 @@
         padding: 2%;
     }
 
-    #contact-head {
+    .contact-head {
         font-size: 7vw;
         font-weight: bold;
+    }
+
+    .contact-sub-head {
+        font-size: 5vw;
     }
 }

@@ -25,7 +25,7 @@
 #point-info {
     width: 100%;
     color: white;
-    position: absolute;
+    position: fixed;
     font-family: 'Open Sans';
     top: 35%;
     left: 25vw;

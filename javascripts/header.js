@@ -84,8 +84,9 @@ function show_elem(elem, timeout) {
     }, timeout)
 }
 
-function transit_list() {
-    var event_list = document.querySelectorAll('.event-list li');
+function transit_list(query_select) {
+    query_select = (query_select) ? query_select : '.event-list li';
+    var event_list = document.querySelectorAll(query_select);
     for (i = 0; i < event_list.length; i++) {
         show_elem(event_list[i], (i + 1) * LIST_ITEM_TIMEOUT);
     }

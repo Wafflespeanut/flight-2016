@@ -12,7 +12,7 @@
         <script type='text/javascript' src="javascripts/header.js"></script>
     </head>
 
-    <body>
+    <body style="overflow-y: scroll">
         <noscript>
             <style>
                 #content { display: none; }
@@ -24,23 +24,55 @@
         </noscript>
         <div id="content">
             <div id='header-area'></div>
-            <div style='background-color: black; position: fixed' class='bg-image'>
-                <div class="bg-dissolve" style='opacity: 0'></div>
+            <div style='position: fixed' class='bg-image'>
+                <div class="bg-dissolve"></div>
             </div>
             <div id='event-container'>
                 <div id='side-col'>
-                    <div style="height: 6px"></div>
+                    <div class='thin-sep'></div>
                     <hr />
-                    <div id='contact-head'>Contact:</div>
-                    <div class='contact'>Kathiresh (Chairman)</div>
-                    <div class='contact'>+91 76 671 52323</div>
-                    <div style="height: 1em"></div>
+                    <div class='contact-head'>Contact:</div>
+                    <div class='contact'>
+                        <div>Kathiresh</div>
+                        <div>(Chairman)</div>
+                        <div>+91 97 152 55152</div>
+                    </div>
+                    <div class='thin-sep'></div>
+                    <div class='contact'>
+                        <div>Ponmadhi</div>
+                        <div>(Program Secretary)</div>
+                        <div>+91 82 209 17491</div>
+                    </div>
                 </div>
                 <div id='col-sep'></div>
                 <div id='main-col'>
                     <div id='col-group'>
-                        <div>Where are we?</div>
-                        <div style="height: 12px"></div>
+                        <div class='contact-head'>Other enquiries:</div>
+                        <div class='contact'>
+                            <div class='contact-sub-head'>Hospitality incharge:</div>
+                            <div class='thin-sep'></div>
+                            <div>(Boys)</div>
+                            <ul>
+                                <li>Balaji (+91 98 842 45282)</li>
+                                <li>Dinesh Kumar (+91 72 007 99391)</li>
+                            </ul>
+                            <div>(Girls)</div>
+                            <ul>
+                                <li>Boomadevi (+91 95 785 68148)</li>
+                                <li>Pooja Nema (+91 94 796 12784)</li>
+                            </ul>
+                            <div class='contact-sub-head'>Event-related queries:</div>
+                            <ul>
+                                <li>Sooriyan (+91 76 671 52323)</li>
+                            </ul>
+                            <div style="height: 12px"></div>
+                            <div class='contact-sub-head'>Workshop-related queries:</div>
+                            <ul>
+                                <li>Harish (+91 74 015 23529)</li>
+                            </ul>
+                        </div>
+                        <div class='contact-head'>Where are we?</div>
+                        <div class='thin-sep'></div>
                         <div id='map'>
                             <script>
                                 function initialize() {
@@ -65,8 +97,8 @@
                                     }); info_window.open(map, marker);
                                 }
                             </script>
-                            <script src="https://maps.googleapis.com/maps/api/js?callback=initialize" async defer></script>
                         </div>
+                        <div class='thick-sep'></div>
                     </div>
                 </div>
                 <div id='footer'>
@@ -82,4 +114,5 @@
             insert_contact();
         }
     </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initialize" async defer></script>
 </html>
