@@ -1,13 +1,11 @@
-/* FIXME: correct everything to match viewports */
-
 @font-face {
     font-family: 'DS-Digital';
-    src: url('../fonts/ds-digital.woff');   /* http://db.onlinewebfonts.com/c/63f874d192fb3892d88d5e26f942b5e2?family=DS-Digital */
+    src: url('../fonts/ds-digital.ttf') format('woff');   /* http://db.onlinewebfonts.com/c/63f874d192fb3892d88d5e26f942b5e2?family=DS-Digital */
 }
 
 body {
     font-family: 'Helvetica';
-    font-size: 1.5em;
+    font-size: 2vw;
 }
 
 /* Countdown timer transition */
@@ -21,26 +19,28 @@ body {
     -ms-transition: opacity 2s ease-in;
 }
 
+.text-container {
+    padding-top: 4vw;
+}
+
 .timer {
-    margin: auto;
-    padding-top: 1em;
+    padding-top: 1vw;
     table-layout: fixed;
-    width: 1000px;
+    width: 100%;
 }
 
 .timer td {
-    padding: 4px 25px 4px 25px;
-    width: 25px;
+    padding: 1vw 3vw;
     font-family: 'DS-Digital', monospace;
     text-align: center;
 }
 
 .timer-val {
-    font-size: 5.2em;
+    font-size: 10vw;
 }
 
 .timer-disp {
-    font-size: 1.2em;
+    font-size: 3vw;
 }
 
 a[href^="mailto:"] {
@@ -50,13 +50,43 @@ a[href^="mailto:"] {
 
 .contact {
     font-family: 'Verdana';
-    font-size: 14px;
-    padding-right: 2em;
-    padding-bottom: 2em;
+    font-size: 1.5vw;
+    padding-right: 1vw;
+    padding-bottom: 1vw;
 }
 
 .icon {
     float: left;
     padding-right: 0.75em;
     height: 1.8em;
+}
+
+@media all and (max-width: 700px) {
+    body {
+        font-size: 5vw;
+    }
+
+    .text-container {
+        padding-top: 25vw;
+    }
+
+    .timer {
+        padding-top: 5vw;
+    }
+
+    .timer td {
+        padding: 1vw 3vw;
+    }
+
+    .timer-val {
+        font-size: 15vw;
+    }
+
+    .timer-disp {
+        font-size: 6vw;
+    }
+
+    .contact {
+        font-size: 4vw;
+    }
 }
