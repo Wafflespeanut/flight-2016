@@ -27,17 +27,17 @@
             <div id='header-area'></div>
             <script>apply_header();</script>
             <div id='scroll-holder'>
-                <img id='arrow-up' src='images/arrow.png' />
-                <img id='arrow-down' src='images/arrow.png' />
-                <img id='double-up' src='images/double-arrow.png' />
-                <img id='double-down' src='images/double-arrow.png' />
-                <div id='slide-1' class='slide bg-image'>
+                <img id='arrow-up' data-desktop='images/arrow.png' data-mobile='images-mobile/arrow.png' />
+                <img id='arrow-down' data-desktop='images/arrow.png' data-mobile='images-mobile/arrow.png' />
+                <img id='double-up' data-desktop='images/double-arrow.png' data-mobile='images-mobile/double-arrow.png' />
+                <img id='double-down' data-desktop='images/double-arrow.png' data-mobile='images-mobile/double-arrow.png' />
+                <div id='slide-1' data-desktop='images/kalam.jpg' data-mobile='images-mobile/kalam.jpg' class='slide bg-image bg-marker'>
                     <div class="bg-dissolve">
                         <div class='slide-front'>Welcome!</div>
                         <div class='slide-footer'>In the memory of our beloved alumnus...</div>
                     </div>
                 </div>
-                <div id='slide-2' class='slide bg-image'>
+                <div id='slide-2' data-desktop='images/gate.jpg' data-mobile='images-mobile/gate.jpg' class='slide bg-image bg-marker'>
                     <div class="bg-dissolve">
                         <div class='slide-head'>Who are we?</div>
                         <div class='slide-content'>
@@ -48,7 +48,7 @@
                         </div>
                     </div>
                 </div>
-                <div id='slide-3' class='slide bg-image'>
+                <div id='slide-3' data-desktop='images/logo.png' data-mobile='images-mobile/logo.png' class='slide bg-image bg-marker'>
                     <div class="bg-dissolve">
                         <div class='slide-head'>What we do?</div>
                         <div class='slide-content'>
@@ -60,7 +60,10 @@
                     </div>
                 </div>
             </div>
-            <script>Scroller();</script>
+            <script>
+                switch_images();
+                Scroller();
+            </script>
         </div>
         <script>
             window.onload = function() {

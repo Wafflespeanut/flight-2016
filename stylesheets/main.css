@@ -12,6 +12,7 @@ body {
 }
 
 #header {
+    font-family: 'Roboto';
     position: fixed;
     top: 0;
     left: 0;
@@ -39,8 +40,6 @@ body {
 
 .tab {
     cursor: default;
-    font-family: 'Roboto';
-    list-style: none;
     font-size: 1em;
     float: left;
     position: relative;

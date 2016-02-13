@@ -25,7 +25,7 @@
         <div id="content">
             <div id='header-area'></div>
             <script>apply_header();</script>
-            <div id='event-background' style='background-image: url("images/hangar.jpg")' class='bg-image'>
+            <div id='event-background' data-desktop="images/hangar.jpg" data-mobile="images-mobile/hangar.jpg" style='position: fixed' class='bg-marker bg-image'>
                 <div class="bg-dissolve"></div>
             </div>
             <div style="padding-top: 20%"></div>
@@ -33,7 +33,7 @@
                 <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
                     <a href='composites_ws.html'>
                         <div>
-                            <img class='card-logo' src='images/composites.png'/>
+                            <img class='card-logo' data-desktop='images/composites.png' data-mobile='images-mobile/composites.png'/>
                             <div class='card-title'>Composites</div>
                             <div class='card-description'>
                                 <p>Workshop on fabrication of composites and their testing</p>
@@ -44,7 +44,7 @@
                 <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
                     <a href="jet_ws.html">
                         <div>
-                            <img class='card-logo' src='images/rocket.png'/>
+                            <img class='card-logo' data-desktop='images/rocket.png' data-mobile='images-mobile/rocket.png'/>
                             <div class='card-title'>Jet</div>
                             <div class='card-description'>
                                 <p>Workshop on jet flow visualization techniques</p>
@@ -55,7 +55,7 @@
                 <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
                     <a href="ansys_ws.html">
                         <div>
-                            <img class='card-logo' src='images/ansys.png'/>
+                            <img class='card-logo' data-desktop='images/ansys.png' data-mobile='images-mobile/ansys.png'/>
                             <div class='card-title'>ANSYS</div>
                             <div class='card-description'>
                                 <p>Workshop on structural and CFD analysis using ANSYS</p>
@@ -66,7 +66,7 @@
                 <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
                     <a href="cansat_ws.html">
                         <div>
-                            <img class='card-logo' src='images/cansat.png'/>
+                            <img class='card-logo' data-desktop='images/cansat.png' data-mobile='images-mobile/cansat.png'/>
                             <div class='card-title'>CANSAT</div>
                             <div class='card-description'>
                                 <p>Workshop on a "mini" deployable satellite</p>
@@ -77,7 +77,7 @@
                 <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
                     <a href="rc_ws.html">
                         <div>
-                            <img class='card-logo' src='images/rc-plane-ws.png'/>
+                            <img class='card-logo' data-desktop='images/rc-plane-ws.png' data-mobile='images-mobile/rc-plane-ws.png'/>
                             <div class='card-title'>R/C Fixed wing</div>
                             <div class='card-description'>
                                 <p>Workshop on fabrication of a remote-controlled fixed wing static model scaled aircraft</p>
@@ -88,7 +88,7 @@
                 <div class='card' onmouseover="card_open(this)" onmouseout="card_close(this)">
                     <a href="uav_ws.html">
                         <div>
-                            <img class='card-logo' src='images/drone-work.png'/>
+                            <img class='card-logo' data-desktop='images/drone-work.png' data-mobile='images-mobile/drone-work.png'/>
                             <div class='card-title'>UAV Flight Controller</div>
                             <div class='card-description'>
                                 <p>Workshop on flight controller, its design, development and integration into an UAV</p>
@@ -97,7 +97,10 @@
                     </a>
                 </div>
             </div>
-            <script>Scroller(3);</script>
+            <script>
+                switch_images();
+                Scroller(3);
+            </script>
         </div>
     </body>
 </html>

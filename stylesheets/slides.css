@@ -1,14 +1,12 @@
 #slide-1 {
-    background-image: url('../images/kalam.jpg');
+    top: 0%;
 }
 
 #slide-2 {
-    background-image: url('../images/gate.jpg');
     top: 100%;
 }
 
 #slide-3 {
-    background-image: url('../images/logo.png');
     background-size: 80%;
     top: 200%;
 }

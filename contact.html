@@ -98,7 +98,6 @@
                                     }); info_window.open(map, marker);
                                 }
                             </script>
-                            <script src="https://maps.googleapis.com/maps/api/js?callback=initialize" async defer></script>
                         </div>
                         <div class='thick-sep'></div>
                     </div>
@@ -106,7 +105,11 @@
                 <div id='footer'>
                     <!--  -->
                 </div>
-                <script>insert_contact();</script>
+                <script>
+                    switch_images();
+                    insert_contact();
+                </script>
+                <script src="https://maps.googleapis.com/maps/api/js?callback=initialize" async defer></script>
             </div>
         </div>
     </body>

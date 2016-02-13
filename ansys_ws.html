@@ -25,18 +25,18 @@
         <div id="content">
             <div id='header-area'></div>
             <script>apply_header();</script>
-            <div style='background-image: url("images/ansys.jpg"); position: fixed' class='bg-image'>
+            <div style='position: fixed' data-desktop="images/ansys.jpg" data-mobile="images-mobile/ansys.jpg" class='bg-marker bg-image'>
                 <div class="bg-dissolve"></div>
             </div>
             <div id='event-container'>
                 <div id='side-col'>
                     <div style="height: 6px"></div>
                     <p id="contact-head"><b>Contact: </b>Meeran</p>
-                    <img class='icon' src='images/contact-icon.png' />
+                    <img class='icon' data-desktop='images/contact-icon.png' data-mobile='images-mobile/contact-icon.png' />
                     <div>+91 96 293 22383</div>
                     <div style="height: 1em"></div>
                     <div>
-                        <img class='icon' src='images/email-icon.png' />
+                        <img class='icon' data-desktop='images/email-icon.png' data-mobile='images-mobile/email-icon.png' />
                         <a href="mailto:mitflight16@gmail.com">mitflight16@gmail.com</a>
                     </div>
                 </div>
@@ -68,6 +68,7 @@
         </div>
         <script>
             window.onload = function() {
+                switch_images();
                 transit_list();
             }
         </script>
