@@ -25,6 +25,7 @@
         </noscript>
         <div id="content">
             <div id='header-area'></div>
+            <script>apply_header();</script>
             <div style="background-image: url('images/blackbird.jpg'); position: fixed" class='bg-image'>
                 <div class="bg-dissolve"></div>
             </div>
@@ -145,7 +146,6 @@
     <script>
         window.onload = function() {
             window.event_clock = new Clock();   // put it inside the window so that we can access later (workaround)
-            apply_header();
         }
     </script>
 </html>

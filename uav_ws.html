@@ -23,6 +23,7 @@
         </noscript>
         <div id="content">
             <div id='header-area'></div>
+            <script>apply_header();</script>
             <div style='background-image: url("images/uav-control.jpg"); position: fixed' class='bg-image'>
                 <div class="bg-dissolve"></div>
             </div>
@@ -63,15 +64,13 @@
                 <div id='footer'>
                     &#8377; 2200 has to be paid in advance. The kit will be given to you by the end of the workshop.
                 </div>
+                <script>insert_contact();</script>
             </div>
         </div>
+        <script>
+            window.onload = function() {
+                transit_list();
+            }
+        </script>
     </body>
-
-    <script>
-        window.onload = function() {
-            apply_header();
-            insert_contact();
-            transit_list();
-        }
-    </script>
 </html>

@@ -24,6 +24,7 @@
         </noscript>
         <div id="content">
             <div id='header-area'></div>
+            <script>apply_header();</script>
             <div style='background-image: url("images/presentation.jpg"); position: fixed' class='bg-image'>
                 <div class="bg-dissolve"></div>
             </div>
@@ -67,16 +68,14 @@
                     <div id='footer'>
                         * Abstracts shouldn't exceed 500 words, and should be in MS Word or PDF format (LaTeX would be lovely!)
                     </div>
+                    <script>insert_contact();</script>
                 </div>
             </div>
         </div>
+        <script>
+            window.onload = function() {
+                transit_list();
+            }
+        </script>
     </body>
-
-    <script>
-        window.onload = function() {
-            apply_header();
-            insert_contact();
-            transit_list();
-        }
-    </script>
 </html>

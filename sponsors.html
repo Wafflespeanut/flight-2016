@@ -22,16 +22,10 @@
         </noscript>
         <div id="content">
             <div id='header-area'></div>
+            <script>apply_header();</script>
             <div style='background-image: url("images/sponsors.jpg")' class='bg-image'>
                 <div class="bg-dissolve"></div>
             </div>
         </div>
     </body>
-
-    <script>
-        window.onload = function() {
-            document.getElementById('header-area').innerHTML = HEADER;
-            apply_mobile_header_attrs();
-        }
-    </script>
 </html>

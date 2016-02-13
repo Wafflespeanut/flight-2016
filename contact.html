@@ -24,6 +24,7 @@
         </noscript>
         <div id="content">
             <div id='header-area'></div>
+            <script>apply_header();</script>
             <div style='position: fixed' class='bg-image'>
                 <div class="bg-dissolve"></div>
             </div>
@@ -97,6 +98,7 @@
                                     }); info_window.open(map, marker);
                                 }
                             </script>
+                            <script src="https://maps.googleapis.com/maps/api/js?callback=initialize" async defer></script>
                         </div>
                         <div class='thick-sep'></div>
                     </div>
@@ -104,15 +106,8 @@
                 <div id='footer'>
                     <!--  -->
                 </div>
+                <script>insert_contact();</script>
             </div>
         </div>
     </body>
-
-    <script>
-        window.onload = function() {
-            apply_header();
-            insert_contact();
-        }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?callback=initialize" async defer></script>
 </html>

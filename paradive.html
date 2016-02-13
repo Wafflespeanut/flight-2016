@@ -24,6 +24,7 @@
         </noscript>
         <div id="content">
             <div id='header-area'></div>
+            <script>apply_header();</script>
             <div style='background-image: url("images/paradive.jpg"); position: fixed' class='bg-image'>
                 <div class="bg-dissolve"></div>
             </div>
@@ -75,15 +76,13 @@
                 <div id='footer'>
                     * Note that you'll be paying for all events on day 2!
                 </div>
+                <script>insert_contact();</script>
             </div>
         </div>
+        <script>
+            window.onload = function() {
+                transit_list();
+            }
+        </script>
     </body>
-
-    <script>
-        window.onload = function() {
-            apply_header();
-            insert_contact();
-            transit_list();
-        }
-    </script>
 </html>
