@@ -33,7 +33,11 @@
     width: 10vw;
 }
 
-#pay {
+.breaker {
+    display: none;
+}
+
+.register {
     border: solid thin white;
     border-radius: 0.5vw;
     margin-left: 1vw;
@@ -207,10 +211,14 @@
         padding-top: 4vw;
     }
 
-    #pay {
+    .register {
         border-radius: 2vw;
         margin-left: 2.5vw;
-        padding: 2% 5%;
+        padding: 1.5% 5%;
+    }
+
+    .breaker {
+        display: block;
     }
 
     #footer {
