@@ -156,7 +156,7 @@ function Clock() {
 
 function set_time(point, date) {
     var mins = date.getMinutes(), hours = date.getHours();
-    var suffix = (hours - 12 > 0) ? ' PM' : ' AM';
+    var suffix = (hours - 12 >= 0) ? ' PM' : ' AM';
     if (hours > 12) {
         point.event_time = (hours - 12) + ':' + ('0' + mins).slice(-2) + suffix;
         if (hours >= 16) {

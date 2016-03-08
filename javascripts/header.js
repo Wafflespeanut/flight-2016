@@ -36,6 +36,14 @@ const HEADER = '<div id="mobile-header"> \
         </a> \
     </div> \
     <div class="tab"> \
+        <a href="fair.html"> \
+            <div class="tab-content"> \
+                <img data-desktop="images/sponsors.png" data-mobile="images-mobile/sponsors.png" /> \
+                <span class="tab-text">Aerospace Fair</span> \
+            </div> \
+        </a> \
+    </div> \
+    <div class="tab"> \
         <a href="contact.html"> \
             <div class="tab-content"> \
                 <img data-desktop="images/phone.png" data-mobile="images-mobile/phone.png" /> \

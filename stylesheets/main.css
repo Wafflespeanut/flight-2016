@@ -43,7 +43,7 @@ body {
     font-size: 1em;
     float: left;
     position: relative;
-    padding: 1% 5%;
+    padding: 1% 3%;
 }
 
 .tab a {
@@ -55,7 +55,6 @@ body {
 }
 
 .tab-content {
-    padding: 5px 10px;
     color: white;
 }
 
