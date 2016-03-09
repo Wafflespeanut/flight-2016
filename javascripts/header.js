@@ -36,10 +36,10 @@ const HEADER = '<div id="mobile-header"> \
         </a> \
     </div> \
     <div class="tab"> \
-        <a href="fair.html"> \
+        <a href="sponsors.html"> \
             <div class="tab-content"> \
                 <img data-desktop="images/sponsors.png" data-mobile="images-mobile/sponsors.png" /> \
-                <span class="tab-text">Aerospace Fair</span> \
+                <span class="tab-text">Sponsors</span> \
             </div> \
         </a> \
     </div> \

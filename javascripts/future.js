@@ -14,20 +14,16 @@ function Scroller() {
     if (window.innerWidth > MAX_WIDTH) {        // FIXME: screwed up! refactor some day...
         document.addEventListener('keydown', scroll, false);
         up_arrow.addEventListener('mouseup', up_up, false);
-        home_arrow.addEventListener('mouseup', home_up, false);
+        home_arrow.addEventListener('mouseup', first_slide, false);
         up_arrow.addEventListener('mousedown', up_down, false);
         down_arrow.addEventListener('mouseup', down_up, false);
-        end_arrow.addEventListener('mouseup', end_up, false);
+        end_arrow.addEventListener('mouseup', last_slide, false);
         down_arrow.addEventListener('mousedown', down_down, false);
     }
 
     function up_up() {
         up_arrow.style.transform = 'translate(' + 0 + 'px, ' + 0 + 'px) rotate(' + UP + ')';
         previous_slide();
-    }
-
-    function home_up() {
-        first_slide();
     }
 
     function up_down() {
@@ -37,10 +33,6 @@ function Scroller() {
     function down_up() {
         down_arrow.style.transform = 'translate(' + 0 + 'px, ' + 0 + 'px) rotate(' + DOWN + ')';
         next_slide();
-    }
-
-    function end_up() {
-        last_slide();
     }
 
     function down_down() {

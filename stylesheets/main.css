@@ -55,6 +55,7 @@ body {
 }
 
 .tab-content {
+    padding: 5px 10px;
     color: white;
 }
 
@@ -138,7 +139,6 @@ body {
     }
 }
 
-
 #arrow-up, #arrow-down {
     position: absolute;
     cursor: pointer;
@@ -192,9 +192,37 @@ body {
     opacity: 0.8;
 }
 
+#gallery {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    width: 80%;
+    margin-left: -40%;
+}
+
+.gallery-img {
+    padding: 2%;
+}
+
+.gallery-img img {
+    width: 15vw;
+}
+
 @media all and (max-width: 700px) {
     #double-up, #double-down, #arrow-up, #arrow-down, #arrow-left, #arrow-right {
         display: none;      /* because, we allow scrolling for mobiles */
+    }
+
+    #gallery {
+        top: 15%;
+    }
+
+    .gallery-img {
+        padding: 5%;
+    }
+
+    .gallery-img img {
+        width: 30vw;
     }
 }
 
